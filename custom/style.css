@@ -27,6 +27,10 @@ header {
     @apply md:h-[50px];
 }
 
+section {
+  scroll-margin-top: 82px; /* tinggi header */
+}
+
 details[open] summary svg {
   transform: rotate(180deg);
 }
