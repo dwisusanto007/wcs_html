@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>WCS - PT. Wahana Ciptasinatria | Welcome</title>
+    <link href="./assets/css/style.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <link rel="icon" id="dynamic-favicon" type="image/svg+xml" />
+    <script>
+        (function () {
+            // ambil huruf pertama dari title
+            const firstLetter = document.title.trim().charAt(0).toUpperCase() || "Q";
+
+            // buat SVG string
+            const svg = `
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+                <rect width="100" height="100" fill="#FFD700"/>
+                <text x="50%" y="50%" dominant-baseline="middle" text-anchor="middle"
+                        font-size="60" font-family="sans-serif" font-weight="bold" fill="black">
+                    ${firstLetter}
+                </text>
+                </svg>
+            `;
+
+            // encode ke data URI
+            const svgDataUri = "data:image/svg+xml," + encodeURIComponent(svg);
+            // set ke favicon
+            document.getElementById("dynamic-favicon").setAttribute("href", svgDataUri);
+        })();
+    </script>
+</head>
+
+<body class="font-inter">
+
+    <!-- Header -->
+    <header class="sticky top-0 bg-white shadow-md z-50">
+        <div class="container mx-auto flex items-center justify-between md:py-4">
+
+            <!-- Logo -->
+            <div id="logo">
+                <a href="#" class="header-logo inline-flex">
+                    <img src="./assets/img/logo_wcs.png" alt="PT Wahana Ciptasinatria">
+                    <span class="ml-2 uppercase">PT Wahana Ciptasinatria</span>
+                </a>
+            </div>
+
+
+            <!-- Desktop Menu -->
+            <nav class="hidden md:flex items-center space-x-6 font-medium text-gray-900 relative">
+                <a href="#">About Us</a>
+
+                <!-- Dropdown Services -->
+                <div class="relative group">
+                    <button class="flex items-center space-x-1">
+                        <span>Solution & Services</span>
+                        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                        </svg>
+                    </button>
+
+                    <!-- Submenu -->
+                    <div
+                        class="absolute left-0 mt-2 w-44 bg-white shadow-lg rounded-md z-50 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 overflow-hidden">
+                        <a href="#" class="block px-4 py-2 hover:bg-gray-100">Web Development</a>
+                        <a href="#" class="block px-4 py-2 hover:bg-gray-100">App Development</a>
+                        <a href="#" class="block px-4 py-2 hover:bg-gray-100">UI/UX Design</a>
+                    </div>
+
+                </div>
+
+                <a href="#">Industries</a>
+                <a href="#">Our Clients</a>
+                <a href="#">Articles</a>
+                <a href="#">Careers</a>
+
+                <div>
+                    <a href="#" class="btn-primary">Book Meeting</a>
+                </div>
+            </nav>
+
+            <!-- Mobile Hamburger -->
+            <div class="md:hidden">
+                <button id="menu-toggle" class="focus:outline-none">
+                    <svg class="w-6 h-6 text-gray-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M4 6h16M4 12h16M4 18h16" />
+                    </svg>
+                </button>
+            </div>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white shadow-md">
+            <a href="#" class="block px-4 py-2 border-b">Home</a>
+            <a href="#" class="block px-4 py-2 border-b">About</a>
+
+            <!-- Dropdown Mobile -->
+            <details class="border-b">
+                <summary class="px-4 py-2 cursor-pointer flex items-center justify-between">
+                    <span>Services</span>
+                    <svg class="w-4 h-4 transform transition-transform duration-200" fill="none" stroke="currentColor"
+                        viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                    </svg>
+                </summary>
+                <div class="pl-6">
+                    <a href="#" class="block px-4 py-2 hover:bg-gray-100">Web Development</a>
+                    <a href="#" class="block px-4 py-2 hover:bg-gray-100">App Development</a>
+                    <a href="#" class="block px-4 py-2 hover:bg-gray-100">UI/UX Design</a>
+                </div>
+            </details>
+
+
+
+            <a href="#" class="block px-4 py-2">Contact</a>
+        </div>
+    </header>
+
+    <!-- Hero -->
+    <section id="heroBanner" class="relative bg-cover bg-center flex items-center text-gray-900 py-8">
+        <div class="-z-10">
+            <img src="./assets/img/bg_banner_left.png" alt="hero banner left" class="absolute left-0 top-0">
+            <img src="./assets/img/bg_banner_right.png" alt="hero banner right" class="absolute right-0 bottom-0">
+        </div>
+
+        <!-- Overlay -->
+        <!-- <div class="absolute inset-0 bg-black/60"></div> -->
+
+        <div class="container relative text-center md:text-left">
+            <div class="flex items-center">
+                <div class="flex-1 flex flex-col items-center md:items-start space-y-8">
+                    <!-- Headline -->
+                    <h1 class="text-3xl md:text-5xl font-extrabold leading-tight opacity-0 animate-slideInLeft delay-0">
+                        One Network Integrator,
+                        <br />All Your Connectivity Needs
+                    </h1>
+                    <!-- Subheadline -->
+                    <p class="text-lg md:text-2xl max-w-3xl opacity-0 animate-slideInRight delay-500">
+                        From integration to security and voice solutions, we deliver seamless connectivity to power your
+                        business growth.
+                    </p>
+                    <!-- CTA -->
+                    <a href="#" class="btn-primary opacity-0 animate-fadeInDown delay-1000">
+                        Book Meeting
+                    </a>
+                </div>
+                <div class="md:ml-4">
+                    <img src="./assets/img/hero_banner.png" alt="All Your Connectivity Needs" class="max-h-[430px]">
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Solution & Services -->
+    <section id="solutionServices" class="h-screen max-h-[768px] py-8">
+        <div class="container mx-auto flex flex-col h-full">
+            <div>
+                <h1 class="text-3xl font-bold text-center mb-2">Solutions & Services</h1>
+                <p class="text-center text-gray-600 mb-6">Build a reliable and scalable IT foundation with our tailored
+                    infrastructure services.</p>
+            </div>
+
+            <div class="flex flex-col flex-1">
+                <!-- Tabs -->
+                <div class="flex space-x-4">
+                    <button
+                        class="tab-btn flex-1 text-white bg-primary hover:text-white px-4 py-2 rounded-t-xl font-medium"
+                        data-tab="network">Network Solution</button>
+                    <button
+                        class="tab-btn flex-1 text-gray-600 hover:text-primary px-4 py-2 rounded-t-xl font-medium bg-[#F5F5F5]"
+                        data-tab="infrastructure">Infrastructure Solution</button>
+                    <button
+                        class="tab-btn flex-1 text-gray-600 hover:text-primary px-4 py-2 rounded-t-xl font-medium bg-[#F5F5F5]"
+                        data-tab="application">Application Solution</button>
+                    <button
+                        class="tab-btn flex-1 text-gray-600 hover:text-primary px-4 py-2 rounded-t-xl font-medium bg-[#F5F5F5]"
+                        data-tab="service">Service Solution</button>
+                    <button
+                        class="tab-btn flex-1 text-gray-600 hover:text-primary px-4 py-2 rounded-t-xl font-medium bg-[#F5F5F5]"
+                        data-tab="hr">Human Resources Solution</button>
+                </div>
+
+                <!-- Tab content -->
+                <div class="tab-content flex-1 p-4 border border-gray-200 rounded-b-lg overflow-auto">
+                    <!-- Network Solution -->
+                    <div class="tab-panel h-full" id="network">
+                        <div class="flex flex-col md:flex-row gap-6">
+                            <img src="./assets/img/solution_network.png" alt="Network Solution"
+                                class="w-full md:w-1/3 rounded-lg object-cover">
+                            <div class="flex-1">
+                                <h2 class="text-xl font-bold mb-2">Network Solution</h2>
+                                <h3 class="font-semibold mt-4">Network Integrator</h3>
+                                <p class="text-gray-600">Business Connectivity...</p>
+                                <h3 class="font-semibold mt-4">Network Security Solution</h3>
+                                <p class="text-gray-600">WCS has the proven skills...</p>
+                                <h3 class="font-semibold mt-4">Voice Network Solution</h3>
+                                <p class="text-gray-600">WCS thrives in working with companies...</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Tab panels lain -->
+                    <div class="tab-panel h-full hidden" id="infrastructure">
+                        <p class="text-gray-600">Content for Infrastructure Solution...</p>
+                    </div>
+                    <div class="tab-panel h-full hidden" id="application">
+                        <p class="text-gray-600">Content for Application Solution...</p>
+                    </div>
+                    <div class="tab-panel h-full hidden" id="service">
+                        <p class="text-gray-600">Content for Service Solution...</p>
+                    </div>
+                    <div class="tab-panel h-full hidden" id="hr">
+                        <p class="text-gray-600">Content for Human Resources Solution...</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Full Screen Section: Trusted By + Why Us -->
+    <section id="secSocialWhyUs"
+        class="h-screen flex flex-col justify-center py-16 overflow-hidden border-b border-[#421C52]/20 scroll-animate opacity-0 delay-300"
+        data-animate="fadeInDown">
+
+        <!-- Trusted By / Client Logos -->
+        <div class="container mx-auto text-center">
+            <h3 class="text-gray-500 text-sm lg:text-base font-medium mb-4">Trusted By 10+ Brands & Companies</h3>
+
+            <div class="swiper mySwiper w-[780px]">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide"><img src="https://placehold.co/120x60?text=Logo+1" /></div>
+                    <div class="swiper-slide"><img src="https://placehold.co/120x60?text=Logo+2" /></div>
+                    <div class="swiper-slide"><img src="https://placehold.co/120x60?text=Logo+3" /></div>
+                    <div class="swiper-slide"><img src="https://placehold.co/120x60?text=Logo+4" /></div>
+                    <div class="swiper-slide"><img src="https://placehold.co/120x60?text=Logo+5" /></div>
+                    <div class="swiper-slide"><img src="https://placehold.co/120x60?text=Logo+6" /></div>
+                    <div class="swiper-slide"><img src="https://placehold.co/120x60?text=Logo+7" /></div>
+                </div>
+            </div>
+        </div>
+        <script>
+            const swiper = new Swiper(".mySwiper", {
+                slidesPerView: 6,
+                spaceBetween: 10,
+                loop: true,
+                autoplay: {
+                    delay: 2000,
+                    disableOnInteraction: false,
+                },
+                speed: 800,
+            });
+        </script>
+
+        <!-- Why Us -->
+        <div class="container mx-auto text-center mt-24 scroll-animate opacity-0" data-animate="fadeInDown">
+            <h2 class="page-title !mb-4">Why Choose Us?</h2>
+            <p class="max-w-2xl mx-auto text-sm lg:text-lg font-normal">
+                More than just delivering IT services. We build partnerships grounded in
+                <span class="font-semibold text-gray-900">trust</span>,
+                <span class="font-semibold text-gray-900">quality</span>, and
+                <span class="font-semibold text-gray-900">innovation</span>.
+            </p>
+
+            <div
+                class="mt-8 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 lg:gap-12 text-sm lg:text-base font-semibold tracking-wide">
+
+                <!-- Point 1: Professional Team -->
+                <div class="flex flex-col items-center text-center max-w-[260px] mx-auto">
+                    <!-- Heroicons: User Group -->
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-12 xl:h-16 mb-4 text-secondary" fill="none"
+                        viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M17 20h5v-2a4 4 0 00-3-3.87M9 20h6M7 20h.01M12 12a4 4 0 100-8 4 4 0 000 8zm6 0a4 4 0 100-8 4 4 0 000 8z" />
+                    </svg>
+                    <span class="text-gray-900 text-lg uppercase">Professional Team</span>
+                    <p class="mt-2 text-xs lg:text-base font-normal text-gray-500">
+                        Our experts bring years of proven experience across industries.
+                    </p>
+                </div>
+
+                <!-- Point 2: Trusted Experience -->
+                <div class="flex flex-col items-center text-center max-w-[260px] mx-auto">
+                    <!-- Heroicons: Badge Check -->
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-12 xl:h-16 mb-4 text-secondary" fill="none"
+                        viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M9 12l2 2l4-4M12 22a10 10 0 100-20 10 10 0 000 20z" />
+                    </svg>
+                    <span class="text-gray-900 text-lg uppercase">Trusted Experience</span>
+                    <p class="mt-2 text-xs lg:text-base font-normal text-gray-500">
+                        Over 10+ years helping clients achieve their goals.
+                    </p>
+                </div>
+
+                <!-- Point 3: 24/7 Support -->
+                <div class="flex flex-col items-center text-center max-w-[260px] mx-auto">
+                    <!-- Heroicons: Support -->
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-12 xl:h-16 mb-4 text-secondary" fill="none"
+                        viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M18.364 5.636l-1.414 1.414a9 9 0 11-12.728 0L3.636 5.636m14.728 0l1.414 1.414m-16.142-1.414l-1.414 1.414" />
+                    </svg>
+                    <span class="text-gray-900 text-lg uppercase">24/7 Support</span>
+                    <p class="mt-2 text-xs lg:text-base font-normal text-gray-500">
+                        Dedicated support team always ready to assist anytime.
+                    </p>
+                </div>
+
+                <!-- Point 4: Innovative Solutions -->
+                <div class="flex flex-col items-center text-center max-w-[260px] mx-auto">
+                    <!-- Heroicons: Light Bulb -->
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-12 xl:h-16 mb-4 text-secondary" fill="none"
+                        viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M11 3a1 1 0 011-1 1 1 0 011 1v2a1 1 0 01-1 1h-1a1 1 0 01-1-1V3zM5 11a7 7 0 1114 0c0 3.866-3.134 7-7 7s-7-3.134-7-7z" />
+                    </svg>
+                    <span class="text-gray-900 text-lg uppercase">Innovative Solutions</span>
+                    <p class="mt-2 text-xs lg:text-base font-normal text-gray-500">
+                        We leverage cutting-edge technology to drive better results.
+                    </p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Client Testimonial -->
+    <section id="clientTestimonial" class="py-16 text-center bg-gray-100 text-gray-900">
+        <div class="container mx-auto text-center px-6">
+            <h2 class="page-title !mb-4">
+                What Our Clients Say
+            </h2>
+            <p class="text-lg text-gray-500 mb-12">
+                Hear directly from the companies and teams we’ve partnered with.
+            </p>
+
+            <div class="grid gap-8 md:grid-cols-3">
+                <div class="bg-white shadow-lg rounded-xl p-6">
+                    <p class="text-gray-500 italic mb-4">
+                        "Working with this team has been a game changer. Our website traffic grew by 60% in just three
+                        months, and their IT support keeps us running smoothly every day."
+                    </p>
+                    <h4 class="font-semibold text-gray-900">John Matthews</h4>
+                    <span class="text-gray-500 text-sm">CEO, BrightTech Solutions</span>
+                </div>
+
+                <div class="bg-white shadow-lg rounded-xl p-6">
+                    <p class="text-gray-500 italic mb-4">
+                        "Their expertise in digital transformation gave us exactly what we needed. Professional,
+                        responsive, and always delivering beyond expectations."
+                    </p>
+                    <h4 class="font-semibold text-gray-900">Sarah Tan</h4>
+                    <span class="text-gray-500 text-sm">Marketing Director, GlobalFoods</span>
+                </div>
+
+                <div class="bg-white shadow-lg rounded-xl p-6">
+                    <p class="text-gray-500 italic mb-4">
+                        "We value not just their technical skills, but the trust and partnership they bring. They truly
+                        care about helping our business grow."
+                    </p>
+                    <h4 class="font-semibold text-gray-900">Ravi Kumar</h4>
+                    <span class="text-gray-500 text-sm">Founder, StartUpHub</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Us -->
+    <section id="secAboutUs" class="section-spacing border-b border-[#421C52]/20 scroll-animate opacity-0 delay-300"
+        data-animate="slideInRight">
+        <div class="container grid lg:grid-cols-[7fr_5fr] xl:grid-cols-[8fr_4fr] gap-16 items-center">
+            <div class="text-sm md:text-lg xl:text-xl">
+                <h2 class="text-center md:text-left page-title">About Us</h2>
+                <div class="text-justify pb-6 lg:pb-10">
+                    <p class="mb-5">
+                        We are more than just an IT service provider. We are your digital growth partner.
+                        Since day one, our mission has been to empower businesses to thrive in the digital age. From
+                        startups to established enterprises, we provide tailored website solutions, IT services, and
+                        technology strategies that align with your vision.
+                    </p>
+                    <p class="mb-5">
+                        With a commitment to <strong>quality, trust, and innovation</strong>, our team of professionals
+                        brings together
+                        technical expertise and industry insights to deliver impactful results. We believe that
+                        transformation is not just about adopting new tools, but about building sustainable solutions
+                        that help you grow.
+                    </p>
+                    <p class="mb-5">
+                        Together, let’s shape the future of your business.
+                    </p>
+                </div>
+                <div class="text-center md:text-left">
+                    <a href="https://www.azalea.com.sg/" target="_blank" class="uppercase link-primary tracking-[0.2em]"
+                        data-event="homepage_link_about_azalea" data-location="section_about_us" data-label="Learn More"
+                        data-id="homepage_link_about_azalea">
+                        Learn More
+                    </a>
+                </div>
+            </div>
+            <div>
+                <div
+                    class="lg:border-l lg:border-purple-950 lg:pl-16 flex flex-col gap-6 lg:gap-[60px] items-center lg:items-start">
+                    <img src="https://placehold.co/300x400?text=300+:+400" alt="image about" class="object-contain" />
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action Highlight -->
+    <section id="ctaHighlight"
+        class="py-6 xl:py-9 text-center bg-secondary text-white scroll-animate opacity-0 delay-300 border-b border-white"
+        data-animate="fadeInDown">
+        <div class="container mx-auto text-center px-6">
+            <h2 class="text-3xl md:text-4xl font-bold mb-4 text-primary">
+                Ready to take the next step in your digital journey?
+            </h2>
+            <p class="text-lg max-w-2xl mx-auto mb-8">
+                Let us help you transform ideas into powerful digital solutions.
+                From websites to IT services. We’re here to guide you every step of the way.
+            </p>
+            <a href="#consultation" class="btn-primary" data-event="homepage_cta_highlight_btn"
+                data-location="section_cta_highlight" data-label="REGISTER INTEREST"
+                data-id="homepage_cta_highlight_btn">
+                Book Your Free Consultation
+            </a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="scroll-animate opacity-0 delay-500" data-animate="fadeInDown">
+        <div class="container footer-wrapper flex items-center text-sm">
+            &copy WCS | 2025
+        </div>
+    </footer>
+
+    <script>
+        const tabs = document.querySelectorAll('.tab-btn');
+        const panels = document.querySelectorAll('.tab-panel');
+
+        tabs.forEach(tab => {
+            tab.addEventListener('click', () => {
+                // remove active class
+                tabs.forEach(t => t.classList.remove('bg-primary', 'text-white', 'hover:text-white'));
+                tabs.forEach(t => t.classList.add('text-gray-600', 'bg-[#F5F5F5]', 'hover:text-primary'));
+                // hide all panels
+                panels.forEach(p => p.classList.add('hidden'));
+
+                // activate clicked tab
+                tab.classList.add('bg-primary', 'text-white', 'hover:text-white');
+                tab.classList.remove('text-gray-600', 'hover:text-primary');
+
+                const target = tab.dataset.tab;
+                document.getElementById(target).classList.remove('hidden');
+            });
+        });
+    </script>
+
+    <script>
+        // Toggle mobile menu
+        const btn = document.getElementById('menu-toggle');
+        const menu = document.getElementById('mobile-menu');
+
+        btn.addEventListener('click', () => {
+            menu.classList.toggle('hidden');
+        });
+
+        // Scroll-trigger Script
+        document.addEventListener('DOMContentLoaded', () => {
+            const observer = new IntersectionObserver((entries, observer) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        const el = entry.target;
+                        const animationClass = el.dataset.animate || 'fadeInDown';
+                        el.classList.remove('opacity-0');
+                        el.classList.add(`animate-${animationClass}`);
+                        observer.unobserve(el);
+                    }
+                });
+            }, { threshold: 0.2 });
+
+            document.querySelectorAll('.scroll-animate').forEach(el => observer.observe(el));
+        });
+    </script>
+</body>
+
+</html>
