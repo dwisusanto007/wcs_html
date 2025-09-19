@@ -986,6 +986,11 @@ video {
   background-color: rgb(255 255 255 / var(--tw-bg-opacity, 1));
 }
 
+.bg-red-200{
+  --tw-bg-opacity: 1;
+  background-color: rgb(254 202 202 / var(--tw-bg-opacity, 1));
+}
+
 .bg-cover{
   background-size: cover;
 }
@@ -1042,12 +1047,38 @@ video {
   padding-bottom: 2rem;
 }
 
+.py-12{
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
+.py-4{
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
 .pb-6{
   padding-bottom: 1.5rem;
 }
 
 .pl-6{
   padding-left: 1.5rem;
+}
+
+.pt-8{
+  padding-top: 2rem;
+}
+
+.pb-16{
+  padding-bottom: 4rem;
+}
+
+.pt-12{
+  padding-top: 3rem;
+}
+
+.pb-4{
+  padding-bottom: 1rem;
 }
 
 .text-center{
