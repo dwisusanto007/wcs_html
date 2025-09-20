@@ -12,6 +12,35 @@
   .delay-1500  { animation-delay: 1.5s; }
 }
 
+/* --- 
+Design System :
+1. Typography
+2. Color
+--- */
+
+h1 {
+    @apply text-[32px] font-bold leading-[40px];
+}
+
+.btn-primary {
+    @apply bg-primary text-white px-5 py-2 rounded text-base;
+    @apply hover:bg-primary-dark;
+}
+
+/* --- Start styling --- */
+#homeBanner {
+    h1 {
+        @apply text-[40px] font-black leading-[50px];
+    }
+    .btn-primary {
+        @apply px-6 py-4;
+    }
+}
+
+body {
+    @apply text-sm text-gray-500;
+}
+
 body {
     @apply text-sm text-gray-500;
 }
@@ -36,12 +65,12 @@ details[open] summary svg {
 }
 
 /* --- Hero --- */
-#heroBanner {
+#homeBanner {
     @apply text-base md:min-h-[430px] relative;
 }
 
 .hero-title {
-    @apply font-caslon font-medium text-secondary leading-tight text-[24px] md:text-[56px];
+    @apply font-medium text-secondary leading-tight text-[24px] md:text-[56px];
 }
 
 /* --- Why Us --- */
@@ -53,18 +82,6 @@ details[open] summary svg {
 .section-spacing {
     @apply py-6 pb-12 md:py-10 md:pb-20;
 }
-/* style global btn-primary */
-.btn-primary {
-    @apply inline-flex rounded-lg font-inter text-sm font-bold;
-    @apply bg-primary border-2 border-primary transition-none text-white;
-    @apply hover:opacity-100 hover:bg-primary-dark hover:border-primary-dark;
-    /* padding default */
-    @apply px-4 py-2 md:px-6 md:py-3;
-}
-/* override jika btn-primary ada di dalam hero */
-.hero .btn-primary {
-    @apply px-6 py-3 md:px-[36px] md:py-6;
-}
 
 .link-primary {
     @apply font-semibold underline underline-offset-8;
@@ -73,7 +90,7 @@ details[open] summary svg {
 
 /* --- Content --- */
 .page-title {
-    @apply text-gray-900 font-caslon font-semibold leading-tight mb-6 lg:mb-10;
+    @apply text-gray-900 font-semibold leading-tight mb-6 lg:mb-10;
     @apply text-[24px] leading-[34px] md:text-[28px] md:leading-[40px] lg:text-[36px] lg:leading-[48px] xl:text-5xl xl:leading-[60px];
 }
 

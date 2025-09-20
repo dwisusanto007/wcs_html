@@ -16,8 +16,6 @@ module.exports = {
         error: '#DC3545',
       },
       fontFamily: {
-        sans: ['Inter', 'sans-serif'],
-        caslon: ['"Libre Caslon Text"', 'serif'],
         inter: ['Inter', 'sans-serif'],
       },
       screens: {
