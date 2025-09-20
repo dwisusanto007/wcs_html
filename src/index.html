@@ -38,7 +38,7 @@
 
     <!-- Header -->
     <header class="sticky top-0 bg-white shadow-md z-50">
-        <div class="container mx-auto flex items-center justify-between md:py-4">
+        <div class="container mx-auto flex items-center justify-between py-2 md:py-4">
 
             <!-- Logo -->
             <div id="logo">
@@ -96,7 +96,7 @@
         </div>
 
         <!-- Mobile Menu -->
-        <div id="mobile-menu" class="hidden md:hidden bg-white shadow-md">
+        <div id="mobile-menu" class="hidden md:hidden bg-white shadow-md border-t">
             <a href="#" class="block px-4 py-2 border-b">Home</a>
             <a href="#" class="block px-4 py-2 border-b">About</a>
 
@@ -133,25 +133,26 @@
         <!-- Overlay -->
         <!-- <div class="absolute inset-0 bg-black/60"></div> -->
 
-        <div class="container relative text-center md:text-left">
-            <div class="flex items-center">
-                <div class="flex-1 flex flex-col items-center md:items-start space-y-8">
-                    <!-- Headline -->
-                    <h1 class="text-3xl md:text-5xl font-extrabold leading-tight opacity-0 animate-slideInLeft delay-0">
-                        One Network Integrator,
-                        <br />All Your Connectivity Needs
-                    </h1>
-                    <!-- Subheadline -->
-                    <p class="text-lg md:text-2xl max-w-3xl opacity-0 animate-slideInRight delay-500">
-                        From integration to security and voice solutions, we deliver seamless connectivity to power your
-                        business growth.
-                    </p>
-                    <!-- CTA -->
+        <div class="container relative">
+            <div class="flex flex-col md:flex-row items-center">
+                <div class="order-2 md:order-1 flex-1 flex flex-col items-start space-y-4 md:space-y-8">
+                    <!-- Hero Headline -->
+                    <div>
+                        <h1 class="opacity-0 animate-slideInLeft delay-0 mb-2 md:mb-4">
+                            One Network Integrator,
+                            <br />All Your Connectivity Needs
+                        </h1>
+                        <p class="opacity-0 animate-slideInRight delay-500">
+                            From integration to security and voice solutions, we deliver seamless connectivity to power your
+                            business growth.
+                        </p>
+                    </div>
+                    <!-- Hero CTA -->
                     <a href="#" class="btn-primary opacity-0 animate-fadeInDown delay-1000">
                         Book Meeting
                     </a>
                 </div>
-                <div class="md:ml-4">
+                <div class="order-1 md:order-2 mb-4 md:mb-0 md:ml-4">
                     <img src="./assets/img/hero_banner.png" alt="All Your Connectivity Needs" class="max-h-[430px]">
                 </div>
             </div>

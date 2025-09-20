@@ -19,7 +19,7 @@ Design System :
 --- */
 
 h1 {
-    @apply text-[32px] font-bold leading-[40px];
+    @apply font-bold text-[32px] leading-[40px];
 }
 
 .btn-primary {
@@ -30,7 +30,7 @@ h1 {
 /* --- Start styling --- */
 #homeBanner {
     h1 {
-        @apply text-[40px] font-black leading-[50px];
+        @apply font-black text-2xl leading-[30px] md:text-[40px] md:leading-[50px];
     }
     .btn-primary {
         @apply px-6 py-4;
