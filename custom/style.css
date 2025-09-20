@@ -18,19 +18,23 @@ Design System :
 2. Color
 --- */
 
-h1 {
-    @apply font-bold text-[32px] leading-[40px];
+.page-title,
+.banner-title {
+    @apply font-bold text-[32px] leading-[40px] mb-2;
 }
 
 .btn-primary {
     @apply bg-primary text-white px-5 py-2 rounded text-base;
     @apply hover:bg-primary-dark;
+    &-outline {
+        @apply bg-white text-primary border border-primary hover:bg-primary-dark hover:text-white;
+    }
 }
 
 /* --- Start styling --- */
 #homeBanner {
-    h1 {
-        @apply font-black text-2xl leading-[30px] md:text-[40px] md:leading-[50px];
+    .banner-title {
+        @apply font-black text-2xl leading-[30px] md:text-[40px] md:leading-[50px] md:mb-4;
     }
     .btn-primary {
         @apply px-6 py-4;
@@ -89,9 +93,8 @@ details[open] summary svg {
 }
 
 /* --- Content --- */
-.page-title {
-    @apply text-gray-900 font-semibold leading-tight mb-6 lg:mb-10;
-    @apply text-[24px] leading-[34px] md:text-[28px] md:leading-[40px] lg:text-[36px] lg:leading-[48px] xl:text-5xl xl:leading-[60px];
+section .section-title {
+    @apply text-gray-900;
 }
 
 .page-title.highlight {
