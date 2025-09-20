@@ -568,7 +568,7 @@
     <!-- Strategic Alliances -->
     <section class="py-16">
         <div class="container mx-auto flex flex-col gap-10">
-            <div class="section-title md:w-2/3">
+            <div class="section-title md:w-[70%]">
                 <h2 class="page-title">
                     Strategic Alliance
                 </h2>
@@ -666,26 +666,69 @@
     </section>
 
     <!-- Industries -->
-    <section class="py-16 bg-white">
-        <div class="container mx-auto px-6">
-            <h2 class="text-2xl font-bold text-center mb-10">Industries We Serve</h2>
+    <section class="py-16">
+        <div class="container mx-auto flex flex-col gap-10">
+            <div class="section-title md:w-[70%]">
+                <h2 class="page-title">
+                    Industries We Serve
+                </h2>
+                <p>
+                    From manufacturing, finance, and retail to the public sector, we deliver tailored technology
+                    solutions to meet each industry’s unique needs.
+                </p>
+            </div>
             <div class="grid md:grid-cols-4 gap-6">
-                <div class="rounded-lg overflow-hidden shadow">
-                    <img src="/src/img/industry1.png" alt="" />
-                    <div class="p-4 font-semibold">Financial Services Industry</div>
+                <div class="relative rounded-lg overflow-hidden h-64 flex items-center justify-center">
+                    <div class="absolute inset-0 bg-cover bg-center"
+                        style="background-image: url('./assets/img/bg_industry_0.png');"></div>
+                    <div class="absolute inset-0 bg-black/40"></div>
+                    <div class="relative z-10 text-white font-semibold text-base">
+                        Financial Services Industry
+                    </div>
                 </div>
-                <div class="rounded-lg overflow-hidden shadow">
-                    <img src="/src/img/industry2.png" alt="" />
-                    <div class="p-4 font-semibold">Telecommunication</div>
+                <div class="relative rounded-lg overflow-hidden h-64 flex items-center justify-center">
+                    <div class="absolute inset-0 bg-cover bg-center"
+                        style="background-image: url('./assets/img/bg_industry_1.png');"></div>
+                    <div class="absolute inset-0 bg-black/40"></div>
+                    <div class="relative z-10 text-white font-semibold text-base">
+                        Telecommunication
+                    </div>
                 </div>
-                <div class="rounded-lg overflow-hidden shadow">
-                    <img src="/src/img/industry3.png" alt="" />
-                    <div class="p-4 font-semibold">Oil & Gas</div>
+                <div class="relative rounded-lg overflow-hidden h-64 flex items-center justify-center">
+                    <div class="absolute inset-0 bg-cover bg-center"
+                        style="background-image: url('./assets/img/bg_industry_2.png');"></div>
+                    <div class="absolute inset-0 bg-black/40"></div>
+                    <div class="relative z-10 text-white font-semibold text-base">
+                        Oil & Gas
+                    </div>
                 </div>
-                <div class="rounded-lg overflow-hidden shadow">
-                    <img src="/src/img/industry4.png" alt="" />
-                    <div class="p-4 font-semibold">Public Services</div>
+                <div class="relative rounded-lg overflow-hidden h-64 flex items-center justify-center">
+                    <div class="absolute inset-0 bg-cover bg-center"
+                        style="background-image: url('./assets/img/bg_industry_3.png');"></div>
+                    <div class="absolute inset-0 bg-black/40"></div>
+                    <div class="relative z-10 text-white font-semibold text-base">
+                        Public Services
+                    </div>
                 </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- CTA Footer -->
+    <section class="py-8 bg-primary text-white" style="background-image: url(./assets/img/bg_cta_footer.png); background-repeat: repeat-x;">
+        <div class="container mx-auto flex items-center gap-10">
+            <div class="section-title md:w-[70%]">
+                <h2 class="page-title text-white">
+                    Book a Meeting
+                </h2>
+                <p class="text-white">
+                    Let’s Talk About Your Business Needs with more than 20 years of experience and 200+ successful
+                    projects, WCS is ready to help your company accelerate with the right IT solutions.
+                </p>
+            </div>
+            <div class="flex flex-1 justify-end">
+                <a href="#" class="btn-primary btn-primary-outline">Book Meeting</a>
             </div>
         </div>
     </section>
