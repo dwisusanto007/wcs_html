@@ -7,11 +7,11 @@ module.exports = {
         primary: '#A21C21',        // Brand Maroon (utama)
         'primary-dark': '#711519', // Hover Maroon
 
-        secondary: '#444444',      // Dark Gray (branding accent, CTA bg)
+        secondary: '#0A335B',      // Dark Gray (branding accent, CTA bg)
 
-        'gray-100': '#EAEAEA',     // Light Gray (background subtle)
-        'gray-500': '#5A5A5A',     // Medium Gray (secondary text)
-        'gray-900': '#303030',     // Almost Black (footer, strong bg)
+        'gray-100': '#F5F5F5',     // Light Gray (background subtle)
+        'gray-500': '#5A5A5A',     // Medium Gray (default page text)
+        'gray-900': '#303030',     // Almost Black (heading)
         success: '#28A745',
         error: '#DC3545',
       },

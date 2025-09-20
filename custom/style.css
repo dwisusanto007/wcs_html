@@ -113,11 +113,8 @@ section .section-title {
 
 /* --- Footer --- */
 footer {
-    @apply font-inter bg-gray-900 text-gray-100 text-[10px] md:text-base lg:text-lg xl:text-xl py-2 px-0 md:py-3 xl:py-5 xl:px-6;
-}
-.footer-wrapper {
-    @apply flex justify-center items-center gap-4 md:gap-8 lg:gap-12 xl:gap-32;
+    @apply font-inter bg-gray-100 text-gray-900 text-[10px] md:text-base;
 }
 footer a {
-    @apply hover:text-primary-dark;
+    @apply hover:text-primary;
 }
