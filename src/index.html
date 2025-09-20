@@ -172,101 +172,163 @@
 
             <div>
                 <!-- Tabs -->
-                <div class="flex flex-col md:flex-row space-x-4">
+                <div class="flex flex-col md:flex-row space-y-1 md:space-x-4">
                     <button
-                        class="tab-btn flex-1 text-white bg-primary hover:text-white px-4 py-2 rounded-t-xl font-medium"
+                        class="tab-btn flex-1 text-white bg-primary hover:text-white px-4 py-3 rounded-xl md:rounded-t-xl md:rounded-b-none font-medium"
                         data-tab="network">Network Solution</button>
                     <button
-                        class="tab-btn flex-1 text-gray-600 hover:text-primary px-4 py-2 rounded-t-xl font-medium bg-[#F5F5F5]"
+                        class="tab-btn flex-1 text-gray-600 hover:text-primary px-4 py-3 rounded-xl md:rounded-t-xl md:rounded-b-none font-medium bg-[#F5F5F5]"
                         data-tab="infrastructure">Infrastructure Solution</button>
                     <button
-                        class="tab-btn flex-1 text-gray-600 hover:text-primary px-4 py-2 rounded-t-xl font-medium bg-[#F5F5F5]"
+                        class="tab-btn flex-1 text-gray-600 hover:text-primary px-4 py-3 rounded-xl md:rounded-t-xl md:rounded-b-none font-medium bg-[#F5F5F5]"
                         data-tab="application">Application Solution</button>
                     <button
-                        class="tab-btn flex-1 text-gray-600 hover:text-primary px-4 py-2 rounded-t-xl font-medium bg-[#F5F5F5]"
+                        class="tab-btn flex-1 text-gray-600 hover:text-primary px-4 py-3 rounded-xl md:rounded-t-xl md:rounded-b-none font-medium bg-[#F5F5F5]"
                         data-tab="service">Service Solution</button>
                     <button
-                        class="tab-btn flex-1 text-gray-600 hover:text-primary px-4 py-2 rounded-t-xl font-medium bg-[#F5F5F5]"
+                        class="tab-btn flex-1 text-gray-600 hover:text-primary px-4 py-3 rounded-xl md:rounded-t-xl md:rounded-b-none font-medium bg-[#F5F5F5]"
                         data-tab="hr">Human Resources Solution</button>
                 </div>
 
                 <!-- Tab content -->
-                <div class="tab-content p-4 border border-gray-200 rounded-b-lg overflow-auto">
+                <div
+                    class="tab-content p-4 mt-2 md:mt-0 border border-gray-200 rounded-xl md:rounded-b-xl md:rounded-t-none overflow-auto">
                     <!-- Network Solution -->
-                    <div class="tab-panel md:h-[400px] overflow-auto" id="network">
+                    <div class="tab-panel min-h-64 md:h-[400px] overflow-auto" id="network">
                         <div class="flex flex-col md:flex-row gap-6">
                             <img src="./assets/img/solution_network.png" alt="Network Solution"
-                                class="sticky top-0 w-full md:w-1/3 h-[100px] md:h-[400px] rounded-lg object-cover">
+                                class="sticky top-0 w-full md:w-1/3 h-[200px] md:h-[400px] rounded-lg object-cover">
                             <div class="flex-1">
                                 <h3 class="content-title mb-6">Network Solution</h3>
 
                                 <h4 class="font-semibold">Network Integrator</h4>
-                                <p>
+                                <p class="mb-6">
                                     Business Connectivity, is part of WCS Solution, which solves todays network
-                                    infrastructure
-                                    problem and accelerates the opportunities to enterprises. and these technology
-                                    and
-                                    solution
-                                    are available to us today with supporting
+                                    infrastructure problem and accelerates the opportunities to enterprises. and these
+                                    technology and solution are available to us today with supporting
                                 </p>
 
-                                <h4 class="font-semibold mt-6">Network Security Solution</h4>
-                                <p>
+                                <h4 class="font-semibold">Network Security Solution</h4>
+                                <p class="mb-6">
                                     WCS has the proven skills and track and track record n providing IT security
-                                    services that
-                                    minimize security risk. As a vendor-neutral consulting firm, we have
-                                    partnered with
-                                    major
-                                    vendors in the IT security market, giving us the ability to develop and
-                                    install
-                                    security measures
-                                    to suit the needs of your business
+                                    services that minimize security risk. As a vendor-neutral consulting firm, we have
+                                    partnered with major vendors in the IT security market, giving us the ability to
+                                    develop and install security measures to suit the needs of your business
                                 </p>
 
-                                <h4 class="font-semibold mt-6">Voice Network Solution</h4>
-                                <p>
+                                <h4 class="font-semibold">Voice Network Solution</h4>
+                                <p class="mb-6">
                                     WCS thrives in working with companies at this new edge, as once
-                                    specialist application
-                                    become the domain of the mainstream. We also ensure that these new
-                                    business tools meet
-                                    the very high expectations of the corporate enterprise in term of
-                                    resilience and ratability.
-                                </p>
-
-                                <h4 class="font-semibold mt-6">Voice Network Solution</h4>
-                                <p>
-                                    WCS thrives in working with companies at this new edge, as once
-                                    specialist application
-                                    become the domain of the mainstream. We also ensure that these new
-                                    business tools meet
-                                    the very high expectations of the corporate enterprise in term of
-                                    resilience and ratability.
-                                </p>
-
-                                <h4 class="font-semibold mt-6">Voice Network Solution</h4>
-                                <p>
-                                    WCS thrives in working with companies at this new edge, as once
-                                    specialist application
-                                    become the domain of the mainstream. We also ensure that these new
-                                    business tools meet
-                                    the very high expectations of the corporate enterprise in term of
-                                    resilience and ratability.
+                                    specialist application become the domain of the mainstream. We also ensure that
+                                    these new  business tools meet the very high expectations of the corporate enterprise in term
+                                    of resilience and ratability.
                                 </p>
                             </div>
                         </div>
                     </div>
                     <!-- Tab panels lain -->
-                    <div class="tab-panel md:h-[400px] overflow-auto hidden" id="infrastructure">
-                        <p class="text-gray-600">Content for Infrastructure Solution...</p>
+                    <div class="tab-panel min-h-64 md:h-[400px] overflow-auto hidden" id="infrastructure">
+                        <div class="flex flex-col md:flex-row gap-6">
+                            <img src="https://placehold.co/600x400" alt="Infrastructure Solution"
+                                class="sticky top-0 w-full md:w-1/3 h-[200px] md:h-[400px] rounded-lg object-cover">
+                            <div class="flex-1">
+                                <h3 class="content-title mb-6">Infrastructure Solution</h3>
+
+                                <h4 class="font-semibold">Infra One</h4>
+                                <p class="mb-6">
+                                    Lorem ipsum dolor sit amet, officia excepteur ex fugiat reprehenderit enim labore
+                                    culpa sint ad nisi Lorem pariatur mollit ex esse exercitation amet. Nisi anim
+                                    cupidatat excepteur officia. Reprehenderit nostrud nostrud ipsum Lorem est aliquip
+                                    amet voluptate voluptate dolor minim nulla est proident. Nostrud officia pariatur ut
+                                    officia. Sit irure elit esse ea nulla sunt ex occaecat reprehenderit commodo officia
+                                    dolor Lorem duis laboris cupidatat officia voluptate. Culpa proident adipisicing id
+                                    nulla nisi laboris ex in Lorem sunt duis officia eiusmod. Aliqua reprehenderit
+                                    commodo ex non excepteur duis sunt velit enim. Voluptate laboris sint cupidatat
+                                    ullamco ut ea consectetur et est culpa et culpa duis.
+                                </p>
+
+                                <h4 class="font-semibold">Infra Two</h4>
+                                <p class="mb-6">
+                                    Lorem ipsum dolor sit amet, officia excepteur ex fugiat reprehenderit enim labore
+                                    culpa sint ad nisi Lorem pariatur mollit ex esse exercitation amet. Nisi anim
+                                    cupidatat excepteur officia. Reprehenderit nostrud nostrud ipsum Lorem est aliquip
+                                    amet voluptate voluptate dolor minim nulla est proident. Nostrud officia pariatur ut
+                                    officia. Sit irure elit esse ea nulla sunt ex occaecat reprehenderit commodo officia
+                                    dolor Lorem duis laboris cupidatat officia voluptate. Culpa proident adipisicing id
+                                    nulla nisi laboris ex in Lorem sunt duis officia eiusmod.
+                                </p>
+                            </div>
+                        </div>
                     </div>
-                    <div class="tab-panel md:h-[400px] overflow-auto hidden" id="application">
-                        <p class="text-gray-600">Content for Application Solution...</p>
+                    <div class="tab-panel min-h-64 md:h-[400px] overflow-auto hidden" id="application">
+                        <div class="flex flex-col md:flex-row gap-6">
+                            <img src="https://placehold.co/600x400" alt="Application Solution"
+                                class="sticky top-0 w-full md:w-1/3 h-[200px] md:h-[400px] rounded-lg object-cover">
+                            <div class="flex-1">
+                                <h3 class="content-title mb-6">Application Solution</h3>
+
+                                <h4 class="font-semibold">Application One</h4>
+                                <p class="mb-6">
+                                    Lorem ipsum dolor sit amet, officia excepteur ex fugiat reprehenderit enim labore
+                                    culpa sint ad nisi Lorem pariatur mollit ex esse exercitation amet. Nisi anim
+                                    cupidatat excepteur officia.
+                                </p>
+
+                                <h4 class="font-semibold">Application Two</h4>
+                                <p class="mb-6">
+                                    Lorem ipsum dolor sit amet, officia excepteur ex fugiat reprehenderit enim labore
+                                    culpa sint ad nisi Lorem pariatur mollit ex esse exercitation amet. Nisi anim
+                                    cupidatat excepteur officia. Reprehenderit nostrud nostrud ipsum Lorem est aliquip
+                                    amet voluptate voluptate dolor minim nulla est proident. Nostrud officia pariatur ut
+                                    officia. Sit irure elit esse ea nulla sunt ex occaecat reprehenderit commodo officia
+                                    dolor Lorem duis laboris cupidatat officia voluptate. Culpa proident adipisicing id
+                                    nulla nisi laboris ex in Lorem sunt duis officia eiusmod.
+                                </p>
+
+                                <h4 class="font-semibold">Application Three</h4>
+                                <p class="mb-6">
+                                    Lorem ipsum dolor sit amet, officia excepteur ex fugiat reprehenderit enim labore
+                                    culpa sint ad nisi Lorem pariatur mollit ex esse exercitation amet. Nisi anim
+                                    cupidatat excepteur officia. Reprehenderit nostrud nostrud ipsum Lorem est aliquip
+                                    amet voluptate voluptate dolor minim nulla est proident. Nostrud officia pariatur ut
+                                    officia. Sit irure elit esse ea nulla sunt ex occaecat reprehenderit commodo officia
+                                    dolor Lorem duis laboris cupidatat officia voluptate. Culpa proident adipisicing id
+                                    nulla nisi laboris ex in Lorem sunt duis officia eiusmod.
+                                </p>
+                            </div>
+                        </div>
                     </div>
-                    <div class="tab-panel md:h-[400px] overflow-auto hidden" id="service">
-                        <p class="text-gray-600">Content for Service Solution...</p>
+                    <div class="tab-panel min-h-64 md:h-[400px] overflow-auto hidden" id="service">
+                        <div class="flex flex-col md:flex-row gap-6">
+                            <img src="https://placehold.co/600x400" alt="Service Solution"
+                                class="sticky top-0 w-full md:w-1/3 h-[200px] md:h-[400px] rounded-lg object-cover">
+                            <div class="flex-1">
+                                <h3 class="content-title mb-6">Service Solution</h3>
+
+                                <h4 class="font-semibold">Service One</h4>
+                                <p class="mb-6">
+                                    Lorem ipsum dolor sit amet, officia excepteur ex fugiat reprehenderit enim labore
+                                    culpa sint ad nisi Lorem pariatur mollit ex esse exercitation amet. Nisi anim
+                                    cupidatat excepteur officia.
+                                </p>
+                            </div>
+                        </div>
                     </div>
-                    <div class="tab-panel md:h-[400px] overflow-auto hidden" id="hr">
-                        <p class="text-gray-600">Content for Human Resources Solution...</p>
+                    <div class="tab-panel min-h-64 md:h-[400px] overflow-auto hidden" id="hr">
+                        <div class="flex flex-col md:flex-row gap-6">
+                            <img src="https://placehold.co/600x400" alt="Human Resource Solution"
+                                class="sticky top-0 w-full md:w-1/3 h-[200px] md:h-[400px] rounded-lg object-cover">
+                            <div class="flex-1">
+                                <h3 class="content-title mb-6">Human Resource Solution</h3>
+
+                                <h4 class="font-semibold">Human Resource One</h4>
+                                <p class="mb-6">
+                                    Lorem ipsum dolor sit amet, officia excepteur ex fugiat reprehenderit enim labore
+                                    culpa sint ad nisi Lorem pariatur mollit ex esse exercitation amet. Nisi anim
+                                    cupidatat excepteur officia.
+                                </p>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -342,7 +404,7 @@
     </section>
 
     <!-- Strategic Alliances -->
-    <section class="py-16 bg-gray-50">
+    <section class="py-16">
         <div class="container mx-auto flex flex-col gap-10">
             <div class="section-title md:w-2/3">
                 <h2 class="page-title">
