@@ -701,6 +701,10 @@ video {
   margin-top: 2rem;
 }
 
+.mt-6{
+  margin-top: 1.5rem;
+}
+
 .block{
   display: block;
 }
@@ -735,6 +739,14 @@ video {
 
 .h-full{
   height: 100%;
+}
+
+.h-auto{
+  height: auto;
+}
+
+.h-\[100px\]{
+  height: 100px;
 }
 
 .max-h-\[430px\]{
@@ -1181,12 +1193,26 @@ Design System :
 2. Color
 --- */
 
+h1, h2, h3, h4, h5, h6{
+  margin-bottom: 0.5rem;
+  --tw-text-opacity: 1;
+  color: rgb(48 48 48 / var(--tw-text-opacity, 1));
+}
+
+h1, 
 .page-title,
 .banner-title{
-  margin-bottom: 0.5rem;
   font-size: 32px;
   font-weight: 700;
   line-height: 40px;
+}
+
+h2,
+.content-title{
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+  font-weight: 700;
+  line-height: 28px;
 }
 
 .btn-primary{
@@ -1536,6 +1562,14 @@ footer a:hover{
 
   .md\:hidden{
     display: none;
+  }
+
+  .md\:h-\[420px\]{
+    height: 420px;
+  }
+
+  .md\:h-\[400px\]{
+    height: 400px;
   }
 
   .md\:min-h-\[420px\]{
