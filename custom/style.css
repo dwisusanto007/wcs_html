@@ -87,7 +87,7 @@ details[open] summary svg {
 
 /* --- Hero --- */
 #homeBanner {
-    @apply text-base md:min-h-[430px] relative;
+    @apply text-base md:min-h-[495px] relative;
 }
 
 /* --- Utilities --- */

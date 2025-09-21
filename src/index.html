@@ -114,17 +114,25 @@
                             </svg>
                         </summary>
                         <div class="pl-6">
-                            <a href="#" class="flex items-center gap-2 px-4 py-2 hover:bg-gray-100 hover:text-red-600">Network
+                            <a href="#"
+                                class="flex items-center gap-2 px-4 py-2 hover:bg-gray-100 hover:text-red-600">Network
                                 Solution</a>
-                            <a href="#" class="flex items-center gap-2 px-4 py-2 hover:bg-gray-100 hover:text-red-600">Infrastructure
+                            <a href="#"
+                                class="flex items-center gap-2 px-4 py-2 hover:bg-gray-100 hover:text-red-600">Infrastructure
                                 Solution</a>
-                            <a href="#" class="flex items-center gap-2 px-4 py-2 hover:bg-gray-100 hover:text-red-600">Application
+                            <a href="#"
+                                class="flex items-center gap-2 px-4 py-2 hover:bg-gray-100 hover:text-red-600">Application
                                 Solution</a>
-                            <a href="#" class="flex items-center gap-2 px-4 py-2 hover:bg-gray-100 hover:text-red-600">Service
+                            <a href="#"
+                                class="flex items-center gap-2 px-4 py-2 hover:bg-gray-100 hover:text-red-600">Service
                                 Solution</a>
-                            <a href="#" class="flex items-center gap-2 px-4 py-2 hover:bg-gray-100 hover:text-red-600">Vendor Management
+                            <a href="#"
+                                class="flex items-center gap-2 px-4 py-2 hover:bg-gray-100 hover:text-red-600">Vendor
+                                Management
                                 Solution</a>
-                            <a href="#" class="flex items-center gap-2 px-4 py-2 hover:bg-gray-100 hover:text-red-600">Human Resource
+                            <a href="#"
+                                class="flex items-center gap-2 px-4 py-2 hover:bg-gray-100 hover:text-red-600">Human
+                                Resource
                                 Solution</a>
                         </div>
                     </details>
@@ -152,16 +160,14 @@
     <section id="homeBanner" class="relative py-8">
         <div class="-z-10">
             <img src="./assets/img/bg_banner_left.png" alt="hero banner left"
-                class="h-[250px] md:h-[400px] absolute left-0 top-0">
+                class="h-[250px] md:h-[400px] absolute left-0 top-0 invisible"
+                onload="this.classList.remove('invisible')" />
             <img src="./assets/img/bg_banner_right.png" alt="hero banner right"
-                class="h-[300px] md:h-[450px] absolute right-0 top-28 md:bottom-0">
+                class="h-[300px] md:h-[450px] absolute right-0 top-28 md:bottom-0 invisible"
+                onload="this.classList.remove('invisible')" />
         </div>
-
-        <!-- Overlay -->
-        <!-- <div class="absolute inset-0 bg-black/60"></div> -->
-
-        <div class="container relative">
-            <div class="flex flex-col md:flex-row items-center">
+        <div class="container relative h-full">
+            <div class="flex flex-col md:flex-row items-center h-full">
                 <div class="order-2 md:order-1 flex-1 flex flex-col items-start space-y-4 md:space-y-8">
                     <!-- Hero Headline -->
                     <div>
@@ -180,8 +186,10 @@
                         Book Meeting
                     </a>
                 </div>
-                <div class="order-1 md:order-2 mb-4 md:mb-0 md:ml-4">
-                    <img src="./assets/img/hero_banner.png" alt="All Your Connectivity Needs" class="max-h-[430px]">
+                <div
+                    class="order-1 md:order-2 mb-4 md:mb-0 md:ml-4 md:w-[475px] md:h-[430px] flex items-center justify-center">
+                    <img src="./assets/img/hero_banner.png" alt="All Your Connectivity Needs"
+                        class="h-full w-auto object-contain md:h-[430px] invisible" onload="this.classList.remove('invisible')" />
                 </div>
             </div>
         </div>
@@ -746,7 +754,7 @@
                     <a href="#" target="_blank" rel="noopener noreferrer"
                         class="swiper-slide !h-auto mb-4 relative rounded-lg bg-white shadow hover:shadow-lg hover:bg-gray-100 flex flex-col items-center justify-center">
                         <img src="./assets/img/article/article_1.png" alt="article"
-                            class="w-full md:h-[170px] bg-cover rounded-t-lg">
+                            class="w-full h-[170px] object-cover rounded-t-lg bg-gray-100" />
 
                         <div class="p-4 flex flex-col gap-4">
                             <div>
@@ -771,7 +779,7 @@
                     <a href="#" target="_blank" rel="noopener noreferrer"
                         class="swiper-slide !h-auto mb-4 relative rounded-lg bg-white shadow hover:shadow-lg hover:bg-gray-100 flex flex-col items-center justify-center">
                         <img src="./assets/img/article/article_2.png" alt="article"
-                            class="w-full md:h-[170px] bg-cover rounded-t-lg">
+                            class="w-full h-[170px] object-cover rounded-t-lg bg-gray-100" />
 
                         <div class="p-4 flex flex-col gap-4">
                             <div>
@@ -795,7 +803,7 @@
                     <a href="#" target="_blank" rel="noopener noreferrer"
                         class="swiper-slide !h-auto mb-4 relative rounded-lg bg-white shadow hover:shadow-lg hover:bg-gray-100 flex flex-col items-center justify-center">
                         <img src="./assets/img/article/article_3.png" alt="article"
-                            class="w-full md:h-[170px] bg-cover rounded-t-lg">
+                            class="w-full h-[170px] object-cover rounded-t-lg bg-gray-100" />
 
                         <div class="p-4 flex flex-col gap-4">
                             <div>
@@ -820,7 +828,7 @@
                     <a href="#" target="_blank" rel="noopener noreferrer"
                         class="swiper-slide !h-auto mb-4 relative rounded-lg bg-white shadow hover:shadow-lg hover:bg-gray-100 flex flex-col items-center justify-center">
                         <img src="./assets/img/article/article_1.png" alt="article"
-                            class="w-full md:h-[170px] bg-cover rounded-t-lg">
+                            class="w-full h-[170px] object-cover rounded-t-lg bg-gray-100" />
 
                         <div class="p-4 flex flex-col gap-4">
                             <div>
@@ -845,7 +853,7 @@
                     <a href="#" target="_blank" rel="noopener noreferrer"
                         class="swiper-slide !h-auto mb-4 relative rounded-lg bg-white shadow hover:shadow-lg hover:bg-gray-100 flex flex-col items-center justify-center">
                         <img src="./assets/img/article/article_1.png" alt="article"
-                            class="w-full md:h-[170px] bg-cover rounded-t-lg">
+                            class="w-full h-[170px] object-cover rounded-t-lg bg-gray-100" />
 
                         <div class="p-4 flex flex-col gap-4">
                             <div>
@@ -870,7 +878,7 @@
                     <a href="#" target="_blank" rel="noopener noreferrer"
                         class="swiper-slide !h-auto mb-4 relative rounded-lg bg-white shadow hover:shadow-lg hover:bg-gray-100 flex flex-col items-center justify-center">
                         <img src="./assets/img/article/article_1.png" alt="article"
-                            class="w-full md:h-[170px] bg-cover rounded-t-lg">
+                            class="w-full h-[170px] object-cover rounded-t-lg bg-gray-100" />
 
                         <div class="p-4 flex flex-col gap-4">
                             <div>
@@ -916,7 +924,7 @@
             </div>
             <div class="grid md:grid-cols-4 gap-6">
                 <div class="relative rounded-lg overflow-hidden h-64 flex items-center justify-center">
-                    <div class="absolute inset-0 bg-cover bg-center"
+                    <div class="absolute inset-0 bg-cover bg-center bg-gray-900"
                         style="background-image: url('./assets/img/bg_industry_0.png');"></div>
                     <div class="absolute inset-0 bg-black/40"></div>
                     <div class="relative z-10 text-white font-semibold text-base">
@@ -924,7 +932,7 @@
                     </div>
                 </div>
                 <div class="relative rounded-lg overflow-hidden h-64 flex items-center justify-center">
-                    <div class="absolute inset-0 bg-cover bg-center"
+                    <div class="absolute inset-0 bg-cover bg-center bg-gray-900"
                         style="background-image: url('./assets/img/bg_industry_1.png');"></div>
                     <div class="absolute inset-0 bg-black/40"></div>
                     <div class="relative z-10 text-white font-semibold text-base">
@@ -932,7 +940,7 @@
                     </div>
                 </div>
                 <div class="relative rounded-lg overflow-hidden h-64 flex items-center justify-center">
-                    <div class="absolute inset-0 bg-cover bg-center"
+                    <div class="absolute inset-0 bg-cover bg-center bg-gray-900"
                         style="background-image: url('./assets/img/bg_industry_2.png');"></div>
                     <div class="absolute inset-0 bg-black/40"></div>
                     <div class="relative z-10 text-white font-semibold text-base">
@@ -940,7 +948,7 @@
                     </div>
                 </div>
                 <div class="relative rounded-lg overflow-hidden h-64 flex items-center justify-center">
-                    <div class="absolute inset-0 bg-cover bg-center"
+                    <div class="absolute inset-0 bg-cover bg-center bg-gray-900"
                         style="background-image: url('./assets/img/bg_industry_3.png');"></div>
                     <div class="absolute inset-0 bg-black/40"></div>
                     <div class="relative z-10 text-white font-semibold text-base">
