@@ -12,6 +12,56 @@
   .delay-1500  { animation-delay: 1.5s; }
 }
 
+/* --- 
+Design System :
+1. Typography
+2. Color
+--- */
+
+h1, h2, h3, h4, h5, h6 {
+    @apply mb-2 text-gray-900 font-bold;
+}
+
+h1, 
+.page-title,
+.banner-title {
+    @apply text-[32px] leading-[40px];
+}
+
+h2,
+.content-title {
+    @apply font-bold text-xl leading-[28px];
+}
+
+h3 {
+    @apply text-xl;
+}
+h4 {
+    @apply text-lg;
+}
+
+.btn-primary {
+    @apply bg-primary text-white px-5 py-2 rounded text-base;
+    @apply hover:bg-primary-dark;
+    &-outline {
+        @apply bg-white text-primary border border-primary hover:bg-primary-dark hover:text-white;
+    }
+}
+
+.h-fill {
+    min-height: calc(100vh - 50px);
+}
+
+/* --- Start styling --- */
+#homeBanner {
+    .banner-title {
+        @apply font-black text-2xl leading-[30px] md:text-[40px] md:leading-[50px] md:mb-4;
+    }
+    .btn-primary {
+        @apply px-6 py-4;
+    }
+}
+
 body {
     @apply text-sm text-gray-500;
 }
@@ -27,39 +77,22 @@ header {
     @apply md:h-[50px];
 }
 
+section {
+  scroll-margin-top: 82px; /* tinggi header */
+}
+
 details[open] summary svg {
   transform: rotate(180deg);
 }
 
 /* --- Hero --- */
-#heroBanner {
-    @apply text-base md:min-h-[430px] relative;
-}
-
-.hero-title {
-    @apply font-caslon font-medium text-secondary leading-tight text-[24px] md:text-[56px];
-}
-
-/* --- Why Us --- */
-#secSocialWhyUs {
-    @apply min-h-screen max-h-[768px] py-16;
+#homeBanner {
+    @apply text-base md:min-h-[495px] relative;
 }
 
 /* --- Utilities --- */
 .section-spacing {
     @apply py-6 pb-12 md:py-10 md:pb-20;
-}
-/* style global btn-primary */
-.btn-primary {
-    @apply inline-flex rounded-lg font-inter text-sm font-bold;
-    @apply bg-primary border-2 border-primary transition-none text-white;
-    @apply hover:opacity-100 hover:bg-primary-dark hover:border-primary-dark;
-    /* padding default */
-    @apply px-4 py-2 md:px-6 md:py-3;
-}
-/* override jika btn-primary ada di dalam hero */
-.hero .btn-primary {
-    @apply px-6 py-3 md:px-[36px] md:py-6;
 }
 
 .link-primary {
@@ -68,22 +101,14 @@ details[open] summary svg {
 }
 
 /* --- Content --- */
-.page-title {
-    @apply text-gray-900 font-caslon font-semibold leading-tight mb-6 lg:mb-10;
-    @apply text-[24px] leading-[34px] md:text-[28px] md:leading-[40px] lg:text-[36px] lg:leading-[48px] xl:text-5xl xl:leading-[60px];
-}
-
-.page-title.highlight {
-    @apply mb-3 lg:mb-[20px];
+section .section-title {
+    @apply text-gray-900;
 }
 
 /* --- Footer --- */
 footer {
-    @apply font-inter bg-gray-900 text-gray-100 text-[10px] md:text-base lg:text-lg xl:text-xl py-2 px-0 md:py-3 xl:py-5 xl:px-6;
-}
-.footer-wrapper {
-    @apply flex justify-center items-center gap-4 md:gap-8 lg:gap-12 xl:gap-32;
+    @apply font-inter bg-gray-100 text-gray-900 text-[10px] md:text-sm;
 }
 footer a {
-    @apply hover:text-primary-dark;
+    @apply hover:text-primary;
 }
