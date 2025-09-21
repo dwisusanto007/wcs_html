@@ -1750,6 +1750,10 @@ footer a:hover{
     margin-bottom: calc(2rem * var(--tw-space-y-reverse));
   }
 
+  .md\:rounded-none{
+    border-radius: 0px;
+  }
+
   .md\:rounded-b-none{
     border-bottom-right-radius: 0px;
     border-bottom-left-radius: 0px;
@@ -1768,6 +1772,26 @@ footer a:hover{
   .md\:rounded-t-xl{
     border-top-left-radius: 0.75rem;
     border-top-right-radius: 0.75rem;
+  }
+
+  .md\:rounded-l-lg{
+    border-top-left-radius: 0.5rem;
+    border-bottom-left-radius: 0.5rem;
+  }
+
+  .md\:rounded-r-lg{
+    border-top-right-radius: 0.5rem;
+    border-bottom-right-radius: 0.5rem;
+  }
+
+  .md\:rounded-l-none{
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px;
+  }
+
+  .md\:rounded-r-none{
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
   }
 
   .md\:p-0{
