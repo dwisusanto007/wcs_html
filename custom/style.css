@@ -41,6 +41,10 @@ h2,
     }
 }
 
+.h-fill {
+    min-height: calc(100vh - 50px);
+}
+
 /* --- Start styling --- */
 #homeBanner {
     .banner-title {
