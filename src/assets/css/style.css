@@ -769,6 +769,14 @@ video {
   height: 160px;
 }
 
+.h-\[120px\]{
+  height: 120px;
+}
+
+.h-\[100px\]{
+  height: 100px;
+}
+
 .max-h-\[430px\]{
   max-height: 430px;
 }
@@ -1135,6 +1143,11 @@ video {
   padding-bottom: 2rem;
 }
 
+.py-6{
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+}
+
 .pb-4{
   padding-bottom: 1rem;
 }
@@ -1149,6 +1162,10 @@ video {
 
 .pt-16{
   padding-top: 4rem;
+}
+
+.pb-8{
+  padding-bottom: 2rem;
 }
 
 .text-center{
@@ -1629,6 +1646,10 @@ footer a:hover{
 }
 
 @media (min-width: 768px){
+  .md\:left-24{
+    left: 6rem;
+  }
+
   .md\:order-1{
     order: 1;
   }
@@ -1709,6 +1730,14 @@ footer a:hover{
     flex-direction: row;
   }
 
+  .md\:items-start{
+    align-items: flex-start;
+  }
+
+  .md\:gap-8{
+    gap: 2rem;
+  }
+
   .md\:space-x-4 > :not([hidden]) ~ :not([hidden]){
     --tw-space-x-reverse: 0;
     margin-right: calc(1rem * var(--tw-space-x-reverse));
@@ -1739,6 +1768,10 @@ footer a:hover{
   .md\:rounded-t-xl{
     border-top-left-radius: 0.75rem;
     border-top-right-radius: 0.75rem;
+  }
+
+  .md\:p-0{
+    padding: 0px;
   }
 
   .md\:py-4{
