@@ -96,38 +96,65 @@
         </div>
 
         <!-- Mobile Menu -->
-        <div id="mobile-menu" class="hidden md:hidden bg-white shadow-md border-t">
-            <a href="#" class="block px-4 py-2 border-b">Home</a>
-            <a href="#" class="block px-4 py-2 border-b">About</a>
-
-            <!-- Dropdown Mobile -->
-            <details class="border-b">
-                <summary class="px-4 py-2 cursor-pointer flex items-center justify-between">
-                    <span>Services</span>
-                    <svg class="w-4 h-4 transform transition-transform duration-200" fill="none" stroke="currentColor"
-                        viewBox="0 0 24 24">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
-                    </svg>
-                </summary>
-                <div class="pl-6">
-                    <a href="#" class="block px-4 py-2 hover:bg-gray-100 hover:text-red-600">Network Solution</a>
-                    <a href="#" class="block px-4 py-2 hover:bg-gray-100 hover:text-red-600">Infrastructure Solution</a>
-                    <a href="#" class="block px-4 py-2 hover:bg-gray-100 hover:text-red-600">Application Solution</a>
-                    <a href="#" class="block px-4 py-2 hover:bg-gray-100 hover:text-red-600">Service Solution</a>
-                    <a href="#" class="block px-4 py-2 hover:bg-gray-100 hover:text-red-600">Vendor Management
-                        Solution</a>
-                    <a href="#" class="block px-4 py-2 hover:bg-gray-100 hover:text-red-600">Human Resource Solution</a>
-                </div>
-            </details>
-            <a href="#" class="block px-4 py-2">Contact</a>
+        <div id="mobile-menu" class="hidden md:hidden bg-white shadow-md border-t flex flex-col"
+            style="height: calc(100vh - 67px)">
+            <ul>
+                <li class="border-b">
+                    <a href="#" class="flex items-center gap-2 px-4 py-3">About</a>
+                </li>
+                <li class="border-b">
+                    <!-- Dropdown Mobile -->
+                    <details>
+                        <summary class="p-4 cursor-pointer flex items-center justify-between">
+                            <span>Services</span>
+                            <svg class="w-4 h-4 transform transition-transform duration-200" fill="none"
+                                stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M19 9l-7 7-7-7" />
+                            </svg>
+                        </summary>
+                        <div class="pl-6">
+                            <a href="#" class="flex items-center gap-2 px-4 py-2 hover:bg-gray-100 hover:text-red-600">Network
+                                Solution</a>
+                            <a href="#" class="flex items-center gap-2 px-4 py-2 hover:bg-gray-100 hover:text-red-600">Infrastructure
+                                Solution</a>
+                            <a href="#" class="flex items-center gap-2 px-4 py-2 hover:bg-gray-100 hover:text-red-600">Application
+                                Solution</a>
+                            <a href="#" class="flex items-center gap-2 px-4 py-2 hover:bg-gray-100 hover:text-red-600">Service
+                                Solution</a>
+                            <a href="#" class="flex items-center gap-2 px-4 py-2 hover:bg-gray-100 hover:text-red-600">Vendor Management
+                                Solution</a>
+                            <a href="#" class="flex items-center gap-2 px-4 py-2 hover:bg-gray-100 hover:text-red-600">Human Resource
+                                Solution</a>
+                        </div>
+                    </details>
+                </li>
+                <li class="border-b">
+                    <a href="#" class="flex items-center gap-2 px-4 py-3">Industries</a>
+                </li>
+                <li class="border-b">
+                    <a href="#" class="flex items-center gap-2 px-4 py-3">Our Clients</a>
+                </li>
+                <li class="border-b">
+                    <a href="#" class="flex items-center gap-2 px-4 py-3">Articles</a>
+                </li>
+                <li class="border-b">
+                    <a href="#" class="flex items-center gap-2 px-4 py-3">Careers</a>
+                </li>
+                <li class="p-4 text-center">
+                    <a href="#" class="btn-primary flex justify-center !py-4">Book Meeting</a>
+                </li>
+            </ul>
         </div>
     </header>
 
     <!-- Hero -->
     <section id="homeBanner" class="relative py-8">
         <div class="-z-10">
-            <img src="./assets/img/bg_banner_left.png" alt="hero banner left" class="absolute left-0 top-0">
-            <img src="./assets/img/bg_banner_right.png" alt="hero banner right" class="absolute right-0 bottom-0">
+            <img src="./assets/img/bg_banner_left.png" alt="hero banner left"
+                class="h-[250px] md:h-[400px] absolute left-0 top-0">
+            <img src="./assets/img/bg_banner_right.png" alt="hero banner right"
+                class="h-[300px] md:h-[450px] absolute right-0 top-28 md:bottom-0">
         </div>
 
         <!-- Overlay -->
@@ -776,7 +803,8 @@
                                     Edge Computing Growth
                                 </h4>
                                 <p class="text-xs">
-                                    Bringing cloud power closer to users for faster, real-time applications. Sustainability...
+                                    Bringing cloud power closer to users for faster, real-time applications.
+                                    Sustainability...
                                 </p>
                             </div>
                             <div class="flex items-center gap-2 text-primary font-semibold">
