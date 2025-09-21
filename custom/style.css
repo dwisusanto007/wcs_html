@@ -36,6 +36,9 @@ h2,
 h3 {
     @apply text-xl;
 }
+h4 {
+    @apply text-lg;
+}
 
 .btn-primary {
     @apply bg-primary text-white px-5 py-2 rounded text-base;
@@ -57,10 +60,6 @@ h3 {
     .btn-primary {
         @apply px-6 py-4;
     }
-}
-
-body {
-    @apply text-sm text-gray-500;
 }
 
 body {
@@ -91,15 +90,6 @@ details[open] summary svg {
     @apply text-base md:min-h-[430px] relative;
 }
 
-.hero-title {
-    @apply font-medium text-secondary leading-tight text-[24px] md:text-[56px];
-}
-
-/* --- Why Us --- */
-#secSocialWhyUs {
-    @apply min-h-screen max-h-[768px] py-16;
-}
-
 /* --- Utilities --- */
 .section-spacing {
     @apply py-6 pb-12 md:py-10 md:pb-20;
@@ -115,13 +105,9 @@ section .section-title {
     @apply text-gray-900;
 }
 
-.page-title.highlight {
-    @apply mb-3 lg:mb-[20px];
-}
-
 /* --- Footer --- */
 footer {
-    @apply font-inter bg-gray-100 text-gray-900 text-[10px] md:text-base;
+    @apply font-inter bg-gray-100 text-gray-900 text-[10px] md:text-sm;
 }
 footer a {
     @apply hover:text-primary;

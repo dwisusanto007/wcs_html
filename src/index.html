@@ -619,7 +619,8 @@
     <!-- Discover Section -->
     <section class="py-4">
         <div class="container mx-auto">
-            <div class="overflow-hidden relative bg-gray-100 rounded-3xl flex flex-col md:flex-row items-center gap-2 md:gap-8">
+            <div
+                class="overflow-hidden relative bg-gray-100 rounded-3xl flex flex-col md:flex-row items-center gap-2 md:gap-8">
                 <div>
                     <img src="./assets/img/bg_top_red.png" alt="discover cta left"
                         class="absolute h-[120px] left-0 md:left-24 top-0">
@@ -945,10 +946,10 @@
 
     <!-- Footer -->
     <footer>
-        <div class="container py-8 mx-auto px-6 grid md:grid-cols-3 gap-8">
-            <div>
-                <h3 class="font-semibold mb-3">Support</h3>
-                <ul class="space-y-2 text-sm">
+        <div class="container py-8 mx-auto flex md:space-x-6">
+            <div class="md:w-1/4">
+                <h4 class="mb-4">Support</h4>
+                <ul class="space-y-3">
                     <li><a href="#">About Us</a></li>
                     <li><a href="#">Industries</a></li>
                     <li><a href="#">Our Client</a></li>
@@ -957,9 +958,9 @@
                     <li><a href="#">Book Meeting</a></li>
                 </ul>
             </div>
-            <div>
-                <h3 class="font-semibold mb-3">Solutions & Services</h3>
-                <ul class="space-y-2 text-sm">
+            <div class="md:w-1/4">
+                <h4 class="mb-4">Solutions & Services</h4>
+                <ul class="space-y-3">
                     <li><a href="#">Network Solution</a></li>
                     <li><a href="#">Infrastructure Solution</a></li>
                     <li><a href="#">Application Solution</a></li>
@@ -968,16 +969,64 @@
                     <li><a href="#">Human Resources</a></li>
                 </ul>
             </div>
-            <div>
-                <h3 class="font-semibold mb-3">Location</h3>
-                <p class="text-sm mb-4">PT ABCD COMPANY<br />Sahid Sudirman Centre 15th Floor<br />Jl. Jend. Sudirman
-                    Kav. 11-12, Central Jakarta</p>
-                <p class="text-sm">Telp: (021) 2345 6789</p>
-                <p class="text-sm">Email: hello@company.com</p>
-                <div class="flex space-x-4 mt-4">
-                    <a href="#"><i class="fab fa-linkedin"></i></a>
-                    <a href="#"><i class="fab fa-twitter"></i></a>
-                    <a href="#"><i class="fab fa-facebook"></i></a>
+            <div class="md:flex-1">
+                <div class="flex flex-col justify-between">
+                    <div>
+                        <h4 class="mb-4">Location PT WAHANA CIPTASINATRIA</h4>
+                        <ul class="space-y-3">
+                            <li class="flex items-start gap-2">
+                                <img src="./assets/img/ic_location.svg" alt="location">
+                                <p>
+                                    Sahid Sudirman Centre 17th Floor, Suite F&G, Jl. Jend. Sudirman No.Kav. 13-15, Karet
+                                    Tengsin,Central Jakarta
+                                </p>
+                            </li>
+                            <li class="flex items-start gap-2">
+                                <img src="./assets/img/ic_phone.svg" alt="phone">
+                                <div class="space-y-1">
+                                    <p>
+                                        <a href="tel:+622131925586">(021) 3192 5586</a>
+                                    </p>
+                                    <p>
+                                        <a href="tel:+622131925587">(021) 3192 5587</a>
+                                    </p>
+                                </div>
+                            </li>
+                            <li class="flex items-start gap-2">
+                                <img src="./assets/img/ic_email.svg" alt="email">
+                                <p>
+                                    <a href="mailto:marketing@wcs.co.id">marketing@wcs.co.id</a>
+                                </p>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="mt-8 flex items-center gap-4">
+                        <p class="text-lg font-bold">
+                            <b>Follow Us:</b>
+                        </p>
+                        <ul class="flex items-center gap-3">
+                            <li>
+                                <a href="#">
+                                    <img src="./assets/img/follow_linkedin.svg" alt="linkedin">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img src="./assets/img/follow_facebook.svg" alt="facebook">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img src="./assets/img/follow_x.svg" alt="twitter">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img src="./assets/img/follow_gmail.svg" alt="gmail">
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </div>
