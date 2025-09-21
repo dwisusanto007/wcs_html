@@ -19,18 +19,22 @@ Design System :
 --- */
 
 h1, h2, h3, h4, h5, h6 {
-    @apply mb-2 text-gray-900;
+    @apply mb-2 text-gray-900 font-bold;
 }
 
 h1, 
 .page-title,
 .banner-title {
-    @apply font-bold text-[32px] leading-[40px];
+    @apply text-[32px] leading-[40px];
 }
 
 h2,
 .content-title {
     @apply font-bold text-xl leading-[28px];
+}
+
+h3 {
+    @apply text-xl;
 }
 
 .btn-primary {
