@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Wahana Ciptasinatria | Welcome</title>
+    <link href="./assets/css/style.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <link rel="icon" id="dynamic-favicon" type="image/svg+xml" />
+    <script>
+        (function () {
+            // ambil huruf pertama dari title
+            const firstLetter = document.title.trim().charAt(0).toUpperCase() || "Q";
+
+            // buat SVG string
+            const svg = `
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+                <rect width="100" height="100" fill="#FFD700"/>
+                <text x="50%" y="50%" dominant-baseline="middle" text-anchor="middle"
+                        font-size="60" font-family="sans-serif" font-weight="bold" fill="black">
+                    ${firstLetter}
+                </text>
+                </svg>
+            `;
+
+            // encode ke data URI
+            const svgDataUri = "data:image/svg+xml," + encodeURIComponent(svg);
+            // set ke favicon
+            document.getElementById("dynamic-favicon").setAttribute("href", svgDataUri);
+        })();
+    </script>
+</head>
+
+<body class="font-inter">
+
+    <!-- Header -->
+    <header class="sticky top-0 bg-white shadow-md z-50">
+        <div class="container mx-auto flex items-center justify-between py-2 md:py-4">
+
+            <!-- Logo -->
+            <div id="logo">
+                <a href="#" class="header-logo inline-flex">
+                    <img src="./assets/img/logo_wcs.png" alt="PT Wahana Ciptasinatria">
+                    <span class="text-xs md:text-base flex lg:hidden xl:flex ml-2 uppercase">PT Wahana
+                        Ciptasinatria</span>
+                </a>
+            </div>
+
+
+            <!-- Desktop Menu -->
+            <nav class="hidden lg:flex items-center space-x-2 lg:space-x-6 font-semibold text-gray-900 relative">
+                <a href="#" class="active md:px-1">About Us</a>
+
+                <!-- Dropdown Services -->
+                <div class="relative group px-1">
+                    <button class="flex items-center space-x-1 group-hover:text-primary">
+                        <span>Solution & Services</span>
+                        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                        </svg>
+                    </button>
+
+                    <!-- Submenu -->
+                    <div
+                        class="font-medium absolute left-0 mt-2 py-2 min-w-64 bg-white shadow-lg rounded-md z-50 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 overflow-hidden">
+                        <a href="#" class="block px-8 py-2 hover:text-primary">Network Solution</a>
+                        <a href="#" class="block px-8 py-2 hover:text-primary">Infrastructure Solution</a>
+                        <a href="#" class="block px-8 py-2 hover:text-primary">Application Solution</a>
+                        <a href="#" class="block px-8 py-2 hover:text-primary">Service Solution</a>
+                        <a href="#" class="block px-8 py-2 hover:text-primary">Vendor Management Solution</a>
+                        <a href="#" class="block px-8 py-2 hover:text-primary">Human Resource Solution</a>
+                    </div>
+                </div>
+
+                <a href="#" class="md:px-1">Industries</a>
+                <a href="#" class="md:px-1">Our Clients</a>
+                <a href="#" class="md:px-1">Articles</a>
+                <a href="#" class="md:px-1">Careers</a>
+
+                <div>
+                    <a href="#" class="btn-primary">Book Meeting</a>
+                </div>
+            </nav>
+
+            <!-- Mobile Hamburger -->
+            <div class="lg:hidden">
+                <button id="menu-toggle" class="focus:outline-none">
+                    <svg class="w-6 h-6 text-gray-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M4 6h16M4 12h16M4 18h16" />
+                    </svg>
+                </button>
+            </div>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden lg:hidden bg-white shadow-md border-t flex flex-col"
+            style="height: calc(100vh - 67px)">
+            <ul>
+                <li class="border-b">
+                    <a href="#" class="flex items-center gap-2 px-4 py-3">About</a>
+                </li>
+                <li class="border-b">
+                    <!-- Dropdown Mobile -->
+                    <details>
+                        <summary class="p-4 cursor-pointer flex items-center justify-between">
+                            <span>Services</span>
+                            <svg class="w-4 h-4 transform transition-transform duration-200" fill="none"
+                                stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M19 9l-7 7-7-7" />
+                            </svg>
+                        </summary>
+                        <div class="pl-6">
+                            <a href="#"
+                                class="flex items-center gap-2 px-4 py-2 hover:bg-gray-100 hover:text-red-600">Network
+                                Solution</a>
+                            <a href="#"
+                                class="flex items-center gap-2 px-4 py-2 hover:bg-gray-100 hover:text-red-600">Infrastructure
+                                Solution</a>
+                            <a href="#"
+                                class="flex items-center gap-2 px-4 py-2 hover:bg-gray-100 hover:text-red-600">Application
+                                Solution</a>
+                            <a href="#"
+                                class="flex items-center gap-2 px-4 py-2 hover:bg-gray-100 hover:text-red-600">Service
+                                Solution</a>
+                            <a href="#"
+                                class="flex items-center gap-2 px-4 py-2 hover:bg-gray-100 hover:text-red-600">Vendor
+                                Management
+                                Solution</a>
+                            <a href="#"
+                                class="flex items-center gap-2 px-4 py-2 hover:bg-gray-100 hover:text-red-600">Human
+                                Resource
+                                Solution</a>
+                        </div>
+                    </details>
+                </li>
+                <li class="border-b">
+                    <a href="#" class="flex items-center gap-2 px-4 py-3">Industries</a>
+                </li>
+                <li class="border-b">
+                    <a href="#" class="flex items-center gap-2 px-4 py-3">Our Clients</a>
+                </li>
+                <li class="border-b">
+                    <a href="#" class="flex items-center gap-2 px-4 py-3">Articles</a>
+                </li>
+                <li class="border-b">
+                    <a href="#" class="flex items-center gap-2 px-4 py-3">Careers</a>
+                </li>
+                <li class="p-4 text-center">
+                    <a href="#" class="btn-primary flex justify-center !py-4">Book Meeting</a>
+                </li>
+            </ul>
+        </div>
+    </header>
+
+    <section class="relative py-8">
+        <div class="-z-10">
+            <img src="./assets/img/bg_banner_left.png" alt="hero banner left"
+                class="h-[250px] md:h-[400px] absolute left-0 top-0 invisible"
+                onload="this.classList.remove('invisible')" />
+            <img src="./assets/img/bg_banner_right.png" alt="hero banner right"
+                class="h-[300px] md:h-[450px] absolute right-0 top-28 md:bottom-0 invisible"
+                onload="this.classList.remove('invisible')" />
+        </div>
+        <div class="container relative h-full">
+            <div class="flex flex-col md:flex-row items-center h-full md:gap-8">
+                <div class="mb-4 md:mb-0 md:w-[440px] md:h-[340px] flex items-center justify-center">
+                    <img src="./assets/img/hero_banner.png" alt="All Your Connectivity Needs"
+                        class="h-full w-auto object-contain md:h-full invisible"
+                        onload="this.classList.remove('invisible')" />
+                </div>
+                <div class="flex-1 flex flex-col items-start space-y-4 md:space-y-8">
+                    <div>
+                        <h1>
+                            Empowering Businesses with
+                            <br />Innovative IT Solutions Since 1995
+                        </h2>
+                        <p>
+                            Wahana Ciptasinatria (WCS) is an end-to-end IT solution provider
+                            in Indonesia. Established in 1995 under the Cormic Technology Group, we deliver
+                            business solutions, IT infrastructure, ERP, cloud services, and digital
+                            transformation consulting to enterprises nationwide.With offices in Jakarta,
+                            Surabaya, and Bandung, and a team of 220+ technology specialists, WCS has
+                            successfully executed 200+ projects across industries including
+                            finance, telecom, oil & gas, and public services.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="relative py-8">
+        <div class="container relative h-full">
+            <div class="flex flex-col md:flex-row items-center h-full md:gap-24">
+                <div class="order-1 md:order-2 mb-4 md:mb-0 md:w-[440px] md:h-[340px] flex items-center justify-center">
+                    <img src="./assets/img/hero_banner.png" alt="All Your Connectivity Needs"
+                        class="h-full w-auto object-contain md:h-full invisible"
+                        onload="this.classList.remove('invisible')" />
+                </div>
+                <div class="order-2 md:order-1 flex-1 flex flex-col items-start space-y-4 md:space-y-8">
+                    <div>
+                        <h2 class="page-title">
+                            What We Do
+                        </h2>
+                        <p>
+                            <b>Our Core Solutions:</b>
+                        </p>
+                        <ul class="mt-2 list-disc pl-6 space-y-1">
+                            <li>
+                                <b>Infrastructure Solutions:</b> Data centers, storage, and end-user computing.
+                            </li>
+                            <li>
+                                <b>Network Solutions:</b> Integration, security, and voice solutions.
+                            </li>
+                            <li>
+                                <b>Applications Solutions:</b> ERP, cloud, and e-business platforms.
+                            </li>
+                            <li>
+                                <b>Services Solutions:</b> Maintenance, helpdesk, and network support.
+                            </li>
+                            <li>
+                                <b>Human Resources Solutions:</b> HCM, payroll, and recruitment systems.
+                            </li>
+                            <li>
+                                <b>Vendor Management Solutions:</b> E-registration, e-catalogue, invoicing, and
+                                tracking.
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="relative py-8">
+        <div class="container relative h-full">
+            <div class="flex flex-col md:flex-row items-center h-full md:gap-24">
+                <div class="mb-4 md:mb-0 md:w-[440px] md:h-[340px] flex items-center justify-center">
+                    <img src="./assets/img/hero_banner.png" alt="All Your Connectivity Needs"
+                        class="h-full w-auto object-contain md:h-full invisible"
+                        onload="this.classList.remove('invisible')" />
+                </div>
+                <div class="flex-1 flex flex-col items-start space-y-4 md:space-y-8">
+                    <div>
+                        <h2 class="page-title">
+                            Trusted by Leading Organizations
+                        </h2>
+                        <p>
+                            WCS has supported top enterprises and institutions in Indonesia, including Bank Rakyat
+                            Indonesia, Bank Mandiri, Telkom Indonesia, Pertamina, and Angkasa Pura. Our experience spans
+                            finance, telecommunications, oil & gas, and public services, giving us the depth to serve
+                            clients of all sizes and sectors.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="relative py-8">
+        <div class="container relative h-full">
+            <div class="flex flex-col md:flex-row items-center h-full md:gap-24">
+                <div class="order-1 md:order-2 mb-4 md:mb-0 md:w-[440px] md:h-[340px] flex items-center justify-center">
+                    <img src="./assets/img/hero_banner.png" alt="All Your Connectivity Needs"
+                        class="h-full w-auto object-contain md:h-full invisible"
+                        onload="this.classList.remove('invisible')" />
+                </div>
+                <div class="order-2 md:order-1 flex-1 flex flex-col items-start space-y-4 md:space-y-8">
+                    <div>
+                        <h2 class="page-title">
+                            Our Commitment
+                        </h2>
+                        <p>
+                            At WCS, we don’t just provide technology—we deliver solutions that drive business outcomes.
+                            Our mission is to help organizations accelerate digital transformation, reduce costs, and
+                            improve operational efficiency while ensuring security and compliance.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>

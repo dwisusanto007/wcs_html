@@ -65,7 +65,6 @@ h4 {
 body {
     @apply text-sm text-gray-500;
 }
-
 /* --- Header --- */
 header {
     @apply min-h-16;
@@ -79,6 +78,16 @@ header {
 
 section {
   scroll-margin-top: 82px; /* tinggi header */
+}
+section p {
+    @apply mb-2;
+}
+
+header nav a {
+    @apply hover:text-primary;
+    &.active {
+        @apply text-primary;
+    }
 }
 
 details[open] summary svg {
