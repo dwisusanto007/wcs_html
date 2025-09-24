@@ -42,7 +42,7 @@
 
             <!-- Logo -->
             <div id="logo">
-                <a href="#" class="header-logo inline-flex">
+                <a href="index.html" class="header-logo inline-flex">
                     <img src="./assets/img/logo_wcs.png" alt="PT Wahana Ciptasinatria">
                     <span class="text-xs md:text-base flex lg:hidden xl:flex ml-2 uppercase">PT Wahana
                         Ciptasinatria</span>
@@ -52,7 +52,7 @@
 
             <!-- Desktop Menu -->
             <nav class="hidden lg:flex items-center space-x-2 lg:space-x-6 font-semibold text-gray-900 relative">
-                <a href="#" class="px-1 hover:text-primary">About Us</a>
+                <a href="about.html" class="md:px-1">About Us</a>
 
                 <!-- Dropdown Services -->
                 <div class="relative group px-1">
@@ -75,10 +75,10 @@
                     </div>
                 </div>
 
-                <a href="#" class="px-1 hover:text-primary">Industries</a>
-                <a href="#" class="px-1 hover:text-primary">Our Clients</a>
-                <a href="#" class="px-1 hover:text-primary">Articles</a>
-                <a href="#" class="px-1 hover:text-primary">Careers</a>
+                <a href="#" class="md:px-1">Industries</a>
+                <a href="#" class="md:px-1">Our Clients</a>
+                <a href="#" class="md:px-1">Articles</a>
+                <a href="#" class="md:px-1">Careers</a>
 
                 <div>
                     <a href="#" class="btn-primary">Book Meeting</a>
@@ -97,7 +97,7 @@
         </div>
 
         <!-- Mobile Menu -->
-        <div id="mobile-menu" class="hidden lg:hidden bg-white shadow-md border-t flex flex-col"
+        <div id="mobileMenu" class="hidden lg:hidden bg-white shadow-md border-t flex flex-col"
             style="height: calc(100vh - 67px)">
             <ul>
                 <li class="border-b">
@@ -168,7 +168,7 @@
                 onload="this.classList.remove('invisible')" />
         </div>
         <div class="container relative h-full">
-            <div class="flex flex-col md:flex-row items-center h-full">
+            <div class="flex flex-col md:flex-row items-center h-full md:gap-8">
                 <div class="order-2 md:order-1 flex-1 flex flex-col items-start space-y-4 md:space-y-8">
                     <!-- Hero Headline -->
                     <div>
@@ -188,9 +188,9 @@
                     </a>
                 </div>
                 <div
-                    class="order-1 md:order-2 mb-4 md:mb-0 md:ml-4 md:w-[475px] md:h-[430px] flex items-center justify-center">
+                    class="order-1 md:order-2 mb-4 md:mb-0 md:w-[475px] md:h-[430px] flex items-center justify-center">
                     <img src="./assets/img/hero_banner.png" alt="All Your Connectivity Needs"
-                        class="h-full w-auto object-contain md:h-[430px] invisible"
+                        class="h-full w-auto object-contain md:h-full invisible"
                         onload="this.classList.remove('invisible')" />
                 </div>
             </div>
@@ -1014,11 +1014,12 @@
 
     <!-- Footer -->
     <footer>
-        <div class="container py-8 mx-auto md:flex space-y-6 md:space-x-6">
+        <div class="container py-8 mx-auto md:flex space-y-6 md:space-x-6 md:space-y-0">
             <div class="md:w-1/4">
                 <h4 class="mb-4">Support</h4>
                 <ul class="space-y-1 md:space-y-3">
-                    <li><a href="#">About Us</a></li>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
                     <li><a href="#">Industries</a></li>
                     <li><a href="#">Our Client</a></li>
                     <li><a href="#">Article</a></li>
@@ -1128,7 +1129,7 @@
     <script>
         // Toggle mobile menu
         const btn = document.getElementById('menu-toggle');
-        const menu = document.getElementById('mobile-menu');
+        const menu = document.getElementById('mobileMenu');
 
         btn.addEventListener('click', () => {
             menu.classList.toggle('hidden');
