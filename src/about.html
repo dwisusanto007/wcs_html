@@ -97,11 +97,11 @@
         </div>
 
         <!-- Mobile Menu -->
-        <div id="mobile-menu" class="hidden lg:hidden bg-white shadow-md border-t flex flex-col"
+        <div id="mobileMenu" class="hidden lg:hidden bg-white shadow-md border-t flex flex-col"
             style="height: calc(100vh - 67px)">
             <ul>
                 <li class="border-b">
-                    <a href="#" class="flex items-center gap-2 px-4 py-3">About</a>
+                    <a href="#" class="active flex items-center gap-2 px-4 py-3">About</a>
                 </li>
                 <li class="border-b">
                     <!-- Dropdown Mobile -->
@@ -167,17 +167,16 @@
                 onload="this.classList.remove('invisible')" />
         </div>
         <div class="container relative h-full">
-            <div class="flex flex-col md:flex-row items-center h-full md:gap-12">
-                <div class="mb-4 md:mb-0 md:w-[440px] md:h-[340px] flex items-center justify-center">
+            <div class="flex flex-col md:flex-row items-center h-full md:gap-8 xl:gap-12">
+                <div class="mb-4 md:mb-0 md:h-[200px] xl:w-[440px] xl:h-[340px] flex items-center justify-center">
                     <img src="./assets/img/about_emporing.png" alt="All Your Connectivity Needs"
                         class="h-full w-auto object-contain md:h-full invisible rounded-lg"
                         onload="this.classList.remove('invisible')" />
                 </div>
                 <div class="flex-1 flex flex-col items-start space-y-4 md:space-y-8">
-                    <div>
-                        <h1>
-                            Empowering Businesses with
-                            <br />Innovative IT Solutions Since 1995
+                    <div class="md:pr-2 xl:pr-6">
+                        <h1 class="lg:max-w-xl">
+                            Empowering Businesses with Innovative IT Solutions Since 1995
                         </h2>
                         <p class="leading-normal">
                             Wahana Ciptasinatria (WCS) is an end-to-end IT solution provider
@@ -196,14 +195,14 @@
 
     <section class="relative py-6 my-4">
         <div class="container relative h-full">
-            <div class="flex flex-col md:flex-row items-center h-full md:gap-24">
-                <div class="order-1 md:order-2 mb-4 md:mb-0 md:w-[440px] md:h-[340px] flex items-center justify-center">
+            <div class="flex flex-col md:flex-row items-center h-full md:gap-8 xl:gap-24">
+                <div class="order-1 md:order-2 mb-4 md:mb-0 md:h-[200px] xl:w-[440px] xl:h-[340px] flex items-center justify-center">
                     <img src="./assets/img/about_what_we_do.png" alt="All Your Connectivity Needs"
                         class="h-full w-auto object-contain md:h-full invisible rounded-lg"
                         onload="this.classList.remove('invisible')" />
                 </div>
                 <div class="order-2 md:order-1 flex-1 flex flex-col items-start space-y-4 md:space-y-8">
-                    <div class="md:pe-6">
+                    <div class="md:pr-2 xl:pr-6">
                         <h2 class="page-title !mb-4">
                             What We Do
                         </h2>
@@ -239,14 +238,14 @@
 
     <section class="relative py-6 my-4 border-t border-gray-100 bg-[#E5E5E5] md:border-none md:h-[340px] md:bg-[url('../img/bg_section_gray.svg')] md:bg-repeat-x">
         <div class="container relative h-full">
-            <div class="flex flex-col md:flex-row items-center h-full md:gap-24">
-                <div class="order-1 mb-4 md:mb-0 md:w-[440px] md:h-[340px] flex items-center justify-center">
+            <div class="flex flex-col md:flex-row items-center h-full md:gap-8 xl:gap-24">
+                <div class="order-1 mb-4 md:mb-0 md:h-[200px] xl:w-[440px] xl:h-[340px] flex items-center justify-center">
                     <img src="./assets/img/about_trusted.png" alt="All Your Connectivity Needs"
                         class="h-full w-auto object-contain md:h-full invisible rounded-lg"
                         onload="this.classList.remove('invisible')" />
                 </div>
                 <div class="order-2 flex-1 flex flex-col items-start space-y-4 md:space-y-8">
-                    <div class="md:pe-6">
+                    <div class="md:pr-2 xl:pr-6">
                         <h2 class="page-title !mb-4">
                             Trusted by Leading Organizations
                         </h2>
@@ -264,14 +263,14 @@
 
     <section class="relative py-6 my-4">
         <div class="container relative h-full">
-            <div class="flex flex-col md:flex-row items-center h-full md:gap-24">
-                <div class="order-1 md:order-2 mb-4 md:mb-0 md:w-[440px] md:h-[340px] flex items-center justify-center">
+            <div class="flex flex-col md:flex-row items-center h-full md:gap-8 xl:gap-24">
+                <div class="order-1 md:order-2 mb-4 md:mb-0 md:h-[200px] xl:w-[440px] xl:h-[340px] flex items-center justify-center">
                     <img src="./assets/img/about_commitment.png" alt="All Your Connectivity Needs"
                         class="h-full w-auto object-contain md:h-full invisible rounded-lg"
                         onload="this.classList.remove('invisible')" />
                 </div>
                 <div class="order-2 md:order-1 flex-1 flex flex-col items-start space-y-4 md:space-y-8">
-                    <div class="md:pe-6">
+                    <div class="md:pr-2 xl:pr-6">
                         <h2 class="page-title !mb-4">
                             Our Commitment
                         </h2>
@@ -394,6 +393,17 @@
             © 2025 PT WAHANA CIPTA NUSANTARA. All rights reserved
         </div>
     </footer>
+
+    <script>
+        // Toggle mobile menu
+        const btn = document.getElementById('menu-toggle');
+        const menu = document.getElementById('mobileMenu');
+
+        btn.addEventListener('click', () => {
+            menu.classList.toggle('hidden');
+            document.body.classList.toggle("overflow-hidden");
+        });
+    </script>
 </body>
 
 </html>

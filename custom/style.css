@@ -89,6 +89,11 @@ header nav a {
         @apply text-primary;
     }
 }
+#mobileMenu a {
+    &.active {
+        @apply text-primary;
+    }
+}
 
 details[open] summary svg {
   transform: rotate(180deg);
