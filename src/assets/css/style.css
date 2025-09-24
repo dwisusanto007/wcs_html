@@ -681,6 +681,21 @@ video {
   margin-right: auto;
 }
 
+.my-8{
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+.my-16{
+  margin-top: 4rem;
+  margin-bottom: 4rem;
+}
+
+.my-4{
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
 .mb-10{
   margin-bottom: 2.5rem;
 }
@@ -707,6 +722,10 @@ video {
 
 .mt-8{
   margin-top: 2rem;
+}
+
+.\!mb-4{
+  margin-bottom: 1rem !important;
 }
 
 .block{
@@ -783,6 +802,14 @@ video {
 
 .h-full{
   height: 100%;
+}
+
+.h-64{
+  height: 16rem;
+}
+
+.h-\[340px\]{
+  height: 340px;
 }
 
 .min-h-64{
@@ -983,6 +1010,10 @@ video {
   border-radius: 0.75rem;
 }
 
+.rounded-none{
+  border-radius: 0px;
+}
+
 .rounded-t-lg{
   border-top-left-radius: 0.5rem;
   border-top-right-radius: 0.5rem;
@@ -1003,6 +1034,11 @@ video {
 .border-gray-200{
   --tw-border-opacity: 1;
   border-color: rgb(229 231 235 / var(--tw-border-opacity, 1));
+}
+
+.border-gray-100{
+  --tw-border-opacity: 1;
+  border-color: rgb(245 245 245 / var(--tw-border-opacity, 1));
 }
 
 .bg-\[\#F5F5F5\]{
@@ -1034,12 +1070,71 @@ video {
   background-color: rgb(255 255 255 / var(--tw-bg-opacity, 1));
 }
 
+.bg-transparent{
+  background-color: transparent;
+}
+
+.bg-\[\#E5E5E5\]{
+  --tw-bg-opacity: 1;
+  background-color: rgb(229 229 229 / var(--tw-bg-opacity, 1));
+}
+
+.bg-gradient-to-r{
+  background-image: linear-gradient(to right, var(--tw-gradient-stops));
+}
+
+.bg-gradient-to-b{
+  background-image: linear-gradient(to bottom, var(--tw-gradient-stops));
+}
+
+.bg-\[linear-gradient\(to_bottom\2c white\2c \#E5E5E5\)\2c url\(\'\.\.\/img\/bg_cta_footer\.png\'\)\]{
+  background-image: linear-gradient(to bottom,white,#E5E5E5),url('../img/bg_cta_footer.png');
+}
+
+.bg-\[url\(\'\/assets\/img\/bg_cta_footer\.png\'\)\]{
+  background-image: url('/assets/img/bg_cta_footer.png');
+}
+
+.bg-\[url\(\'\.\.\/img\/bg_cta_footer\.png\'\)\]{
+  background-image: url('../img/bg_cta_footer.png');
+}
+
+.bg-\[linear-gradient\(to_right\2c white\2c \#E5E5E5\)\]{
+  background-image: linear-gradient(to right,white,#E5E5E5);
+}
+
+.bg-\[url\(\'\.\.\/img\/bg_section_gray\.svg\'\)\]{
+  background-image: url('../img/bg_section_gray.svg');
+}
+
+.from-white{
+  --tw-gradient-from: #fff var(--tw-gradient-from-position);
+  --tw-gradient-to: rgb(255 255 255 / 0) var(--tw-gradient-to-position);
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
+}
+
+.to-gray-200{
+  --tw-gradient-to: #e5e7eb var(--tw-gradient-to-position);
+}
+
+.to-\[\#E5E5E5\]{
+  --tw-gradient-to: #E5E5E5 var(--tw-gradient-to-position);
+}
+
 .bg-cover{
   background-size: cover;
 }
 
+.bg-contain{
+  background-size: contain;
+}
+
 .bg-center{
   background-position: center;
+}
+
+.bg-repeat-x{
+  background-repeat: repeat-x;
 }
 
 .object-contain{
@@ -1143,6 +1238,10 @@ video {
   padding-top: 4rem;
 }
 
+.pt-8{
+  padding-top: 2rem;
+}
+
 .text-center{
   text-align: center;
 }
@@ -1180,6 +1279,14 @@ video {
 
 .uppercase{
   text-transform: uppercase;
+}
+
+.leading-normal{
+  line-height: 1.5;
+}
+
+.leading-loose{
+  line-height: 2;
 }
 
 .text-gray-500{
@@ -1767,6 +1874,10 @@ footer a:hover{
     gap: 6rem;
   }
 
+  .md\:gap-12{
+    gap: 3rem;
+  }
+
   .md\:space-x-4 > :not([hidden]) ~ :not([hidden]){
     --tw-space-x-reverse: 0;
     margin-right: calc(1rem * var(--tw-space-x-reverse));
@@ -1811,8 +1922,36 @@ footer a:hover{
     border-top-right-radius: 0.75rem;
   }
 
+  .md\:border-none{
+    border-style: none;
+  }
+
   .md\:bg-\[url\(\'\.\.\/img\/bg_cta_footer\.png\'\)\]{
     background-image: url('../img/bg_cta_footer.png');
+  }
+
+  .md\:bg-\[linear-gradient\(to_bottom\2c white\2c \#E5E5E5\)\2c url\(\'\.\.\/img\/bg_cta_footer\.png\'\)\]{
+    background-image: linear-gradient(to bottom,white,#E5E5E5),url('../img/bg_cta_footer.png');
+  }
+
+  .md\:bg-\[linear-gradient\(to_right\2c white\2c \#E5E5E5\)\2c url\(\'\.\.\/img\/bg_cta_footer\.png\'\)\]{
+    background-image: linear-gradient(to right,white,#E5E5E5),url('../img/bg_cta_footer.png');
+  }
+
+  .md\:bg-\[linear-gradient\(to_right\2c white\2c \#E5E5E5\)\\\2c url\(\'\.\.\/img\/bg_cta_footer\.png\'\)\]{
+    background-image: linear-gradient(to right,white,#E5E5E5)\,url('../img/bg_cta_footer.png');
+  }
+
+  .md\:bg-\[url\(\'\.\.\/img\/bg_section_gray\.svg\'\)\]{
+    background-image: url('../img/bg_section_gray.svg');
+  }
+
+  .md\:bg-\[length\:auto_100\%\]{
+    background-size: auto 100%;
+  }
+
+  .md\:bg-contain{
+    background-size: contain;
   }
 
   .md\:bg-repeat-x{
@@ -1833,12 +1972,29 @@ footer a:hover{
     padding-bottom: 1rem;
   }
 
+  .md\:py-8{
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+  }
+
   .md\:pl-\[calc\(\(100\%-theme\(maxWidth\.7xl\)\)\/2\+1rem\)\]{
     padding-left: calc((100% - 80rem) / 2 + 1rem);
   }
 
   .md\:pr-0{
     padding-right: 0px;
+  }
+
+  .md\:pe-4{
+    padding-inline-end: 1rem;
+  }
+
+  .md\:pe-8{
+    padding-inline-end: 2rem;
+  }
+
+  .md\:pe-6{
+    padding-inline-end: 1.5rem;
   }
 
   .md\:text-base{
