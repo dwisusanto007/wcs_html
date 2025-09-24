@@ -18,7 +18,6 @@
             // buat SVG string
             const svg = `
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
-                <rect width="100" height="100" fill="#FFFFFF"/>
                 <text x="50%" y="50%" dominant-baseline="middle" text-anchor="middle"
                         font-size="40" font-family="sans-serif" font-weight="bold" fill="#A21C21">
                     WCS
@@ -52,7 +51,9 @@
 
             <!-- Desktop Menu -->
             <nav class="hidden lg:flex items-center space-x-2 lg:space-x-6 font-semibold text-gray-900 relative">
-                <a href="about.html" class="md:px-1">About Us</a>
+                <a href="about.html" class="md:px-1">
+                    About Us
+                </a>
 
                 <!-- Dropdown Services -->
                 <div class="relative group px-1">
@@ -66,22 +67,44 @@
                     <!-- Submenu -->
                     <div
                         class="font-medium absolute left-0 mt-2 py-2 min-w-64 bg-white shadow-lg rounded-md z-50 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 overflow-hidden">
-                        <a href="#" class="block px-8 py-2 hover:text-primary">Network Solution</a>
-                        <a href="#" class="block px-8 py-2 hover:text-primary">Infrastructure Solution</a>
-                        <a href="#" class="block px-8 py-2 hover:text-primary">Application Solution</a>
-                        <a href="#" class="block px-8 py-2 hover:text-primary">Service Solution</a>
-                        <a href="#" class="block px-8 py-2 hover:text-primary">Vendor Management Solution</a>
-                        <a href="#" class="block px-8 py-2 hover:text-primary">Human Resource Solution</a>
+                        <a href="solution_network.html" class="block px-8 py-2 hover:text-primary">
+                            Network Solution
+                        </a>
+                        <a href="#" class="block px-8 py-2 hover:text-primary">
+                            Infrastructure Solution
+                        </a>
+                        <a href="#" class="block px-8 py-2 hover:text-primary">
+                            Application Solution
+                        </a>
+                        <a href="#" class="block px-8 py-2 hover:text-primary">
+                            Service Solution
+                        </a>
+                        <a href="#" class="block px-8 py-2 hover:text-primary">
+                            Vendor Management Solution
+                        </a>
+                        <a href="#" class="block px-8 py-2 hover:text-primary">
+                            Human Resource Solution
+                        </a>
                     </div>
                 </div>
 
-                <a href="industry.html" class="active md:px-1">Industries</a>
-                <a href="#" class="md:px-1">Our Clients</a>
-                <a href="#" class="md:px-1">Articles</a>
-                <a href="#" class="md:px-1">Careers</a>
+                <a href="industry.html" class="active md:px-1">
+                    Industries
+                </a>
+                <a href="client.html" class="md:px-1">
+                    Our Clients
+                </a>
+                <a href="article.html" class="md:px-1">
+                    Articles
+                </a>
+                <a href="career.html" class="md:px-1">
+                    Careers
+                </a>
 
                 <div>
-                    <a href="#" class="btn-primary">Book Meeting</a>
+                    <a href="contact.html" class="btn-primary">
+                        Book Meeting
+                    </a>
                 </div>
             </nav>
 
@@ -101,13 +124,15 @@
             style="height: calc(100vh - 67px)">
             <ul>
                 <li class="border-b">
-                    <a href="#" class="active flex items-center gap-2 px-4 py-3">About</a>
+                    <a href="about.html" class="flex items-center gap-2 px-4 py-3">
+                        About Us
+                    </a>
                 </li>
                 <li class="border-b">
                     <!-- Dropdown Mobile -->
                     <details>
                         <summary class="p-4 cursor-pointer flex items-center justify-between">
-                            <span>Services</span>
+                            <span>Solution & Services</span>
                             <svg class="w-4 h-4 transform transition-transform duration-200" fill="none"
                                 stroke="currentColor" viewBox="0 0 24 24">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
@@ -115,43 +140,57 @@
                             </svg>
                         </summary>
                         <div class="pl-6">
+                            <a href="solution_network.html"
+                                class="flex items-center gap-2 px-4 py-2 hover:bg-gray-100 hover:text-red-600">
+                                Network Solution
+                            </a>
                             <a href="#"
-                                class="flex items-center gap-2 px-4 py-2 hover:bg-gray-100 hover:text-red-600">Network
-                                Solution</a>
+                                class="flex items-center gap-2 px-4 py-2 hover:bg-gray-100 hover:text-red-600">
+                                Infrastructure Solution
+                            </a>
                             <a href="#"
-                                class="flex items-center gap-2 px-4 py-2 hover:bg-gray-100 hover:text-red-600">Infrastructure
-                                Solution</a>
+                                class="flex items-center gap-2 px-4 py-2 hover:bg-gray-100 hover:text-red-600">
+                                Application Solution
+                            </a>
                             <a href="#"
-                                class="flex items-center gap-2 px-4 py-2 hover:bg-gray-100 hover:text-red-600">Application
-                                Solution</a>
+                                class="flex items-center gap-2 px-4 py-2 hover:bg-gray-100 hover:text-red-600">
+                                Service Solution
+                            </a>
                             <a href="#"
-                                class="flex items-center gap-2 px-4 py-2 hover:bg-gray-100 hover:text-red-600">Service
-                                Solution</a>
+                                class="flex items-center gap-2 px-4 py-2 hover:bg-gray-100 hover:text-red-600">
+                                Vendor Management Solution
+                            </a>
                             <a href="#"
-                                class="flex items-center gap-2 px-4 py-2 hover:bg-gray-100 hover:text-red-600">Vendor
-                                Management
-                                Solution</a>
-                            <a href="#"
-                                class="flex items-center gap-2 px-4 py-2 hover:bg-gray-100 hover:text-red-600">Human
-                                Resource
-                                Solution</a>
+                                class="flex items-center gap-2 px-4 py-2 hover:bg-gray-100 hover:text-red-600">
+                                Human Resource Solution
+                            </a>
                         </div>
                     </details>
                 </li>
                 <li class="border-b">
-                    <a href="#" class="flex items-center gap-2 px-4 py-3">Industries</a>
+                    <a href="industry.html" class="active flex items-center gap-2 px-4 py-3">
+                        Industries
+                    </a>
                 </li>
                 <li class="border-b">
-                    <a href="#" class="flex items-center gap-2 px-4 py-3">Our Clients</a>
+                    <a href="client.html" class="flex items-center gap-2 px-4 py-3">
+                        Our Clients
+                    </a>
                 </li>
                 <li class="border-b">
-                    <a href="#" class="flex items-center gap-2 px-4 py-3">Articles</a>
+                    <a href="article.html" class="flex items-center gap-2 px-4 py-3">
+                        Articles
+                    </a>
                 </li>
                 <li class="border-b">
-                    <a href="#" class="flex items-center gap-2 px-4 py-3">Careers</a>
+                    <a href="career.html" class="flex items-center gap-2 px-4 py-3">
+                        Careers
+                    </a>
                 </li>
                 <li class="p-4 text-center">
-                    <a href="#" class="btn-primary flex justify-center !py-4">Book Meeting</a>
+                    <a href="contact.html" class="btn-primary flex justify-center !py-4">
+                        Book Meeting
+                    </a>
                 </li>
             </ul>
         </div>
@@ -341,16 +380,17 @@
                     <li><a href="index.html">Home</a></li>
                     <li><a href="about.html">About Us</a></li>
                     <li><a href="industry.html">Industries</a></li>
-                    <li><a href="#">Our Client</a></li>
-                    <li><a href="#">Article</a></li>
-                    <li><a href="#">Careers</a></li>
-                    <li><a href="#">Book Meeting</a></li>
+                    <li><a href="client.html">Our Client</a></li>
+                    <li><a href="article.html">Article</a></li>
+                    <li><a href="career.html">Careers</a></li>
+                    <li><a href="contact.html">Book Meeting</a></li>
                 </ul>
             </div>
             <div class="md:w-1/4">
                 <h4 class="mb-4">Solutions & Services</h4>
                 <ul class="space-y-1 md:space-y-3">
-                    <li><a href="#">Network Solution</a></li>
+                    <li><a href="solution_network.html">Network Solution</a></li>
+                            </a>
                     <li><a href="#">Infrastructure Solution</a></li>
                     <li><a href="#">Application Solution</a></li>
                     <li><a href="#">Service Solution</a></li>

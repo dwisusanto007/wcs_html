@@ -34,7 +34,7 @@ h2,
 }
 
 h3 {
-    @apply text-xl;
+    @apply text-lg;
 }
 h4 {
     @apply text-lg;
@@ -83,7 +83,8 @@ section p {
     @apply mb-2;
 }
 
-header nav a {
+header nav > a,
+header nav button {
     @apply hover:text-primary;
     &.active {
         @apply text-primary;
