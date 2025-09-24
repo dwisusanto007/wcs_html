@@ -50,7 +50,7 @@
 
 
             <!-- Desktop Menu -->
-            <nav class="hidden md:flex items-center space-x-6 font-semibold text-gray-900 relative">
+            <nav class="hidden lg:flex items-center space-x-6 font-semibold text-gray-900 relative">
                 <a href="#" class="px-1 hover:text-primary">About Us</a>
 
                 <!-- Dropdown Services -->
@@ -371,7 +371,7 @@
     </section>
 
     <!-- Featured Success Stories -->
-    <section class="py-16 bg-gray-50 h-fill">
+    <section class="py-16 h-fill">
         <div class="container mx-auto flex flex-col mb-10">
             <div class="section-title md:max-w-3/4">
                 <h2 class="page-title">Featured Success Stories</h2>
@@ -623,7 +623,7 @@
                     deliver innovative, high-end technology solutions from day one.
                 </p>
             </div>
-            <div class="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-9 gap-4 items-center">
+            <div class="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-8 lg:grid-cols-10 gap-4 items-center">
                 <img src="./assets/img/alliance/Aruba_Networks.svg" alt="Alliance Aruba Networks" class="w-full" />
                 <img src="./assets/img/alliance/AVAYA.svg" alt="Alliance AVAYA" class="w-full" />
                 <img src="./assets/img/alliance/CyberArk.svg" alt="Alliance CyberArk" class="w-full" />
@@ -652,19 +652,19 @@
     </section>
 
     <!-- Discover Section -->
-    <section class="py-4">
+    <section class="py-6">
         <div class="container mx-auto">
             <div
                 class="overflow-hidden relative bg-gray-100 rounded-3xl flex flex-col md:flex-row items-center gap-2 md:gap-8">
                 <div>
                     <img src="./assets/img/bg_top_red.png" alt="discover cta left"
-                        class="absolute h-[120px] left-0 md:left-24 top-0">
+                        class="absolute h-[120px] left-0 md:left-36 top-0">
                     <img src="./assets/img/bg_bottom_blue.png" alt="discover cta right"
                         class="absolute h-[100px] md:h-[160px] right-0 bottom-0">
                 </div>
                 <div class="z-20">
                     <img src="./assets/img/discover_solution.png" alt="Discover Solution"
-                        class="h-[200px] object-cover" />
+                        class="h-[240px] object-cover" />
                 </div>
                 <div class="z-20 flex-1 flex flex-col items-center md:items-start space-y-6 p-4 pb-8 md:p-0">
                     <!-- Hero Headline -->
@@ -970,9 +970,8 @@
     </section>
 
     <!-- CTA Footer -->
-    <section class="py-8 bg-primary text-white"
-        style="background-image: url(./assets/img/bg_cta_footer.png); background-repeat: repeat-x;">
-        <div class="container mx-auto flex items-center gap-10">
+    <section class="py-8 text-white bg-primary md:bg-[url('../img/bg_cta_footer.png')] md:bg-repeat-x">
+        <div class="container mx-auto md:flex items-center gap-10">
             <div class="section-title md:w-[70%]">
                 <h2 class="page-title text-white">
                     Book a Meeting
@@ -982,7 +981,7 @@
                     projects, WCS is ready to help your company accelerate with the right IT solutions.
                 </p>
             </div>
-            <div class="flex flex-1 justify-end">
+            <div class="mt-8 md:mt-0 flex flex-1 justify-center md:justify-end">
                 <a href="#" class="btn-primary btn-primary-outline">Book Meeting</a>
             </div>
         </div>
@@ -1136,7 +1135,7 @@
                 breakpoints,
                 loop: true,
                 autoplay: {
-                    delay: 2000,
+                    delay: 1000,
                     disableOnInteraction: false,
                 },
                 speed: 800,
