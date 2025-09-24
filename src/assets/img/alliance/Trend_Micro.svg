@@ -1,11 +1,11 @@
 <svg width="107" height="92" viewBox="0 0 107 92" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
 <rect x="1" y="1" width="104.889" height="90" rx="8" fill="white"/>
 <rect x="0.5" y="0.5" width="105.889" height="91" rx="8.5" stroke="black" stroke-opacity="0.24"/>
-<mask id="mask0_305_669" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="3" y="27" width="101" height="38">
-<rect x="3.44444" y="27.7227" width="100" height="36.5546" fill="#D9D9D9"/>
+<mask id="mask0_305_669" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="23" y="35" width="61" height="22">
+<rect x="23.4444" y="35.0337" width="60" height="21.9328" fill="#D9D9D9"/>
 </mask>
 <g mask="url(#mask0_305_669)">
-<rect x="-9.16054" y="17.2185" width="124.79" height="57.1429" fill="url(#pattern0_305_669)"/>
+<rect x="15.8815" y="28.7312" width="74.8739" height="34.2857" fill="url(#pattern0_305_669)"/>
 </g>
 <defs>
 <pattern id="pattern0_305_669" patternContentUnits="objectBoundingBox" width="1" height="1">
