@@ -52,7 +52,7 @@
 
             <!-- Desktop Menu -->
             <nav class="hidden lg:flex items-center space-x-2 lg:space-x-6 font-semibold text-gray-900 relative">
-                <a href="about.html" class="active md:px-1">About Us</a>
+                <a href="about.html" class="md:px-1">About Us</a>
 
                 <!-- Dropdown Services -->
                 <div class="relative group px-1">
@@ -75,7 +75,7 @@
                     </div>
                 </div>
 
-                <a href="industry.html" class="md:px-1">Industries</a>
+                <a href="industry.html" class="active md:px-1">Industries</a>
                 <a href="#" class="md:px-1">Our Clients</a>
                 <a href="#" class="md:px-1">Articles</a>
                 <a href="#" class="md:px-1">Careers</a>
@@ -157,35 +157,59 @@
         </div>
     </header>
 
-    <section class="bg-white relative py-4 md:py-8 overflow-hidden">
+    <!-- Hero -->
+    <section class="relative py-8 md:border-none md:h-[340px] bg-gray-100 overflow-hidden">
         <div class="-z-10">
-            <img src="./assets/img/bg_banner_left.png" alt="hero banner left"
-                class="h-[250px] md:h-[400px] absolute left-0 top-0 invisible"
+            <img src="./assets/img/bg_title_left.svg" alt="hero banner left"
+                class="h-[100px] md:h-[240px] absolute left-0 top-0 md:top-auto md:bottom-0 invisible transform scale-y-[-1] md:scale-y-100"
                 onload="this.classList.remove('invisible')" />
-            <img src="./assets/img/bg_banner_right.png" alt="hero banner right"
-                class="h-[300px] md:h-[450px] absolute right-0 top-28 md:bottom-0 invisible"
+            <img src="./assets/img/bg_title_right.svg" alt="hero banner right"
+                class="h-[100px] md:h-[240px] absolute right-0 bottom-0 invisible"
                 onload="this.classList.remove('invisible')" />
         </div>
         <div class="container relative h-full">
+            <div class="flex flex-col md:flex-row items-center h-full md:gap-8">
+                <div class="order-2 md:order-1 flex-1 flex flex-col items-center space-y-4 md:space-y-8">
+                    <!-- Hero Headline -->
+                    <div class="max-w-2xl text-center">
+                        <h1 class="banner-title">
+                            Industries We Serve
+                        </h1>
+                        <p class="opacity-00">
+                            With over two decades of experience and more than 200 successful projects, Wahana
+                            Ciptasinatria (WCS) has become a trusted partner across multiple industries. Our end-to-end
+                            IT solutions are designed to meet the unique challenges of each sector, driving innovation,
+                            efficiency, and growth.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="financial-services" class="bg-white relative py-4 md:py-8">
+        <div class="container relative h-full">
             <div class="flex flex-col md:flex-row items-center h-full md:gap-8 xl:gap-12">
                 <div class="mb-4 md:mb-0 md:h-[200px] xl:w-[440px] xl:h-[340px] flex items-center justify-center">
-                    <img src="./assets/img/about_emporing.png" alt="All Your Connectivity Needs"
+                    <img src="./assets/img/bg_industry_1.png" alt="Financial Services"
                         class="h-full w-auto object-contain md:h-full invisible rounded-lg"
                         onload="this.classList.remove('invisible')" />
                 </div>
                 <div class="flex-1 flex flex-col items-start space-y-4 md:space-y-8">
                     <div class="md:pr-2 xl:pr-6">
-                        <h1 class="lg:max-w-xl">
-                            Empowering Businesses with Innovative IT Solutions Since 1995
-                        </h1>
+                        <h2 class="page-title !mb-4">
+                            Financial Services
+                        </h2>
                         <p class="leading-normal">
-                            Wahana Ciptasinatria (WCS) is an end-to-end IT solution provider
-                            in Indonesia. Established in 1995 under the Cormic Technology Group, we deliver
-                            business solutions, IT infrastructure, ERP, cloud services, and digital
-                            transformation consulting to enterprises nationwide.With offices in Jakarta,
-                            Surabaya, and Bandung, and a team of 220+ technology specialists, WCS has
-                            successfully executed 200+ projects across industries including
-                            finance, telecom, oil & gas, and public services.
+                            We support leading banks and financial institutions in strengthening their IT
+                            infrastructure, securing networks, and modernizing core systems.
+                        </p>
+                        <p class="leading-normal">
+                            <b>Clients include:</b> BRI, BTN, BNI, Mandiri, Adira Finance, Bukopin.
+                        </p>
+                        <p class="leading-normal">
+                            <b>Projects delivered:</b> WAN backbone, data center upgrades, enterprise switching, VPN
+                            solutions, and network security systems.
                         </p>
                     </div>
                 </div>
@@ -193,67 +217,63 @@
         </div>
     </section>
 
-    <section class="bg-white relative py-6 my-4">
+    <section id="telecommunication" class="bg-white relative py-6 my-4">
         <div class="container relative h-full">
             <div class="flex flex-col md:flex-row items-center h-full md:gap-8 xl:gap-24">
-                <div class="order-1 md:order-2 mb-4 md:mb-0 md:h-[200px] xl:w-[440px] xl:h-[340px] flex items-center justify-center">
-                    <img src="./assets/img/about_what_we_do.png" alt="All Your Connectivity Needs"
+                <div
+                    class="order-1 md:order-2 mb-4 md:mb-0 md:h-[200px] xl:w-[440px] xl:h-[340px] flex items-center justify-center">
+                    <img src="./assets/img/bg_industry_2.png" alt="Telecommunication"
                         class="h-full w-auto object-contain md:h-full invisible rounded-lg"
                         onload="this.classList.remove('invisible')" />
                 </div>
                 <div class="order-2 md:order-1 flex-1 flex flex-col items-start space-y-4 md:space-y-8">
                     <div class="md:pr-2 xl:pr-6">
                         <h2 class="page-title !mb-4">
-                            What We Do
+                            Telecommunication
                         </h2>
                         <p class="leading-normal">
-                            <b>Our Core Solutions:</b>
+                            Our expertise enables telecom providers to expand their connectivity, manage large-scale
+                            networks, and deliver reliable digital services.
                         </p>
-                        <ul class="mt-2 list-disc pl-6 space-y-1">
-                            <li>
-                                <b>Infrastructure Solutions:</b> Data centers, storage, and end-user computing.
-                            </li>
-                            <li>
-                                <b>Network Solutions:</b> Integration, security, and voice solutions.
-                            </li>
-                            <li>
-                                <b>Applications Solutions:</b> ERP, cloud, and e-business platforms.
-                            </li>
-                            <li>
-                                <b>Services Solutions:</b> Maintenance, helpdesk, and network support.
-                            </li>
-                            <li>
-                                <b>Human Resources Solutions:</b> HCM, payroll, and recruitment systems.
-                            </li>
-                            <li>
-                                <b>Vendor Management Solutions:</b> E-registration, e-catalogue, invoicing, and
-                                tracking.
-                            </li>
-                        </ul>
+                        <p class="leading-normal">
+                            <b>Clients include:</b> Cable & Wireless, Satkomindo, Telkom, Bakrie Telecom, Beacon
+                            Telecommunication.
+                        </p>
+                        <p class="leading-normal">
+                            <b>Projects delivered:</b> Gigabit Ethernet, multimedia communication, wireless LAN,
+                            backbone systems, and network management platforms.
+                        </p>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <section class="bg-white relative py-6 my-4 md:h-[340px] md:bg-[url('../img/bg_section_gray.svg')] md:bg-repeat-x">
+    <section id="oil-gas" class="bg-white relative py-4 md:py-8">
         <div class="container relative h-full">
-            <div class="flex flex-col md:flex-row items-center h-full md:gap-8 xl:gap-24">
-                <div class="order-1 mb-4 md:mb-0 md:h-[200px] xl:w-[440px] xl:h-[340px] flex items-center justify-center">
-                    <img src="./assets/img/about_trusted.png" alt="All Your Connectivity Needs"
+            <div class="flex flex-col md:flex-row items-center h-full md:gap-8 xl:gap-12">
+                <div class="mb-4 md:mb-0 md:h-[200px] xl:w-[440px] xl:h-[340px] flex items-center justify-center">
+                    <img src="./assets/img/bg_industry_3.png" alt="Oil & Gas"
                         class="h-full w-auto object-contain md:h-full invisible rounded-lg"
                         onload="this.classList.remove('invisible')" />
                 </div>
-                <div class="order-2 flex-1 flex flex-col items-start space-y-4 md:space-y-8">
+                <div class="flex-1 flex flex-col items-start space-y-4 md:space-y-8">
                     <div class="md:pr-2 xl:pr-6">
                         <h2 class="page-title !mb-4">
-                            Trusted by Leading Organizations
+                            Oil & Gas
                         </h2>
                         <p class="leading-normal">
-                             WCS has supported top enterprises and institutions in Indonesia, including Bank Rakyat
-                            Indonesia, Bank Mandiri, Telkom Indonesia, Pertamina, and Angkasa Pura. Our experience spans
-                            finance, telecommunications, oil & gas, and public services, giving us the depth to serve
-                            clients of all sizes and sectors.
+                            We help energy companies secure and optimize their operations with advanced IT
+                            infrastructure and communication solutions.
+                        </p>
+                        <p class="leading-normal">
+                            <b>Clients include:</b>
+                            Pertamina (Balongan, Plaju, Cilacap), Talisman Energy, Conoco Philips.
+                        </p>
+                        <p class="leading-normal">
+                            <b>Projects delivered:</b>
+                            Network backbone, PABX systems, gigabit switching, and next-generation connectivity
+                            solutions.
                         </p>
                     </div>
                 </div>
@@ -261,23 +281,32 @@
         </div>
     </section>
 
-    <section class="bg-white relative py-6 my-4">
+    <section id="public-services" class="bg-white relative py-6 my-4">
         <div class="container relative h-full">
             <div class="flex flex-col md:flex-row items-center h-full md:gap-8 xl:gap-24">
-                <div class="order-1 md:order-2 mb-4 md:mb-0 md:h-[200px] xl:w-[440px] xl:h-[340px] flex items-center justify-center">
-                    <img src="./assets/img/about_commitment.png" alt="All Your Connectivity Needs"
+                <div
+                    class="order-1 md:order-2 mb-4 md:mb-0 md:h-[200px] xl:w-[440px] xl:h-[340px] flex items-center justify-center">
+                    <img src="./assets/img/bg_industry_4.png" alt="Public Services"
                         class="h-full w-auto object-contain md:h-full invisible rounded-lg"
                         onload="this.classList.remove('invisible')" />
                 </div>
                 <div class="order-2 md:order-1 flex-1 flex flex-col items-start space-y-4 md:space-y-8">
                     <div class="md:pr-2 xl:pr-6">
                         <h2 class="page-title !mb-4">
-                            Our Commitment
+                            Public Services
                         </h2>
                         <p class="leading-normal">
-                            At WCS, we don’t just provide technology—we deliver solutions that drive business outcomes.
-                            Our mission is to help organizations accelerate digital transformation, reduce costs, and
-                            improve operational efficiency while ensuring security and compliance.
+                            From aviation to utilities, we support public service providers in modernizing operations,
+                            enhancing security, and ensuring reliable IT systems.
+                        </p>
+                        <p class="leading-normal">
+                            <b>Clients include:</b>
+                            Angkasa Pura II, Jasa Angkasa Semesta, Humpuss Holding, PDAM Surabaya, Power Gen, Meratus
+                            Group.
+                        </p>
+                        <p class="leading-normal">
+                            <b>Projects delivered:</b>
+                            LAN core switching, ERP implementation, CCTV networks, and enterprise backbone systems.
                         </p>
                     </div>
                 </div>
