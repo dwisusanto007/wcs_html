@@ -42,16 +42,17 @@
 
             <!-- Logo -->
             <div id="logo">
-                <a href="#" class="header-logo inline-flex">
+                <a href="index.html" class="header-logo inline-flex">
                     <img src="./assets/img/logo_wcs.png" alt="PT Wahana Ciptasinatria">
-                    <span class="ml-2 uppercase">PT Wahana Ciptasinatria</span>
+                    <span class="text-xs md:text-base flex lg:hidden xl:flex ml-2 uppercase">PT Wahana
+                        Ciptasinatria</span>
                 </a>
             </div>
 
 
             <!-- Desktop Menu -->
-            <nav class="hidden md:flex items-center space-x-6 font-semibold text-gray-900 relative">
-                <a href="#" class="px-1 hover:text-primary">About Us</a>
+            <nav class="hidden lg:flex items-center space-x-2 lg:space-x-6 font-semibold text-gray-900 relative">
+                <a href="about.html" class="md:px-1">About Us</a>
 
                 <!-- Dropdown Services -->
                 <div class="relative group px-1">
@@ -74,10 +75,10 @@
                     </div>
                 </div>
 
-                <a href="#" class="px-1 hover:text-primary">Industries</a>
-                <a href="#" class="px-1 hover:text-primary">Our Clients</a>
-                <a href="#" class="px-1 hover:text-primary">Articles</a>
-                <a href="#" class="px-1 hover:text-primary">Careers</a>
+                <a href="#" class="md:px-1">Industries</a>
+                <a href="#" class="md:px-1">Our Clients</a>
+                <a href="#" class="md:px-1">Articles</a>
+                <a href="#" class="md:px-1">Careers</a>
 
                 <div>
                     <a href="#" class="btn-primary">Book Meeting</a>
@@ -85,7 +86,7 @@
             </nav>
 
             <!-- Mobile Hamburger -->
-            <div class="md:hidden">
+            <div class="lg:hidden">
                 <button id="menu-toggle" class="focus:outline-none">
                     <svg class="w-6 h-6 text-gray-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
@@ -96,7 +97,7 @@
         </div>
 
         <!-- Mobile Menu -->
-        <div id="mobile-menu" class="hidden md:hidden bg-white shadow-md border-t flex flex-col"
+        <div id="mobileMenu" class="hidden lg:hidden bg-white shadow-md border-t flex flex-col"
             style="height: calc(100vh - 67px)">
             <ul>
                 <li class="border-b">
@@ -167,7 +168,7 @@
                 onload="this.classList.remove('invisible')" />
         </div>
         <div class="container relative h-full">
-            <div class="flex flex-col md:flex-row items-center h-full">
+            <div class="flex flex-col md:flex-row items-center h-full md:gap-8">
                 <div class="order-2 md:order-1 flex-1 flex flex-col items-start space-y-4 md:space-y-8">
                     <!-- Hero Headline -->
                     <div>
@@ -187,9 +188,10 @@
                     </a>
                 </div>
                 <div
-                    class="order-1 md:order-2 mb-4 md:mb-0 md:ml-4 md:w-[475px] md:h-[430px] flex items-center justify-center">
+                    class="order-1 md:order-2 mb-4 md:mb-0 md:w-[475px] md:h-[430px] flex items-center justify-center">
                     <img src="./assets/img/hero_banner.png" alt="All Your Connectivity Needs"
-                        class="h-full w-auto object-contain md:h-[430px] invisible" onload="this.classList.remove('invisible')" />
+                        class="h-full w-auto object-contain md:h-full invisible"
+                        onload="this.classList.remove('invisible')" />
                 </div>
             </div>
         </div>
@@ -228,10 +230,10 @@
                 <div
                     class="tab-content p-4 mt-2 md:mt-0 border border-gray-200 rounded-xl md:rounded-b-xl md:rounded-t-none overflow-auto">
                     <!-- Network Solution -->
-                    <div class="tab-panel min-h-64 md:h-[400px] overflow-auto" id="network">
+                    <div class="tab-panel min-h-64 md:h-[520px] lg:h-[400px] overflow-auto" id="network">
                         <div class="flex flex-col md:flex-row gap-6">
                             <img src="./assets/img/solution_network.png" alt="Network Solution"
-                                class="sticky top-0 w-full md:w-1/3 h-[200px] md:h-[400px] rounded-lg object-cover">
+                                class="sticky top-0 w-full md:w-1/3 h-[200px] md:h-[250px] lg:h-[400px] rounded-lg object-cover">
                             <div class="flex-1">
                                 <h3 class="content-title mb-6">Network Solution</h3>
 
@@ -262,10 +264,10 @@
                         </div>
                     </div>
                     <!-- Tab panels lain -->
-                    <div class="tab-panel min-h-64 md:h-[400px] overflow-auto hidden" id="infrastructure">
+                    <div class="tab-panel min-h-64 md:h-[520px] lg:h-[400px] overflow-auto hidden" id="infrastructure">
                         <div class="flex flex-col md:flex-row gap-6">
                             <img src="https://placehold.co/600x400" alt="Infrastructure Solution"
-                                class="sticky top-0 w-full md:w-1/3 h-[200px] md:h-[400px] rounded-lg object-cover">
+                                class="sticky top-0 w-full md:w-1/3 h-[200px] md:h-[250px] lg:h-[400px] rounded-lg object-cover">
                             <div class="flex-1">
                                 <h3 class="content-title mb-6">Infrastructure Solution</h3>
 
@@ -295,10 +297,10 @@
                             </div>
                         </div>
                     </div>
-                    <div class="tab-panel min-h-64 md:h-[400px] overflow-auto hidden" id="application">
+                    <div class="tab-panel min-h-64 md:h-[520px] lg:h-[400px] overflow-auto hidden" id="application">
                         <div class="flex flex-col md:flex-row gap-6">
                             <img src="https://placehold.co/600x400" alt="Application Solution"
-                                class="sticky top-0 w-full md:w-1/3 h-[200px] md:h-[400px] rounded-lg object-cover">
+                                class="sticky top-0 w-full md:w-1/3 h-[200px] md:h-[250px] lg:h-[400px] rounded-lg object-cover">
                             <div class="flex-1">
                                 <h3 class="content-title mb-6">Application Solution</h3>
 
@@ -333,10 +335,10 @@
                             </div>
                         </div>
                     </div>
-                    <div class="tab-panel min-h-64 md:h-[400px] overflow-auto hidden" id="service">
+                    <div class="tab-panel min-h-64 md:h-[520px] lg:h-[400px] overflow-auto hidden" id="service">
                         <div class="flex flex-col md:flex-row gap-6">
                             <img src="https://placehold.co/600x400" alt="Service Solution"
-                                class="sticky top-0 w-full md:w-1/3 h-[200px] md:h-[400px] rounded-lg object-cover">
+                                class="sticky top-0 w-full md:w-1/3 h-[200px] md:h-[250px] lg:h-[400px] rounded-lg object-cover">
                             <div class="flex-1">
                                 <h3 class="content-title mb-6">Service Solution</h3>
 
@@ -349,10 +351,10 @@
                             </div>
                         </div>
                     </div>
-                    <div class="tab-panel min-h-64 md:h-[400px] overflow-auto hidden" id="hr">
+                    <div class="tab-panel min-h-64 md:h-[520px] lg:h-[400px] overflow-auto hidden" id="hr">
                         <div class="flex flex-col md:flex-row gap-6">
                             <img src="https://placehold.co/600x400" alt="Human Resource Solution"
-                                class="sticky top-0 w-full md:w-1/3 h-[200px] md:h-[400px] rounded-lg object-cover">
+                                class="sticky top-0 w-full md:w-1/3 h-[200px] md:h-[250px] lg:h-[400px] rounded-lg object-cover">
                             <div class="flex-1">
                                 <h3 class="content-title mb-6">Human Resource Solution</h3>
 
@@ -371,7 +373,7 @@
     </section>
 
     <!-- Featured Success Stories -->
-    <section class="py-16 bg-gray-50 h-fill">
+    <section class="py-16 xl:h-fill">
         <div class="container mx-auto flex flex-col mb-10">
             <div class="section-title md:max-w-3/4">
                 <h2 class="page-title">Featured Success Stories</h2>
@@ -382,7 +384,7 @@
         </div>
 
         <div
-            class="relative container md:max-w-[100vw] md:pl-[calc((100%-theme(maxWidth.7xl))/2+1rem)] md:lg:pl-[calc((100%-theme(maxWidth.7xl))/2+2rem)]">
+            class="relative container md:max-w-[100vw] ml-0 md:ml-4 lg:ml-8 xl:ml-0 md:pr-0 md:pl-[calc((100%-theme(maxWidth.7xl))/2+1rem)] lg:pl-[calc((100%-theme(maxWidth.7xl))/2+2rem)]">
             <div class="swiper clientSwiper w-full">
                 <div class="swiper-wrapper items-stretch">
                     <a href="#"
@@ -623,7 +625,7 @@
                     deliver innovative, high-end technology solutions from day one.
                 </p>
             </div>
-            <div class="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-9 gap-4 items-center">
+            <div class="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-6 lg:grid-cols-10 gap-4 items-center">
                 <img src="./assets/img/alliance/Aruba_Networks.svg" alt="Alliance Aruba Networks" class="w-full" />
                 <img src="./assets/img/alliance/AVAYA.svg" alt="Alliance AVAYA" class="w-full" />
                 <img src="./assets/img/alliance/CyberArk.svg" alt="Alliance CyberArk" class="w-full" />
@@ -652,19 +654,19 @@
     </section>
 
     <!-- Discover Section -->
-    <section class="py-4">
+    <section class="py-6">
         <div class="container mx-auto">
             <div
                 class="overflow-hidden relative bg-gray-100 rounded-3xl flex flex-col md:flex-row items-center gap-2 md:gap-8">
                 <div>
                     <img src="./assets/img/bg_top_red.png" alt="discover cta left"
-                        class="absolute h-[120px] left-0 md:left-24 top-0">
+                        class="absolute h-[120px] left-0 md:left-36 top-0">
                     <img src="./assets/img/bg_bottom_blue.png" alt="discover cta right"
                         class="absolute h-[100px] md:h-[160px] right-0 bottom-0">
                 </div>
                 <div class="z-20">
                     <img src="./assets/img/discover_solution.png" alt="Discover Solution"
-                        class="h-[200px] object-cover" />
+                        class="h-[240px] object-cover" />
                 </div>
                 <div class="z-20 flex-1 flex flex-col items-center md:items-start space-y-6 p-4 pb-8 md:p-0">
                     <!-- Hero Headline -->
@@ -697,9 +699,9 @@
                     With over 20 years of experience, PT Wahana Ciptasinatria is more than just a technology provider
                 </p>
             </div>
-            <div class="grid md:grid-cols-3 gap-1">
-                <div class="bg-gray-100 p-6 flex items-start gap-4 rounded-lg md:rounded-r-none md:rounded-l-lg">
-                    <img src="./assets/img/ic_calendar.svg" alt="experienced" class="w-8 md:w-12">
+            <div class="grid lg:grid-cols-3 gap-1">
+                <div class="bg-gray-100 p-6 flex items-start gap-4 rounded-lg lg:rounded-r-none lg:rounded-l-lg">
+                    <img src="./assets/img/ic_calendar.svg" alt="experienced" class="w-8 lg:w-12">
                     <div>
                         <h3>
                             20+ Years Experienced
@@ -709,8 +711,8 @@
                         </p>
                     </div>
                 </div>
-                <div class="bg-gray-100 p-6 flex items-start gap-4 rounded-lg md:rounded-none">
-                    <img src="./assets/img/ic_people.svg" alt="services" class="w-8 md:w-12">
+                <div class="bg-gray-100 p-6 flex items-start gap-4 rounded-lg lg:rounded-none">
+                    <img src="./assets/img/ic_people.svg" alt="services" class="w-8 lg:w-12">
                     <div>
                         <h3>
                             220+ Total of Services
@@ -720,7 +722,7 @@
                         </p>
                     </div>
                 </div>
-                <div class="bg-gray-100 p-6 flex items-start gap-4 rounded-lg md:rounded-l-none md:rounded-r-lg">
+                <div class="bg-gray-100 p-6 flex items-start gap-4 rounded-lg lg:rounded-l-none lg:rounded-r-lg">
                     <img src="./assets/img/ic_project.svg" alt="project" class="w-8 md:w-12">
                     <div>
                         <h3>
@@ -753,7 +755,7 @@
             </div>
         </div>
         <div
-            class="relative container md:max-w-[100vw] md:pl-[calc((100%-theme(maxWidth.7xl))/2+1rem)] md:lg:pl-[calc((100%-theme(maxWidth.7xl))/2+2rem)]">
+            class="relative container md:max-w-[100vw] ml-0 md:ml-4 lg:ml-8 xl:ml-0 md:pr-0 md:pl-[calc((100%-theme(maxWidth.7xl))/2+1rem)] lg:pl-[calc((100%-theme(maxWidth.7xl))/2+2rem)]">
             <div class="swiper articleSwiper w-full">
                 <div class="swiper-wrapper items-stretch">
                     <a href="#" target="_blank" rel="noopener noreferrer"
@@ -857,17 +859,16 @@
                     </a>
                     <a href="#" target="_blank" rel="noopener noreferrer"
                         class="swiper-slide !h-auto mb-4 relative rounded-lg bg-white shadow hover:shadow-lg hover:bg-gray-100 flex flex-col items-center justify-center">
-                        <img src="./assets/img/article/article_1.png" alt="article"
+                        <img src="./assets/img/article/article_2.png" alt="article"
                             class="w-full h-[170px] object-cover rounded-t-lg bg-gray-100" />
 
                         <div class="p-4 flex flex-col gap-4">
                             <div>
                                 <h4>
-                                    Cloud Transformation on the Rise
+                                    Cybersecurity in Focus
                                 </h4>
                                 <p class="text-xs">
-                                    Businesses are accelerating their move to the cloud, driving agility and cost
-                                    efficiency.
+                                    With digital adoption, security remains the top priority in cloud technology.
                                 </p>
                             </div>
                             <div class="flex items-center gap-2 text-primary font-semibold">
@@ -882,17 +883,17 @@
                     </a>
                     <a href="#" target="_blank" rel="noopener noreferrer"
                         class="swiper-slide !h-auto mb-4 relative rounded-lg bg-white shadow hover:shadow-lg hover:bg-gray-100 flex flex-col items-center justify-center">
-                        <img src="./assets/img/article/article_1.png" alt="article"
+                        <img src="./assets/img/article/article_3.png" alt="article"
                             class="w-full h-[170px] object-cover rounded-t-lg bg-gray-100" />
 
                         <div class="p-4 flex flex-col gap-4">
                             <div>
                                 <h4>
-                                    Cloud Transformation on the Rise
+                                    Edge Computing Growth
                                 </h4>
                                 <p class="text-xs">
-                                    Businesses are accelerating their move to the cloud, driving agility and cost
-                                    efficiency.
+                                    Bringing cloud power closer to users for faster, real-time applications.
+                                    Sustainability...
                                 </p>
                             </div>
                             <div class="flex items-center gap-2 text-primary font-semibold">
@@ -933,46 +934,69 @@
                 </p>
             </div>
             <div class="grid md:grid-cols-4 gap-6">
-                <div class="relative rounded-lg overflow-hidden h-64 flex items-center justify-center">
-                    <div class="absolute inset-0 bg-cover bg-center bg-gray-900"
-                        style="background-image: url('./assets/img/bg_industry_0.png');"></div>
-                    <div class="absolute inset-0 bg-black/40"></div>
-                    <div class="relative z-10 text-white font-semibold text-base">
+                <a href="#"
+                    class="group relative rounded-lg overflow-hidden h-48 xl:h-64 flex items-center justify-center">
+                    <!-- background image -->
+                    <div class="absolute inset-0 bg-cover bg-center bg-gray-900 transition-transform duration-700 ease-in-out group-hover:scale-125"
+                        style="background-image: url('./assets/img/bg_industry_1.png');">
+                    </div>
+                    <!-- overlay -->
+                    <div class="absolute inset-0 bg-black/40 group-hover:bg-black/10"></div>
+                    <!-- text -->
+                    <div class="relative z-10 text-white font-semibold text-base p-2 xl:p-4 text-center">
                         Financial Services Industry
                     </div>
-                </div>
-                <div class="relative rounded-lg overflow-hidden h-64 flex items-center justify-center">
-                    <div class="absolute inset-0 bg-cover bg-center bg-gray-900"
-                        style="background-image: url('./assets/img/bg_industry_1.png');"></div>
-                    <div class="absolute inset-0 bg-black/40"></div>
-                    <div class="relative z-10 text-white font-semibold text-base">
+                </a>
+                <a href="#"
+                    class="group relative rounded-lg overflow-hidden h-48 xl:h-64 flex items-center justify-center">
+                    <!-- background image -->
+                    <div class="absolute inset-0 bg-cover bg-center bg-gray-900 transition-transform duration-700 ease-in-out group-hover:scale-125"
+                        style="background-image: url('./assets/img/bg_industry_2.png');">
+                    </div>
+                    <!-- overlay -->
+                    <div class="absolute inset-0 bg-black/40 group-hover:bg-black/10"></div>
+                    <!-- text -->
+                    <div class="relative z-10 text-white font-semibold text-base p-2 xl:p-4 text-center">
                         Telecommunication
                     </div>
-                </div>
-                <div class="relative rounded-lg overflow-hidden h-64 flex items-center justify-center">
-                    <div class="absolute inset-0 bg-cover bg-center bg-gray-900"
-                        style="background-image: url('./assets/img/bg_industry_2.png');"></div>
-                    <div class="absolute inset-0 bg-black/40"></div>
-                    <div class="relative z-10 text-white font-semibold text-base">
+                </a>
+                <a href="#"
+                    class="group relative rounded-lg overflow-hidden h-48 xl:h-64 flex items-center justify-center">
+                    <!-- background image -->
+                    <div class="absolute inset-0 bg-cover bg-center bg-gray-900 transition-transform duration-700 ease-in-out group-hover:scale-125"
+                        style="background-image: url('./assets/img/bg_industry_3.png');">
+                    </div>
+                    <!-- overlay -->
+                    <div class="absolute inset-0 bg-black/40 group-hover:bg-black/10"></div>
+                    <!-- text -->
+                    <div class="relative z-10 text-white font-semibold text-base p-2 xl:p-4 text-center">
                         Oil & Gas
                     </div>
-                </div>
-                <div class="relative rounded-lg overflow-hidden h-64 flex items-center justify-center">
-                    <div class="absolute inset-0 bg-cover bg-center bg-gray-900"
-                        style="background-image: url('./assets/img/bg_industry_3.png');"></div>
-                    <div class="absolute inset-0 bg-black/40"></div>
-                    <div class="relative z-10 text-white font-semibold text-base">
+                </a>
+                <a href="#"
+                    class="group relative rounded-lg overflow-hidden h-48 xl:h-64 flex items-center justify-center">
+                    <!-- background image -->
+                    <div class="absolute inset-0 bg-cover bg-center bg-gray-900 transition-transform duration-700 ease-in-out group-hover:scale-125"
+                        style="background-image: url('./assets/img/bg_industry_4.png');">
+                    </div>
+                    <!-- overlay -->
+                    <div class="absolute inset-0 bg-black/40 group-hover:bg-black/10"></div>
+                    <!-- text -->
+                    <div class="relative z-10 text-white font-semibold text-base p-2 xl:p-4 text-center">
                         Public Services
                     </div>
-                </div>
+                </a>
+            </div>
+
+            <div class="text-center mt-8">
+                <a href="#" class="btn-primary btn-primary-outline !px-8">View All</a>
             </div>
         </div>
     </section>
 
     <!-- CTA Footer -->
-    <section class="py-8 bg-primary text-white"
-        style="background-image: url(./assets/img/bg_cta_footer.png); background-repeat: repeat-x;">
-        <div class="container mx-auto flex items-center gap-10">
+    <section class="py-8 text-white bg-primary md:bg-[url('../img/bg_cta_footer.png')] md:bg-repeat-x">
+        <div class="container mx-auto md:flex items-center gap-10">
             <div class="section-title md:w-[70%]">
                 <h2 class="page-title text-white">
                     Book a Meeting
@@ -982,7 +1006,7 @@
                     projects, WCS is ready to help your company accelerate with the right IT solutions.
                 </p>
             </div>
-            <div class="flex flex-1 justify-end">
+            <div class="mt-8 md:mt-0 flex flex-1 justify-center md:justify-end">
                 <a href="#" class="btn-primary btn-primary-outline">Book Meeting</a>
             </div>
         </div>
@@ -990,11 +1014,12 @@
 
     <!-- Footer -->
     <footer>
-        <div class="container py-8 mx-auto md:flex space-y-6 md:space-x-6">
+        <div class="container py-8 mx-auto md:flex space-y-6 md:space-x-6 md:space-y-0">
             <div class="md:w-1/4">
                 <h4 class="mb-4">Support</h4>
                 <ul class="space-y-1 md:space-y-3">
-                    <li><a href="#">About Us</a></li>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
                     <li><a href="#">Industries</a></li>
                     <li><a href="#">Our Client</a></li>
                     <li><a href="#">Article</a></li>
@@ -1104,26 +1129,17 @@
     <script>
         // Toggle mobile menu
         const btn = document.getElementById('menu-toggle');
-        const menu = document.getElementById('mobile-menu');
+        const menu = document.getElementById('mobileMenu');
 
         btn.addEventListener('click', () => {
             menu.classList.toggle('hidden');
             document.body.classList.toggle("overflow-hidden");
         });
 
-        // Swiper Breakpoints Config
-        const clientBreakpoints = {
-            0: { slidesPerView: 1, spaceBetween: 20 },
-            768: { slidesPerView: 2, spaceBetween: 30 },
-            1024: { slidesPerView: 3.5, spaceBetween: 40 },
-            1280: { slidesPerView: 3.5, spaceBetween: 40 },
-            1536: { slidesPerView: 4.5, spaceBetween: 48 },
-            1920: { slidesPerView: 5.5, spaceBetween: 56 }, // 3xl custom
-        };
-
-        const articleBreakpoints = {
+        // Swiper Breakpoints Config (shared)
+        const defaultBreakpoints = {
             0: { slidesPerView: 1, spaceBetween: 10 },
-            768: { slidesPerView: 2, spaceBetween: 10 },
+            768: { slidesPerView: 2.5, spaceBetween: 15 },
             1024: { slidesPerView: 3.5, spaceBetween: 20 },
             1280: { slidesPerView: 3.5, spaceBetween: 20 },
             1536: { slidesPerView: 4.5, spaceBetween: 20 },
@@ -1131,12 +1147,12 @@
         };
 
         // Helper: Init Swiper
-        function initSwiper(selector, breakpoints) {
+        function initSwiper(selector, breakpoints = defaultBreakpoints) {
             const swiper = new Swiper(selector, {
                 breakpoints,
                 loop: true,
                 autoplay: {
-                    delay: 2000,
+                    delay: 1000,
                     disableOnInteraction: false,
                 },
                 speed: 800,
@@ -1149,9 +1165,10 @@
             return swiper;
         }
 
-        // Init Both Swipers
-        const clientSwiper = initSwiper(".clientSwiper", clientBreakpoints);
-        const articleSwiper = initSwiper(".articleSwiper", articleBreakpoints);
+        // Init Both Swipers (pakai defaultBreakpoints)
+        const clientSwiper = initSwiper(".clientSwiper");
+        const articleSwiper = initSwiper(".articleSwiper");
+
 
 
         // Scroll-trigger Script
