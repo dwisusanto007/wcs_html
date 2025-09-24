@@ -34,10 +34,10 @@
     </script>
 </head>
 
-<body class="font-inter">
+<body class="font-inter bg-gray-100">
 
     <!-- Header -->
-    <header class="sticky top-0 bg-white shadow-md z-50">
+    <header class="sticky top-0 bg-white shadow-sm z-50 border-b border-gray-100">
         <div class="container mx-auto flex items-center justify-between py-2 md:py-4">
 
             <!-- Logo -->
@@ -157,15 +157,37 @@
         </div>
     </header>
 
-    <section class="relative py-4 md:py-8">
+    <!-- Hero -->
+    <section class="relative py-8 md:border-none md:h-[340px] bg-gray-100 overflow-hidden">
         <div class="-z-10">
-            <img src="./assets/img/bg_banner_left.png" alt="hero banner left"
-                class="h-[250px] md:h-[400px] absolute left-0 top-0 invisible"
+            <img src="./assets/img/bg_title_left.svg" alt="hero banner left"
+                class="h-[200px] md:h-[240px] absolute left-0 bottom-0 invisible"
                 onload="this.classList.remove('invisible')" />
-            <img src="./assets/img/bg_banner_right.png" alt="hero banner right"
-                class="h-[300px] md:h-[450px] absolute right-0 top-28 md:bottom-0 invisible"
+            <img src="./assets/img/bg_title_right.svg" alt="hero banner right"
+                class="h-[200px] md:h-[240px] absolute right-0 bottom-0 invisible"
                 onload="this.classList.remove('invisible')" />
         </div>
+        <div class="container relative h-full">
+            <div class="flex flex-col md:flex-row items-center h-full md:gap-8">
+                <div class="order-2 md:order-1 flex-1 flex flex-col items-center space-y-4 md:space-y-8">
+                    <!-- Hero Headline -->
+                    <div class="max-w-2xl text-center">
+                        <h1 class="banner-title">
+                            Industries We Serve
+                        </h1>
+                        <p class="opacity-00">
+                            With over two decades of experience and more than 200 successful projects, Wahana
+                            Ciptasinatria (WCS) has become a trusted partner across multiple industries. Our end-to-end
+                            IT solutions are designed to meet the unique challenges of each sector, driving innovation,
+                            efficiency, and growth.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="bg-white relative py-4 md:py-8">
         <div class="container relative h-full">
             <div class="flex flex-col md:flex-row items-center h-full md:gap-8 xl:gap-12">
                 <div class="mb-4 md:mb-0 md:h-[200px] xl:w-[440px] xl:h-[340px] flex items-center justify-center">
@@ -179,13 +201,15 @@
                             Financial Services
                         </h2>
                         <p class="leading-normal">
-                            We support leading banks and financial institutions in strengthening their IT infrastructure, securing networks, and modernizing core systems.
+                            We support leading banks and financial institutions in strengthening their IT
+                            infrastructure, securing networks, and modernizing core systems.
                         </p>
                         <p class="leading-normal">
                             <b>Clients include:</b> BRI, BTN, BNI, Mandiri, Adira Finance, Bukopin.
                         </p>
                         <p class="leading-normal">
-                            <b>Projects delivered:</b> WAN backbone, data center upgrades, enterprise switching, VPN solutions, and network security systems.
+                            <b>Projects delivered:</b> WAN backbone, data center upgrades, enterprise switching, VPN
+                            solutions, and network security systems.
                         </p>
                     </div>
                 </div>
@@ -193,10 +217,11 @@
         </div>
     </section>
 
-    <section class="relative py-6 my-4">
+    <section class="bg-white relative py-6 my-4">
         <div class="container relative h-full">
             <div class="flex flex-col md:flex-row items-center h-full md:gap-8 xl:gap-24">
-                <div class="order-1 md:order-2 mb-4 md:mb-0 md:h-[200px] xl:w-[440px] xl:h-[340px] flex items-center justify-center">
+                <div
+                    class="order-1 md:order-2 mb-4 md:mb-0 md:h-[200px] xl:w-[440px] xl:h-[340px] flex items-center justify-center">
                     <img src="./assets/img/bg_industry_2.png" alt="Telecommunication"
                         class="h-full w-auto object-contain md:h-full invisible rounded-lg"
                         onload="this.classList.remove('invisible')" />
@@ -207,13 +232,16 @@
                             Telecommunication
                         </h2>
                         <p class="leading-normal">
-                            Our expertise enables telecom providers to expand their connectivity, manage large-scale networks, and deliver reliable digital services.
+                            Our expertise enables telecom providers to expand their connectivity, manage large-scale
+                            networks, and deliver reliable digital services.
                         </p>
                         <p class="leading-normal">
-                            <b>Clients include:</b> Cable & Wireless, Satkomindo, Telkom, Bakrie Telecom, Beacon Telecommunication.
+                            <b>Clients include:</b> Cable & Wireless, Satkomindo, Telkom, Bakrie Telecom, Beacon
+                            Telecommunication.
                         </p>
                         <p class="leading-normal">
-                            <b>Projects delivered:</b> Gigabit Ethernet, multimedia communication, wireless LAN, backbone systems, and network management platforms.
+                            <b>Projects delivered:</b> Gigabit Ethernet, multimedia communication, wireless LAN,
+                            backbone systems, and network management platforms.
                         </p>
                     </div>
                 </div>
@@ -221,7 +249,7 @@
         </div>
     </section>
 
-    <section class="relative py-4 md:py-8">
+    <section class="bg-white relative py-4 md:py-8">
         <div class="container relative h-full">
             <div class="flex flex-col md:flex-row items-center h-full md:gap-8 xl:gap-12">
                 <div class="mb-4 md:mb-0 md:h-[200px] xl:w-[440px] xl:h-[340px] flex items-center justify-center">
@@ -235,15 +263,17 @@
                             Oil & Gas
                         </h2>
                         <p class="leading-normal">
-                            We help energy companies secure and optimize their operations with advanced IT infrastructure and communication solutions.
+                            We help energy companies secure and optimize their operations with advanced IT
+                            infrastructure and communication solutions.
                         </p>
                         <p class="leading-normal">
-                            <b>Clients include:</b> 
+                            <b>Clients include:</b>
                             Pertamina (Balongan, Plaju, Cilacap), Talisman Energy, Conoco Philips.
                         </p>
                         <p class="leading-normal">
-                            <b>Projects delivered:</b> 
-                            Network backbone, PABX systems, gigabit switching, and next-generation connectivity solutions.
+                            <b>Projects delivered:</b>
+                            Network backbone, PABX systems, gigabit switching, and next-generation connectivity
+                            solutions.
                         </p>
                     </div>
                 </div>
@@ -251,10 +281,11 @@
         </div>
     </section>
 
-    <section class="relative py-6 my-4">
+    <section class="bg-white relative py-6 my-4">
         <div class="container relative h-full">
             <div class="flex flex-col md:flex-row items-center h-full md:gap-8 xl:gap-24">
-                <div class="order-1 md:order-2 mb-4 md:mb-0 md:h-[200px] xl:w-[440px] xl:h-[340px] flex items-center justify-center">
+                <div
+                    class="order-1 md:order-2 mb-4 md:mb-0 md:h-[200px] xl:w-[440px] xl:h-[340px] flex items-center justify-center">
                     <img src="./assets/img/bg_industry_4.png" alt="Public Services"
                         class="h-full w-auto object-contain md:h-full invisible rounded-lg"
                         onload="this.classList.remove('invisible')" />
@@ -265,14 +296,16 @@
                             Public Services
                         </h2>
                         <p class="leading-normal">
-                            From aviation to utilities, we support public service providers in modernizing operations, enhancing security, and ensuring reliable IT systems.
+                            From aviation to utilities, we support public service providers in modernizing operations,
+                            enhancing security, and ensuring reliable IT systems.
                         </p>
                         <p class="leading-normal">
-                            <b>Clients include:</b> 
-                            Angkasa Pura II, Jasa Angkasa Semesta, Humpuss Holding, PDAM Surabaya, Power Gen, Meratus Group.
+                            <b>Clients include:</b>
+                            Angkasa Pura II, Jasa Angkasa Semesta, Humpuss Holding, PDAM Surabaya, Power Gen, Meratus
+                            Group.
                         </p>
                         <p class="leading-normal">
-                            <b>Projects delivered:</b> 
+                            <b>Projects delivered:</b>
                             LAN core switching, ERP implementation, CCTV networks, and enterprise backbone systems.
                         </p>
                     </div>
