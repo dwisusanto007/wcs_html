@@ -34,7 +34,7 @@ h2,
 }
 
 h3 {
-    @apply text-xl;
+    @apply text-lg;
 }
 h4 {
     @apply text-lg;
@@ -83,7 +83,8 @@ section p {
     @apply mb-2;
 }
 
-header nav a {
+header nav > a,
+header nav button {
     @apply hover:text-primary;
     &.active {
         @apply text-primary;
@@ -125,4 +126,19 @@ footer {
 }
 footer a {
     @apply hover:text-primary;
+}
+
+/* --- Custom Animation Link (from black to primary) --- */
+.link-animate {
+    @apply relative inline-block hover:text-primary;
+    @apply after:content-[''] after:absolute after:left-0 after:bottom-0;
+    @apply after:w-full after:h-[2px] after:bg-current;
+    @apply after:origin-left after:scale-x-0 hover:after:scale-x-100;
+    @apply after:transition-transform after:duration-300;
+}
+.link-primary-dark {
+    @apply text-primary hover:text-primary-dark;
+}
+.link-dark-primary {
+    @apply text-gray-900 hover:text-primary;
 }

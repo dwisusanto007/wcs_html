@@ -51,13 +51,13 @@
 
             <!-- Desktop Menu -->
             <nav class="hidden lg:flex items-center space-x-2 lg:space-x-6 font-semibold text-gray-900 relative">
-                <a href="about.html" class="active md:px-1">
+                <a href="about.html" class="md:px-1">
                     About Us
                 </a>
 
                 <!-- Dropdown Services -->
                 <div class="relative group px-1">
-                    <button class="flex items-center space-x-1 group-hover:text-primary">
+                    <button class="active flex items-center space-x-1 group-hover:text-primary">
                         <span>Solution & Services</span>
                         <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
@@ -124,14 +124,14 @@
             style="height: calc(100vh - 67px)">
             <ul>
                 <li class="border-b">
-                    <a href="about.html" class="active flex items-center gap-2 px-4 py-3">
+                    <a href="about.html" class="flex items-center gap-2 px-4 py-3">
                         About Us
                     </a>
                 </li>
                 <li class="border-b">
                     <!-- Dropdown Mobile -->
                     <details>
-                        <summary class="p-4 cursor-pointer flex items-center justify-between">
+                        <summary class="active p-4 cursor-pointer flex items-center justify-between">
                             <span>Solution & Services</span>
                             <svg class="w-4 h-4 transform transition-transform duration-200" fill="none"
                                 stroke="currentColor" viewBox="0 0 24 24">
@@ -140,28 +140,22 @@
                             </svg>
                         </summary>
                         <div class="pl-6">
-                            <a href="solution_network.html"
-                                class="flex items-center gap-2 px-4 py-2 hover:bg-gray-100 hover:text-red-600">
+                            <a href="solution_network.html" class="flex items-center gap-2 px-4 py-2 hover:bg-gray-100 hover:text-red-600">
                                 Network Solution
                             </a>
-                            <a href="#"
-                                class="flex items-center gap-2 px-4 py-2 hover:bg-gray-100 hover:text-red-600">
+                            <a href="#" class="flex items-center gap-2 px-4 py-2 hover:bg-gray-100 hover:text-red-600">
                                 Infrastructure Solution
                             </a>
-                            <a href="#"
-                                class="flex items-center gap-2 px-4 py-2 hover:bg-gray-100 hover:text-red-600">
+                            <a href="#" class="flex items-center gap-2 px-4 py-2 hover:bg-gray-100 hover:text-red-600">
                                 Application Solution
                             </a>
-                            <a href="#"
-                                class="flex items-center gap-2 px-4 py-2 hover:bg-gray-100 hover:text-red-600">
+                            <a href="#" class="flex items-center gap-2 px-4 py-2 hover:bg-gray-100 hover:text-red-600">
                                 Service Solution
                             </a>
-                            <a href="#"
-                                class="flex items-center gap-2 px-4 py-2 hover:bg-gray-100 hover:text-red-600">
+                            <a href="#" class="flex items-center gap-2 px-4 py-2 hover:bg-gray-100 hover:text-red-600">
                                 Vendor Management Solution
                             </a>
-                            <a href="#"
-                                class="flex items-center gap-2 px-4 py-2 hover:bg-gray-100 hover:text-red-600">
+                            <a href="#" class="flex items-center gap-2 px-4 py-2 hover:bg-gray-100 hover:text-red-600">
                                 Human Resource Solution
                             </a>
                         </div>
@@ -196,128 +190,278 @@
         </div>
     </header>
 
-    <section class="bg-white relative py-4 md:py-8 overflow-hidden">
+    <!-- Hero -->
+    <section class="relative py-8 md:border-none md:h-[340px] bg-gray-100 overflow-hidden">
         <div class="-z-10">
-            <img src="./assets/img/bg_banner_left.png" alt="hero banner left"
-                class="h-[250px] md:h-[400px] absolute left-0 top-0 invisible"
+            <img src="./assets/img/bg_title_left.svg" alt="hero banner left"
+                class="h-[100px] md:h-[240px] absolute left-0 top-0 md:top-auto md:bottom-0 invisible transform scale-y-[-1] md:scale-y-100"
                 onload="this.classList.remove('invisible')" />
-            <img src="./assets/img/bg_banner_right.png" alt="hero banner right"
-                class="h-[300px] md:h-[450px] absolute right-0 top-28 md:bottom-0 invisible"
+            <img src="./assets/img/bg_title_right.svg" alt="hero banner right"
+                class="h-[100px] md:h-[240px] absolute right-0 bottom-0 invisible"
                 onload="this.classList.remove('invisible')" />
         </div>
         <div class="container relative h-full">
-            <div class="flex flex-col md:flex-row items-center h-full md:gap-8 xl:gap-12">
-                <div class="mb-4 md:mb-0 md:h-[200px] xl:w-[440px] xl:h-[340px] flex items-center justify-center">
-                    <img src="./assets/img/about_emporing.png" alt="All Your Connectivity Needs"
+            <div class="flex flex-col lg:flex-row items-center h-full md:gap-8">
+                <div class="order-2 lg:order-1 flex-1 flex flex-col items-center space-y-4 md:space-y-8">
+                    <!-- Hero Headline -->
+                    <div class="max-w-2xl text-center">
+                        <h1 class="banner-title">
+                            Network Solution
+                        </h1>
+                        <p class="opacity-00">
+                            Secure, reliable, and scalable network infrastructure tailored to empower your business.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="network-integrator" class="bg-white relative py-4 md:py-8">
+        <div class="container relative h-full">
+            <div class="flex flex-col lg:flex-row items-start h-full md:gap-8 xl:gap-12">
+                <div class="mb-4 md:mb-0 md:h-auto lg:h-[340px] flex items-center justify-center">
+                    <img src="./assets/img/network_integrator.png" alt="Network Integrator"
                         class="h-full w-auto object-contain md:h-full invisible rounded-lg"
                         onload="this.classList.remove('invisible')" />
                 </div>
                 <div class="flex-1 flex flex-col items-start space-y-4 md:space-y-8">
-                    <div class="md:pr-2 xl:pr-6">
-                        <h1 class="lg:max-w-xl">
-                            Empowering Businesses with Innovative IT Solutions Since 1995
-                        </h1>
-                        <p class="leading-normal">
-                            Wahana Ciptasinatria (WCS) is an end-to-end IT solution provider
-                            in Indonesia. Established in 1995 under the Cormic Technology Group, we deliver
-                            business solutions, IT infrastructure, ERP, cloud services, and digital
-                            transformation consulting to enterprises nationwide.With offices in Jakarta,
-                            Surabaya, and Bandung, and a team of 220+ technology specialists, WCS has
-                            successfully executed 200+ projects across industries including
-                            finance, telecom, oil & gas, and public services.
-                        </p>
+                    <div class="md:pr-2 xl:pr-6 w-full flex flex-col gap-4">
+                        <h2 class="page-title">
+                            Network Integrator
+                        </h2>
+                        <div>
+                            <h3>
+                                Enterprise Network
+                            </h3>
+                            <ul class="list-disc pl-6 grid md:grid-cols-2 gap-1">
+                                <li>
+                                    Multimedia Communication
+                                </li>
+                                <li>
+                                    IP enable solution
+                                </li>
+                                <li>
+                                    Mobility Solution
+                                </li>
+                                <li>
+                                    Enterprise Security Solution
+                                </li>
+                                <li>
+                                    Cabling system for wired or optical
+                                </li>
+                                <li>
+                                    Infrastructure
+                                </li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h3>
+                                Wireless Network
+                            </h3>
+                            <ul class="list-disc pl-6 grid md:grid-cols-2 gap-1">
+                                <li>
+                                    WLAN Enterprise Solution
+                                </li>
+                                <li>
+                                    WLAN for Carrier Class and Hot Spot
+                                </li>
+                                <li>
+                                    Wireless Mesh Solution
+                                </li>
+                                <li>
+                                    Access Control and Management for Wireless Solution
+                                </li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h3>
+                                Carrier Class Network
+                            </h3>
+                            <ul class="list-disc pl-6 grid md:grid-cols-2 gap-1">
+                                <li>
+                                    Building Frame Relay Networks
+                                </li>
+                                <li>
+                                    Building Next Generation Networks
+                                </li>
+                                <li>
+                                    Building Optical Networks (SDH, STM-64,
+                                </li>
+                                <li>
+                                    CWDM, Optical Ethernet)
+                                </li>
+                                <li>
+                                    ADSL and Cable Operation Solution
+                                </li>
+                                <li>
+                                    Unified Access Control
+                                </li>
+                                <li>
+                                    Wireless Networks, such as Wmesh, Wimax,
+                                </li>
+                                <li>
+                                    WLAN
+                                </li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h3>
+                                OPERATIONAL SUPPORT SYSTEM (OSSS)
+                            </h3>
+                            <p>
+                                The OSS Architecture defines the policies, procedure, standard and system required to
+                                allocate the cost for the infrastructure component and support
+                            </p>
+                        </div>
+                        <div>
+                            <h3>
+                                SYSTEMS MANAGEMENT
+                            </h3>
+                            <p>
+                                System management includes the automation and control of platform and associated
+                                resources, network and applications and the coordination and control of work flowing
+                                through the infrastructure system.
+                            </p>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <section class="bg-white relative py-6 my-4">
+    <section id="network-security" class="bg-white relative py-6 my-4">
         <div class="container relative h-full">
-            <div class="flex flex-col md:flex-row items-center h-full md:gap-8 xl:gap-24">
-                <div class="order-1 md:order-2 mb-4 md:mb-0 md:h-[200px] xl:w-[440px] xl:h-[340px] flex items-center justify-center">
-                    <img src="./assets/img/about_what_we_do.png" alt="All Your Connectivity Needs"
+            <div class="flex flex-col lg:flex-row items-start h-full md:gap-8 xl:gap-12">
+                <div
+                    class="order-1 lg:order-2 mb-4 md:mb-0 md:h-auto lg:h-[340px] flex items-center justify-center">
+                    <img src="./assets/img/network_security_solution.png" alt="Network Security Solution"
                         class="h-full w-auto object-contain md:h-full invisible rounded-lg"
                         onload="this.classList.remove('invisible')" />
                 </div>
-                <div class="order-2 md:order-1 flex-1 flex flex-col items-start space-y-4 md:space-y-8">
-                    <div class="md:pr-2 xl:pr-6">
+                <div class="order-2 lg:order-1 flex-1 flex flex-col items-start space-y-4 md:space-y-8">
+                    <div class="md:pr-2 xl:pr-6 flex flex-col gap-4">
                         <h2 class="page-title !mb-4">
-                            What We Do
+                            Network Security Solution
                         </h2>
                         <p class="leading-normal">
-                            <b>Our Core Solutions:</b>
+                            WCS has the proven skills and track and track record n providing IT security services that
+                            minimize security risk. As a vendor-neutral consulting firm, we have partnered with major
+                            vendors in the IT security market, giving us the ability to develop and install security
+                            measures to suit the needs of your business
                         </p>
-                        <ul class="mt-2 list-disc pl-6 space-y-1">
-                            <li>
-                                <b>Infrastructure Solutions:</b> Data centers, storage, and end-user computing.
-                            </li>
-                            <li>
-                                <b>Network Solutions:</b> Integration, security, and voice solutions.
-                            </li>
-                            <li>
-                                <b>Applications Solutions:</b> ERP, cloud, and e-business platforms.
-                            </li>
-                            <li>
-                                <b>Services Solutions:</b> Maintenance, helpdesk, and network support.
-                            </li>
-                            <li>
-                                <b>Human Resources Solutions:</b> HCM, payroll, and recruitment systems.
-                            </li>
-                            <li>
-                                <b>Vendor Management Solutions:</b> E-registration, e-catalogue, invoicing, and
-                                tracking.
-                            </li>
-                        </ul>
+                        <div>
+                            <p class="leading-normal">
+                                <b>We provides Security Services in the following areas :</b>
+                            </p>
+                            <ul class="list-disc pl-6 grid md:grid-cols-2 gap-1">
+                                <li>
+                                    Virtual Private Networks Solution
+                                </li>
+                                <li>
+                                    Remote Access Solution
+                                </li>
+                                <li>
+                                    Virus Protection and alert
+                                </li>
+                                <li>
+                                    Data Encryption
+                                </li>
+                                <li>
+                                    Security Socket Layer (SSL) Solutions
+                                </li>
+                                <li>
+                                    Bandwidth Management & Compression
+                                </li>
+                                <li>
+                                    Perimeter Deployment & Compression
+                                </li>
+                                <li>
+                                    Security Policy Design and Enforcement
+                                </li>
+                                <li>
+                                    Security Auditing
+                                </li>
+                                <li>
+                                    Intrusion Detection Prevention
+                                </li>
+                                <li>
+                                    Wireless Security and access control for WLAN, Hotspot and Wimax Single sign on
+                                    solution
+                                </li>
+                                <li>
+                                    based on customer application and database
+                                </li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <section class="bg-white relative py-6 my-4 md:h-[340px] md:bg-[url('../img/bg_section_gray.svg')] md:bg-repeat-x">
+    <section id="voice-network" class="bg-white relative py-4 md:py-8">
         <div class="container relative h-full">
-            <div class="flex flex-col md:flex-row items-center h-full md:gap-8 xl:gap-24">
-                <div class="order-1 mb-4 md:mb-0 md:h-[200px] xl:w-[440px] xl:h-[340px] flex items-center justify-center">
-                    <img src="./assets/img/about_trusted.png" alt="All Your Connectivity Needs"
+            <div class="flex flex-col lg:flex-row items-start h-full md:gap-8 xl:gap-12">
+                <div class="mb-4 md:mb-0 md:h-auto lg:h-[340px] flex items-center justify-center">
+                    <img src="./assets/img/voice_network_solution.png" alt="Voice Network Solution"
                         class="h-full w-auto object-contain md:h-full invisible rounded-lg"
                         onload="this.classList.remove('invisible')" />
                 </div>
-                <div class="order-2 flex-1 flex flex-col items-start space-y-4 md:space-y-8">
-                    <div class="md:pr-2 xl:pr-6">
+                <div class="flex-1 flex flex-col items-start space-y-4 md:space-y-8">
+                    <div class="md:pr-2 xl:pr-6 flex flex-col gap-4">
                         <h2 class="page-title !mb-4">
-                            Trusted by Leading Organizations
+                            Voice Network Solution
                         </h2>
                         <p class="leading-normal">
-                             WCS has supported top enterprises and institutions in Indonesia, including Bank Rakyat
-                            Indonesia, Bank Mandiri, Telkom Indonesia, Pertamina, and Angkasa Pura. Our experience spans
-                            finance, telecommunications, oil & gas, and public services, giving us the depth to serve
-                            clients of all sizes and sectors.
+                            WCS has the proven skills and track and track record n providing IT security services that
+                            minimize security risk. As a vendor-neutral consulting firm, we have partnered with major
+                            vendors in the IT security market, giving us the ability to develop and install security
+                            measures to suit the needs of your business
                         </p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section class="bg-white relative py-6 my-4">
-        <div class="container relative h-full">
-            <div class="flex flex-col md:flex-row items-center h-full md:gap-8 xl:gap-24">
-                <div class="order-1 md:order-2 mb-4 md:mb-0 md:h-[200px] xl:w-[440px] xl:h-[340px] flex items-center justify-center">
-                    <img src="./assets/img/about_commitment.png" alt="All Your Connectivity Needs"
-                        class="h-full w-auto object-contain md:h-full invisible rounded-lg"
-                        onload="this.classList.remove('invisible')" />
-                </div>
-                <div class="order-2 md:order-1 flex-1 flex flex-col items-start space-y-4 md:space-y-8">
-                    <div class="md:pr-2 xl:pr-6">
-                        <h2 class="page-title !mb-4">
-                            Our Commitment
-                        </h2>
-                        <p class="leading-normal">
-                            At WCS, we don’t just provide technology—we deliver solutions that drive business outcomes.
-                            Our mission is to help organizations accelerate digital transformation, reduce costs, and
-                            improve operational efficiency while ensuring security and compliance.
-                        </p>
+                        <div>
+                            <p class="leading-normal">
+                                <b>We provides Security Services in the following areas :</b>
+                            </p>
+                            <ul class="list-disc pl-6 grid md:grid-cols-2 gap-1">
+                                <li>
+                                    Virtual Private Networks Solution
+                                </li>
+                                <li>
+                                    Remote Access Solution
+                                </li>
+                                <li>
+                                    Virus Protection and alert
+                                </li>
+                                <li>
+                                    Data Encryption
+                                </li>
+                                <li>
+                                    Security Socket Layer (SSL) Solutions
+                                </li>
+                                <li>
+                                    Bandwidth Management & Compression
+                                </li>
+                                <li>
+                                    Perimeter Deployment & Compression
+                                </li>
+                                <li>
+                                    Security Policy Design and Enforcement
+                                </li>
+                                <li>
+                                    Security Auditing
+                                </li>
+                                <li>
+                                    Intrusion Detection Prevention
+                                </li>
+                                <li>
+                                    Wireless Security and access control for WLAN, Hotspot and Wimax Single sign on solution
+                                </li>
+                                <li>
+                                    based on customer application and database
+                                </li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
             </div>

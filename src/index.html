@@ -18,7 +18,6 @@
             // buat SVG string
             const svg = `
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
-                <rect width="100" height="100" fill="#FFFFFF"/>
                 <text x="50%" y="50%" dominant-baseline="middle" text-anchor="middle"
                         font-size="40" font-family="sans-serif" font-weight="bold" fill="#A21C21">
                     WCS
@@ -52,7 +51,9 @@
 
             <!-- Desktop Menu -->
             <nav class="hidden lg:flex items-center space-x-2 lg:space-x-6 font-semibold text-gray-900 relative">
-                <a href="about.html" class="md:px-1">About Us</a>
+                <a href="about.html" class="md:px-1">
+                    About Us
+                </a>
 
                 <!-- Dropdown Services -->
                 <div class="relative group px-1">
@@ -66,22 +67,44 @@
                     <!-- Submenu -->
                     <div
                         class="font-medium absolute left-0 mt-2 py-2 min-w-64 bg-white shadow-lg rounded-md z-50 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 overflow-hidden">
-                        <a href="#" class="block px-8 py-2 hover:text-primary">Network Solution</a>
-                        <a href="#" class="block px-8 py-2 hover:text-primary">Infrastructure Solution</a>
-                        <a href="#" class="block px-8 py-2 hover:text-primary">Application Solution</a>
-                        <a href="#" class="block px-8 py-2 hover:text-primary">Service Solution</a>
-                        <a href="#" class="block px-8 py-2 hover:text-primary">Vendor Management Solution</a>
-                        <a href="#" class="block px-8 py-2 hover:text-primary">Human Resource Solution</a>
+                        <a href="solution_network.html" class="block px-8 py-2 hover:text-primary">
+                            Network Solution
+                        </a>
+                        <a href="#" class="block px-8 py-2 hover:text-primary">
+                            Infrastructure Solution
+                        </a>
+                        <a href="#" class="block px-8 py-2 hover:text-primary">
+                            Application Solution
+                        </a>
+                        <a href="#" class="block px-8 py-2 hover:text-primary">
+                            Service Solution
+                        </a>
+                        <a href="#" class="block px-8 py-2 hover:text-primary">
+                            Vendor Management Solution
+                        </a>
+                        <a href="#" class="block px-8 py-2 hover:text-primary">
+                            Human Resource Solution
+                        </a>
                     </div>
                 </div>
 
-                <a href="industry.html" class="md:px-1">Industries</a>
-                <a href="#" class="md:px-1">Our Clients</a>
-                <a href="#" class="md:px-1">Articles</a>
-                <a href="#" class="md:px-1">Careers</a>
+                <a href="industry.html" class="md:px-1">
+                    Industries
+                </a>
+                <a href="client.html" class="md:px-1">
+                    Our Clients
+                </a>
+                <a href="article.html" class="md:px-1">
+                    Articles
+                </a>
+                <a href="career.html" class="md:px-1">
+                    Careers
+                </a>
 
                 <div>
-                    <a href="#" class="btn-primary">Book Meeting</a>
+                    <a href="contact.html" class="btn-primary">
+                        Book Meeting
+                    </a>
                 </div>
             </nav>
 
@@ -101,13 +124,15 @@
             style="height: calc(100vh - 67px)">
             <ul>
                 <li class="border-b">
-                    <a href="#" class="flex items-center gap-2 px-4 py-3">About</a>
+                    <a href="about.html" class="flex items-center gap-2 px-4 py-3">
+                        About Us
+                    </a>
                 </li>
                 <li class="border-b">
                     <!-- Dropdown Mobile -->
                     <details>
                         <summary class="p-4 cursor-pointer flex items-center justify-between">
-                            <span>Services</span>
+                            <span>Solution & Services</span>
                             <svg class="w-4 h-4 transform transition-transform duration-200" fill="none"
                                 stroke="currentColor" viewBox="0 0 24 24">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
@@ -115,43 +140,52 @@
                             </svg>
                         </summary>
                         <div class="pl-6">
-                            <a href="#"
-                                class="flex items-center gap-2 px-4 py-2 hover:bg-gray-100 hover:text-red-600">Network
-                                Solution</a>
-                            <a href="#"
-                                class="flex items-center gap-2 px-4 py-2 hover:bg-gray-100 hover:text-red-600">Infrastructure
-                                Solution</a>
-                            <a href="#"
-                                class="flex items-center gap-2 px-4 py-2 hover:bg-gray-100 hover:text-red-600">Application
-                                Solution</a>
-                            <a href="#"
-                                class="flex items-center gap-2 px-4 py-2 hover:bg-gray-100 hover:text-red-600">Service
-                                Solution</a>
-                            <a href="#"
-                                class="flex items-center gap-2 px-4 py-2 hover:bg-gray-100 hover:text-red-600">Vendor
-                                Management
-                                Solution</a>
-                            <a href="#"
-                                class="flex items-center gap-2 px-4 py-2 hover:bg-gray-100 hover:text-red-600">Human
-                                Resource
-                                Solution</a>
+                            <a href="solution_network.html"
+                                class="flex items-center gap-2 px-4 py-2 hover:bg-gray-100 hover:text-red-600">
+                                Network Solution
+                            </a>
+                            <a href="#" class="flex items-center gap-2 px-4 py-2 hover:bg-gray-100 hover:text-red-600">
+                                Infrastructure Solution
+                            </a>
+                            <a href="#" class="flex items-center gap-2 px-4 py-2 hover:bg-gray-100 hover:text-red-600">
+                                Application Solution
+                            </a>
+                            <a href="#" class="flex items-center gap-2 px-4 py-2 hover:bg-gray-100 hover:text-red-600">
+                                Service Solution
+                            </a>
+                            <a href="#" class="flex items-center gap-2 px-4 py-2 hover:bg-gray-100 hover:text-red-600">
+                                Vendor Management Solution
+                            </a>
+                            <a href="#" class="flex items-center gap-2 px-4 py-2 hover:bg-gray-100 hover:text-red-600">
+                                Human Resource Solution
+                            </a>
                         </div>
                     </details>
                 </li>
                 <li class="border-b">
-                    <a href="#" class="flex items-center gap-2 px-4 py-3">Industries</a>
+                    <a href="industry.html" class="flex items-center gap-2 px-4 py-3">
+                        Industries
+                    </a>
                 </li>
                 <li class="border-b">
-                    <a href="#" class="flex items-center gap-2 px-4 py-3">Our Clients</a>
+                    <a href="client.html" class="flex items-center gap-2 px-4 py-3">
+                        Our Clients
+                    </a>
                 </li>
                 <li class="border-b">
-                    <a href="#" class="flex items-center gap-2 px-4 py-3">Articles</a>
+                    <a href="article.html" class="flex items-center gap-2 px-4 py-3">
+                        Articles
+                    </a>
                 </li>
                 <li class="border-b">
-                    <a href="#" class="flex items-center gap-2 px-4 py-3">Careers</a>
+                    <a href="career.html" class="flex items-center gap-2 px-4 py-3">
+                        Careers
+                    </a>
                 </li>
                 <li class="p-4 text-center">
-                    <a href="#" class="btn-primary flex justify-center !py-4">Book Meeting</a>
+                    <a href="contact.html" class="btn-primary flex justify-center !py-4">
+                        Book Meeting
+                    </a>
                 </li>
             </ul>
         </div>
@@ -187,8 +221,7 @@
                         Book Meeting
                     </a>
                 </div>
-                <div
-                    class="order-1 md:order-2 mb-4 md:mb-0 md:w-[475px] md:h-[430px] flex items-center justify-center">
+                <div class="order-1 md:order-2 mb-4 md:mb-0 md:w-[475px] md:h-[430px] flex items-center justify-center">
                     <img src="./assets/img/hero_banner.png" alt="All Your Connectivity Needs"
                         class="h-full w-auto object-contain md:h-full invisible"
                         onload="this.classList.remove('invisible')" />
@@ -232,8 +265,12 @@
                     <!-- Network Solution -->
                     <div class="tab-panel min-h-64 md:h-[520px] lg:h-[400px] overflow-auto" id="network">
                         <div class="flex flex-col md:flex-row gap-6">
-                            <img src="./assets/img/solution_network.png" alt="Network Solution"
-                                class="sticky top-0 w-full md:w-1/3 h-[200px] md:h-[250px] lg:h-[400px] rounded-lg object-cover">
+                            <a href="solution_network.html#voice-network"
+                                class="cursor-pointer sticky top-0 w-full md:w-1/3 h-[200px] md:h-[250px] lg:h-[400px] rounded-lg overflow-hidden">
+                                <img src="./assets/img/solution_network.png" alt="Network Solution"
+                                    class="w-full h-full object-cover transition-transform duration-700 ease-in-out hover:scale-125">
+                            </a>
+
                             <div class="flex-1">
                                 <h3 class="content-title mb-6">Network Solution</h3>
 
@@ -241,7 +278,12 @@
                                 <p class="mb-6">
                                     Business Connectivity, is part of WCS Solution, which solves todays network
                                     infrastructure problem and accelerates the opportunities to enterprises. and these
-                                    technology and solution are available to us today with supporting
+                                    technology and solution are available to us today with supporting.
+                                    <a href="solution_network.html#network-integrator"
+                                        class="link-animate link-primary-dark">
+                                        View Detail
+                                    </a>
+
                                 </p>
 
                                 <h4 class="font-semibold">Network Security Solution</h4>
@@ -249,7 +291,11 @@
                                     WCS has the proven skills and track and track record n providing IT security
                                     services that minimize security risk. As a vendor-neutral consulting firm, we have
                                     partnered with major vendors in the IT security market, giving us the ability to
-                                    develop and install security measures to suit the needs of your business
+                                    develop and install security measures to suit the needs of your business.
+                                    <a href="solution_network.html#network-security"
+                                        class="link-animate link-primary-dark">
+                                        View Detail
+                                    </a>
                                 </p>
 
                                 <h4 class="font-semibold">Voice Network Solution</h4>
@@ -257,8 +303,11 @@
                                     WCS thrives in working with companies at this new edge, as once
                                     specialist application become the domain of the mainstream. We also ensure that
                                     these new business tools meet the very high expectations of the corporate enterprise
-                                    in term
-                                    of resilience and ratability.
+                                    in term of resilience and ratability.
+                                    <a href="solution_network.html#voice-network"
+                                        class="link-animate link-primary-dark">
+                                        View Detail
+                                    </a>
                                 </p>
                             </div>
                         </div>
@@ -1018,24 +1067,76 @@
             <div class="md:w-1/4">
                 <h4 class="mb-4">Support</h4>
                 <ul class="space-y-1 md:space-y-3">
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="about.html">About Us</a></li>
-                    <li><a href="industry.html">Industries</a></li>
-                    <li><a href="#">Our Client</a></li>
-                    <li><a href="#">Article</a></li>
-                    <li><a href="#">Careers</a></li>
-                    <li><a href="#">Book Meeting</a></li>
+                    <li>
+                        <a href="index.html" class="link-animate link-dark-primary">
+                            Home
+                        </a>
+                    </li>
+                    <li>
+                        <a href="about.html" class="link-animate link-dark-primary">
+                            About Us
+                        </a>
+                    </li>
+                    <li>
+                        <a href="industry.html" class="link-animate link-dark-primary">
+                            Industries
+                        </a>
+                    </li>
+                    <li>
+                        <a href="client.html" class="link-animate link-dark-primary">
+                            Our Client
+                        </a>
+                    </li>
+                    <li>
+                        <a href="article.html" class="link-animate link-dark-primary">
+                            Article
+                        </a>
+                    </li>
+                    <li>
+                        <a href="career.html" class="link-animate link-dark-primary">
+                            Careers
+                        </a>
+                    </li>
+                    <li>
+                        <a href="contact.html" class="link-animate link-dark-primary">
+                            Book Meeting
+                        </a>
+                    </li>
                 </ul>
             </div>
             <div class="md:w-1/4">
                 <h4 class="mb-4">Solutions & Services</h4>
                 <ul class="space-y-1 md:space-y-3">
-                    <li><a href="#">Network Solution</a></li>
-                    <li><a href="#">Infrastructure Solution</a></li>
-                    <li><a href="#">Application Solution</a></li>
-                    <li><a href="#">Service Solution</a></li>
-                    <li><a href="#">Vendor Management</a></li>
-                    <li><a href="#">Human Resources</a></li>
+                    <li>
+                        <a href="solution_network.html" class="link-animate link-dark-primary">
+                            Network Solution
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="link-animate link-dark-primary">
+                            Infrastructure Solution
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="link-animate link-dark-primary">
+                            Application Solution
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="link-animate link-dark-primary">
+                            Service Solution
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="link-animate link-dark-primary">
+                            Vendor Management
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="link-animate link-dark-primary">
+                            Human Resources
+                        </a>
+                    </li>
                 </ul>
             </div>
             <div class="md:flex-1">
@@ -1054,17 +1155,23 @@
                                 <img src="./assets/img/ic_phone.svg" alt="phone">
                                 <div class="space-y-1">
                                     <p>
-                                        <a href="tel:+622131925586">(021) 3192 5586</a>
+                                        <a href="tel:+622131925586" class="link-animate link-dark-primary">
+                                            (021) 3192 5586
+                                        </a>
                                     </p>
                                     <p>
-                                        <a href="tel:+622131925587">(021) 3192 5587</a>
+                                        <a href="tel:+622131925587" class="link-animate link-dark-primary">
+                                            (021) 3192 5587
+                                        </a>
                                     </p>
                                 </div>
                             </li>
                             <li class="flex items-start gap-2">
                                 <img src="./assets/img/ic_email.svg" alt="email">
                                 <p>
-                                    <a href="mailto:marketing@wcs.co.id">marketing@wcs.co.id</a>
+                                    <a href="mailto:marketing@wcs.co.id"  class="link-animate link-dark-primary">
+                                        marketing@wcs.co.id
+                                    </a>
                                 </p>
                             </li>
                         </ul>
