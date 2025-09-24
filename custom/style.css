@@ -89,7 +89,7 @@ header nav a {
         @apply text-primary;
     }
 }
-#mobileMenu a {
+#mobile-menu a {
     &.active {
         @apply text-primary;
     }
