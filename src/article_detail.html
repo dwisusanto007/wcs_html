@@ -1,0 +1,535 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Wahana Ciptasinatria | Welcome</title>
+    <link href="./assets/css/style.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <link rel="icon" id="dynamic-favicon" type="image/svg+xml" />
+    <script>
+        (function () {
+            // ambil huruf pertama dari title
+            const firstLetter = document.title.trim().charAt(0).toUpperCase() || "Q";
+
+            // buat SVG string
+            const svg = `
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+                <text x="50%" y="50%" dominant-baseline="middle" text-anchor="middle"
+                        font-size="40" font-family="sans-serif" font-weight="bold" fill="#A21C21">
+                    WCS
+                </text>
+                </svg>
+            `;
+
+            // encode ke data URI
+            const svgDataUri = "data:image/svg+xml," + encodeURIComponent(svg);
+            // set ke favicon
+            document.getElementById("dynamic-favicon").setAttribute("href", svgDataUri);
+        })();
+    </script>
+</head>
+
+<body class="font-inter bg-gray-100">
+
+    <!-- Header -->
+    <header class="sticky top-0 bg-white shadow-sm z-50 border-b border-gray-100">
+        <div class="container mx-auto flex items-center justify-between py-2 md:py-4">
+
+            <!-- Logo -->
+            <div id="logo">
+                <a href="index.html" class="header-logo inline-flex">
+                    <img src="./assets/img/logo_wcs.png" alt="PT Wahana Ciptasinatria">
+                    <span class="text-xs md:text-base flex lg:hidden xl:flex ml-2 uppercase">PT Wahana
+                        Ciptasinatria</span>
+                </a>
+            </div>
+
+
+            <!-- Desktop Menu -->
+            <nav class="hidden lg:flex items-center space-x-2 lg:space-x-6 font-semibold text-gray-900 relative">
+                <a href="about.html" class="md:px-1">
+                    About Us
+                </a>
+
+                <!-- Dropdown Services -->
+                <div class="relative group px-1">
+                    <button class="flex items-center space-x-1 group-hover:text-primary">
+                        <span>Solution & Services</span>
+                        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                        </svg>
+                    </button>
+
+                    <!-- Submenu -->
+                    <div
+                        class="font-medium absolute left-0 mt-2 py-2 min-w-64 bg-white shadow-lg rounded-md z-50 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 overflow-hidden">
+                        <a href="solution_network.html" class="block px-8 py-2 hover:text-primary">
+                            Network Solution
+                        </a>
+                        <a href="#" class="block px-8 py-2 hover:text-primary">
+                            Infrastructure Solution
+                        </a>
+                        <a href="#" class="block px-8 py-2 hover:text-primary">
+                            Application Solution
+                        </a>
+                        <a href="#" class="block px-8 py-2 hover:text-primary">
+                            Service Solution
+                        </a>
+                        <a href="#" class="block px-8 py-2 hover:text-primary">
+                            Vendor Management Solution
+                        </a>
+                        <a href="#" class="block px-8 py-2 hover:text-primary">
+                            Human Resource Solution
+                        </a>
+                    </div>
+                </div>
+
+                <a href="industry.html" class="md:px-1">
+                    Industries
+                </a>
+                <a href="client.html" class="md:px-1">
+                    Our Clients
+                </a>
+                <a href="article.html" class="active md:px-1">
+                    Articles
+                </a>
+                <a href="career.html" class="md:px-1">
+                    Careers
+                </a>
+
+                <div>
+                    <a href="contact.html" class="btn-primary">
+                        Book Meeting
+                    </a>
+                </div>
+            </nav>
+
+            <!-- Mobile Hamburger -->
+            <div class="lg:hidden">
+                <button id="menu-toggle" class="focus:outline-none">
+                    <svg class="w-6 h-6 text-gray-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M4 6h16M4 12h16M4 18h16" />
+                    </svg>
+                </button>
+            </div>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden lg:hidden bg-white shadow-md border-t flex flex-col"
+            style="height: calc(100vh - 67px)">
+            <ul>
+                <li class="border-b">
+                    <a href="about.html" class="flex items-center gap-2 px-4 py-3">
+                        About Us
+                    </a>
+                </li>
+                <li class="border-b">
+                    <!-- Dropdown Mobile -->
+                    <details>
+                        <summary class="p-4 cursor-pointer flex items-center justify-between">
+                            <span>Solution & Services</span>
+                            <svg class="w-4 h-4 transform transition-transform duration-200" fill="none"
+                                stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M19 9l-7 7-7-7" />
+                            </svg>
+                        </summary>
+                        <div class="pl-6">
+                            <a href="solution_network.html"
+                                class="flex items-center gap-2 px-4 py-2 hover:bg-gray-100 hover:text-red-600">
+                                Network Solution
+                            </a>
+                            <a href="#" class="flex items-center gap-2 px-4 py-2 hover:bg-gray-100 hover:text-red-600">
+                                Infrastructure Solution
+                            </a>
+                            <a href="#" class="flex items-center gap-2 px-4 py-2 hover:bg-gray-100 hover:text-red-600">
+                                Application Solution
+                            </a>
+                            <a href="#" class="flex items-center gap-2 px-4 py-2 hover:bg-gray-100 hover:text-red-600">
+                                Service Solution
+                            </a>
+                            <a href="#" class="flex items-center gap-2 px-4 py-2 hover:bg-gray-100 hover:text-red-600">
+                                Vendor Management Solution
+                            </a>
+                            <a href="#" class="flex items-center gap-2 px-4 py-2 hover:bg-gray-100 hover:text-red-600">
+                                Human Resource Solution
+                            </a>
+                        </div>
+                    </details>
+                </li>
+                <li class="border-b">
+                    <a href="industry.html" class="flex items-center gap-2 px-4 py-3">
+                        Industries
+                    </a>
+                </li>
+                <li class="border-b">
+                    <a href="client.html" class="flex items-center gap-2 px-4 py-3">
+                        Our Clients
+                    </a>
+                </li>
+                <li class="border-b">
+                    <a href="article.html" class="active flex items-center gap-2 px-4 py-3">
+                        Articles
+                    </a>
+                </li>
+                <li class="border-b">
+                    <a href="career.html" class="flex items-center gap-2 px-4 py-3">
+                        Careers
+                    </a>
+                </li>
+                <li class="p-4 text-center">
+                    <a href="contact.html" class="btn-primary flex justify-center !py-4">
+                        Book Meeting
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </header>
+
+    <!-- Hero -->
+    <section class="relative md:border-none md:h-[340px] flex items-center overflow-hidden">
+        <img src="./assets/img/article/case_adira_finance.png" alt="Adira Finance"
+            class="h-full w-auto mx-auto object-contain md:h-full invisible"
+            onload="this.classList.remove('invisible')" />
+    </section>
+
+    <section id="page-content" class="bg-white relative py-4 md:py-8">
+        <div class="container relative h-full">
+            <div>
+                <h1 class="page-title">
+                    Case Study: Strengthening IT Infrastructure for Adira Finance
+                </h2>
+                <p class="leading-normal text-gray-500">
+                    Written by 
+                    <span class="font-semibold">Bunga Abdul</span>
+                    <span> · 04 Sept 2025 </span>
+                    <span> · 4 min read </span>
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section id="network-security" class="bg-white relative py-6 my-4">
+        <div class="container relative h-full">
+            <div class="flex flex-col lg:flex-row items-start h-full md:gap-8 xl:gap-12">
+                <div class="order-1 lg:order-2 mb-4 md:mb-0 md:h-auto lg:h-[340px] flex items-center justify-center">
+                    <img src="./assets/img/network_security_solution.png" alt="Network Security Solution"
+                        class="h-full w-auto object-contain md:h-full invisible rounded-lg"
+                        onload="this.classList.remove('invisible')" />
+                </div>
+                <div class="order-2 lg:order-1 flex-1 flex flex-col items-start space-y-4 md:space-y-8">
+                    <div class="md:pr-2 xl:pr-6 flex flex-col gap-4">
+                        <h2 class="page-title !mb-4">
+                            Network Security Solution
+                        </h2>
+                        <p class="leading-normal">
+                            WCS has the proven skills and track and track record n providing IT security services that
+                            minimize security risk. As a vendor-neutral consulting firm, we have partnered with major
+                            vendors in the IT security market, giving us the ability to develop and install security
+                            measures to suit the needs of your business
+                        </p>
+                        <div>
+                            <p class="leading-normal">
+                                <b>We provides Security Services in the following areas :</b>
+                            </p>
+                            <ul class="list-disc pl-6 grid md:grid-cols-2 gap-1">
+                                <li>
+                                    Virtual Private Networks Solution
+                                </li>
+                                <li>
+                                    Remote Access Solution
+                                </li>
+                                <li>
+                                    Virus Protection and alert
+                                </li>
+                                <li>
+                                    Data Encryption
+                                </li>
+                                <li>
+                                    Security Socket Layer (SSL) Solutions
+                                </li>
+                                <li>
+                                    Bandwidth Management & Compression
+                                </li>
+                                <li>
+                                    Perimeter Deployment & Compression
+                                </li>
+                                <li>
+                                    Security Policy Design and Enforcement
+                                </li>
+                                <li>
+                                    Security Auditing
+                                </li>
+                                <li>
+                                    Intrusion Detection Prevention
+                                </li>
+                                <li>
+                                    Wireless Security and access control for WLAN, Hotspot and Wimax Single sign on
+                                    solution
+                                </li>
+                                <li>
+                                    based on customer application and database
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="voice-network" class="bg-white relative py-4 md:py-8">
+        <div class="container relative h-full">
+            <div class="flex flex-col lg:flex-row items-start h-full md:gap-8 xl:gap-12">
+                <div class="mb-4 md:mb-0 md:h-auto lg:h-[340px] flex items-center justify-center">
+                    <img src="./assets/img/voice_network_solution.png" alt="Voice Network Solution"
+                        class="h-full w-auto object-contain md:h-full invisible rounded-lg"
+                        onload="this.classList.remove('invisible')" />
+                </div>
+                <div class="flex-1 flex flex-col items-start space-y-4 md:space-y-8">
+                    <div class="md:pr-2 xl:pr-6 flex flex-col gap-4">
+                        <h2 class="page-title !mb-4">
+                            Voice Network Solution
+                        </h2>
+                        <p class="leading-normal">
+                            WCS has the proven skills and track and track record n providing IT security services that
+                            minimize security risk. As a vendor-neutral consulting firm, we have partnered with major
+                            vendors in the IT security market, giving us the ability to develop and install security
+                            measures to suit the needs of your business
+                        </p>
+                        <div>
+                            <p class="leading-normal">
+                                <b>We provides Security Services in the following areas :</b>
+                            </p>
+                            <ul class="list-disc pl-6 grid md:grid-cols-2 gap-1">
+                                <li>
+                                    Virtual Private Networks Solution
+                                </li>
+                                <li>
+                                    Remote Access Solution
+                                </li>
+                                <li>
+                                    Virus Protection and alert
+                                </li>
+                                <li>
+                                    Data Encryption
+                                </li>
+                                <li>
+                                    Security Socket Layer (SSL) Solutions
+                                </li>
+                                <li>
+                                    Bandwidth Management & Compression
+                                </li>
+                                <li>
+                                    Perimeter Deployment & Compression
+                                </li>
+                                <li>
+                                    Security Policy Design and Enforcement
+                                </li>
+                                <li>
+                                    Security Auditing
+                                </li>
+                                <li>
+                                    Intrusion Detection Prevention
+                                </li>
+                                <li>
+                                    Wireless Security and access control for WLAN, Hotspot and Wimax Single sign on
+                                    solution
+                                </li>
+                                <li>
+                                    based on customer application and database
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Footer -->
+    <section class="py-8 text-white bg-primary md:bg-[url('../img/bg_cta_footer.png')] md:bg-repeat-x">
+        <div class="container mx-auto md:flex items-center gap-10">
+            <div class="section-title md:w-[70%]">
+                <h2 class="page-title text-white">
+                    Book a Meeting
+                </h2>
+                <p class="text-white">
+                    Let’s Talk About Your Business Needs with more than 20 years of experience and 200+ successful
+                    projects, WCS is ready to help your company accelerate with the right IT solutions.
+                </p>
+            </div>
+            <div class="mt-8 md:mt-0 flex flex-1 justify-center md:justify-end">
+                <a href="#" class="btn-primary btn-primary-outline">Book Meeting</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container py-8 mx-auto md:flex space-y-6 md:space-x-6 md:space-y-0">
+            <div class="md:w-1/4">
+                <h4 class="mb-4">Support</h4>
+                <ul class="space-y-1 md:space-y-3">
+                    <li>
+                        <a href="index.html" class="link-animate link-dark-primary">
+                            Home
+                        </a>
+                    </li>
+                    <li>
+                        <a href="about.html" class="link-animate link-dark-primary">
+                            About Us
+                        </a>
+                    </li>
+                    <li>
+                        <a href="industry.html" class="link-animate link-dark-primary">
+                            Industries
+                        </a>
+                    </li>
+                    <li>
+                        <a href="client.html" class="link-animate link-dark-primary">
+                            Our Client
+                        </a>
+                    </li>
+                    <li>
+                        <a href="article.html" class="link-animate link-dark-primary">
+                            Article
+                        </a>
+                    </li>
+                    <li>
+                        <a href="career.html" class="link-animate link-dark-primary">
+                            Careers
+                        </a>
+                    </li>
+                    <li>
+                        <a href="contact.html" class="link-animate link-dark-primary">
+                            Book Meeting
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="md:w-1/4">
+                <h4 class="mb-4">Solutions & Services</h4>
+                <ul class="space-y-1 md:space-y-3">
+                    <li>
+                        <a href="solution_network.html" class="link-animate link-dark-primary">
+                            Network Solution
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="link-animate link-dark-primary">
+                            Infrastructure Solution
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="link-animate link-dark-primary">
+                            Application Solution
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="link-animate link-dark-primary">
+                            Service Solution
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="link-animate link-dark-primary">
+                            Vendor Management
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="link-animate link-dark-primary">
+                            Human Resources
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="md:flex-1">
+                <div class="flex flex-col justify-between">
+                    <div>
+                        <h4 class="mb-4">Location PT WAHANA CIPTASINATRIA</h4>
+                        <ul class="space-y-1 md:space-y-3">
+                            <li class="flex items-start gap-2">
+                                <img src="./assets/img/ic_location.svg" alt="location">
+                                <p>
+                                    Sahid Sudirman Centre 17th Floor, Suite F&G, Jl. Jend. Sudirman No.Kav. 13-15, Karet
+                                    Tengsin,Central Jakarta
+                                </p>
+                            </li>
+                            <li class="flex items-start gap-2">
+                                <img src="./assets/img/ic_phone.svg" alt="phone">
+                                <div class="space-y-1">
+                                    <p>
+                                        <a href="tel:+622131925586" class="link-animate link-dark-primary">
+                                            (021) 3192 5586
+                                        </a>
+                                    </p>
+                                    <p>
+                                        <a href="tel:+622131925587" class="link-animate link-dark-primary">
+                                            (021) 3192 5587
+                                        </a>
+                                    </p>
+                                </div>
+                            </li>
+                            <li class="flex items-start gap-2">
+                                <img src="./assets/img/ic_email.svg" alt="email">
+                                <p>
+                                    <a href="mailto:marketing@wcs.co.id" class="link-animate link-dark-primary">
+                                        marketing@wcs.co.id
+                                    </a>
+                                </p>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="mt-8 flex items-center gap-4">
+                        <p class="text-lg font-bold">
+                            <b>Follow Us:</b>
+                        </p>
+                        <ul class="flex items-center gap-3">
+                            <li>
+                                <a href="#">
+                                    <img src="./assets/img/follow_linkedin.svg" alt="linkedin">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img src="./assets/img/follow_facebook.svg" alt="facebook">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img src="./assets/img/follow_x.svg" alt="twitter">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img src="./assets/img/follow_gmail.svg" alt="gmail">
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="w-full border-t text-center text-xs py-4">
+            © 2025 PT WAHANA CIPTA NUSANTARA. All rights reserved
+        </div>
+    </footer>
+
+    <script>
+        // Toggle mobile menu
+        const btn = document.getElementById('menu-toggle');
+        const menu = document.getElementById('mobile-menu');
+
+        btn.addEventListener('click', () => {
+            menu.classList.toggle('hidden');
+            document.body.classList.toggle("overflow-hidden");
+        });
+    </script>
+</body>
+
+</html>
