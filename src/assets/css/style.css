@@ -719,6 +719,10 @@ video {
   margin-bottom: 1.5rem;
 }
 
+.mb-8{
+  margin-bottom: 2rem;
+}
+
 .ml-0{
   margin-left: 0px;
 }
@@ -759,20 +763,12 @@ video {
   height: auto !important;
 }
 
-.h-10{
-  height: 2.5rem;
-}
-
 .h-4{
   height: 1rem;
 }
 
 .h-48{
   height: 12rem;
-}
-
-.h-5{
-  height: 1.25rem;
 }
 
 .h-6{
@@ -827,16 +823,8 @@ video {
   min-height: 16rem;
 }
 
-.w-10{
-  width: 2.5rem;
-}
-
 .w-4{
   width: 1rem;
-}
-
-.w-5{
-  width: 1.25rem;
 }
 
 .w-6{
@@ -1031,10 +1019,6 @@ video {
   border-radius: 1.5rem;
 }
 
-.rounded-full{
-  border-radius: 9999px;
-}
-
 .rounded-lg{
   border-radius: 0.5rem;
 }
@@ -1072,11 +1056,6 @@ video {
 .border-gray-200{
   --tw-border-opacity: 1;
   border-color: rgb(229 231 235 / var(--tw-border-opacity, 1));
-}
-
-.border-gray-900{
-  --tw-border-opacity: 1;
-  border-color: rgb(48 48 48 / var(--tw-border-opacity, 1));
 }
 
 .bg-\[\#F5F5F5\]{
@@ -1264,11 +1243,6 @@ video {
   line-height: 1.5;
 }
 
-.\!text-primary{
-  --tw-text-opacity: 1 !important;
-  color: rgb(162 28 33 / var(--tw-text-opacity, 1)) !important;
-}
-
 .text-\[\#1E1E1E\]{
   --tw-text-opacity: 1;
   color: rgb(30 30 30 / var(--tw-text-opacity, 1));
@@ -1331,6 +1305,14 @@ video {
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
 
+.transition{
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, -webkit-backdrop-filter;
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter;
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter, -webkit-backdrop-filter;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
+
 .transition-all{
   transition-property: all;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -1343,14 +1325,14 @@ video {
   transition-duration: 150ms;
 }
 
-.transition-transform{
-  transition-property: transform;
+.transition-opacity{
+  transition-property: opacity;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-duration: 150ms;
 }
 
-.transition-opacity{
-  transition-property: opacity;
+.transition-transform{
+  transition-property: transform;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-duration: 150ms;
 }
@@ -1371,12 +1353,12 @@ video {
   transition-duration: 200ms;
 }
 
-.duration-700{
-  transition-duration: 700ms;
-}
-
 .duration-500{
   transition-duration: 500ms;
+}
+
+.duration-700{
+  transition-duration: 700ms;
 }
 
 .ease-in-out{
@@ -1416,26 +1398,58 @@ h6{
 h1,
 .page-title,
 .banner-title{
-  font-size: 32px;
-  line-height: 40px;
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+  line-height: 28px;
+}
+
+@media (min-width: 768px){
+  h1,
+.page-title,
+.banner-title{
+    font-size: 32px;
+    line-height: 40px;
+  }
 }
 
 h2,
 .content-title{
-  font-size: 1.25rem;
+  font-size: 1.125rem;
   line-height: 1.75rem;
   font-weight: 700;
-  line-height: 28px;
+}
+
+@media (min-width: 768px){
+  h2,
+.content-title{
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+    line-height: 28px;
+  }
 }
 
 h3{
-  font-size: 1.125rem;
-  line-height: 1.75rem;
+  font-size: 1rem;
+  line-height: 1.5rem;
+}
+
+@media (min-width: 768px){
+  h3{
+    font-size: 1.125rem;
+    line-height: 1.75rem;
+  }
 }
 
 h4{
-  font-size: 1.125rem;
-  line-height: 1.75rem;
+  font-size: 1rem;
+  line-height: 1.5rem;
+}
+
+@media (min-width: 768px){
+  h4{
+    font-size: 1.125rem;
+    line-height: 1.75rem;
+  }
 }
 
 .btn-primary{
@@ -1756,15 +1770,9 @@ footer a:hover{
   width: 1.25rem !important;
 }
 
-.after\:\!text-3xl::after{
-  content: var(--tw-content);
-  font-size: 1.875rem !important;
-  line-height: 2.25rem !important;
-}
-
-.after\:\!font-bold::after{
-  content: var(--tw-content);
-  font-weight: 700 !important;
+.swiper-pagination-bullet-active{
+  --tw-bg-opacity: 1 !important;
+  background-color: rgb(162 28 33 / var(--tw-bg-opacity, 1)) !important;
 }
 
 .hover\:scale-125:hover{
@@ -1783,11 +1791,6 @@ footer a:hover{
 
 .hover\:border-\[\#000000\]\/\[0\.24\]:hover{
   border-color: rgb(0 0 0 / 0.24);
-}
-
-.hover\:border-primary:hover{
-  --tw-border-opacity: 1;
-  border-color: rgb(162 28 33 / var(--tw-border-opacity, 1));
 }
 
 .hover\:bg-gray-100:hover{
@@ -1906,6 +1909,10 @@ footer a:hover{
     display: flex;
   }
 
+  .md\:inline-flex{
+    display: inline-flex;
+  }
+
   .md\:h-\[160px\]{
     height: 160px;
   }
@@ -1976,6 +1983,10 @@ footer a:hover{
 
   .md\:w-\[70\%\]{
     width: 70%;
+  }
+
+  .md\:max-w-5xl{
+    max-width: 64rem;
   }
 
   .md\:max-w-\[100vw\]{
