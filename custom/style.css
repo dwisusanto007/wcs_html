@@ -5,11 +5,25 @@
 @tailwind utilities;
 
 @layer utilities {
-  .delay-0     { animation-delay: 0s; }
-  .delay-300   { animation-delay: 0.3s; }
-  .delay-500   { animation-delay: 0.5s; }
-  .delay-1000  { animation-delay: 1s; }
-  .delay-1500  { animation-delay: 1.5s; }
+    .delay-0 {
+        animation-delay: 0s;
+    }
+
+    .delay-300 {
+        animation-delay: 0.3s;
+    }
+
+    .delay-500 {
+        animation-delay: 0.5s;
+    }
+
+    .delay-1000 {
+        animation-delay: 1s;
+    }
+
+    .delay-1500 {
+        animation-delay: 1.5s;
+    }
 }
 
 /* --- 
@@ -18,11 +32,16 @@ Design System :
 2. Color
 --- */
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
     @apply mb-2 text-gray-900 font-bold;
 }
 
-h1, 
+h1,
 .page-title,
 .banner-title {
     @apply text-[32px] leading-[40px];
@@ -36,6 +55,7 @@ h2,
 h3 {
     @apply text-lg;
 }
+
 h4 {
     @apply text-lg;
 }
@@ -43,6 +63,7 @@ h4 {
 .btn-primary {
     @apply bg-primary text-white px-5 py-2 rounded text-base;
     @apply hover:bg-primary-dark;
+
     &-outline {
         @apply bg-white text-primary border border-primary hover:bg-primary-dark hover:text-white;
     }
@@ -57,6 +78,7 @@ h4 {
     .banner-title {
         @apply font-black text-2xl leading-[30px] md:text-[40px] md:leading-[50px] md:mb-4;
     }
+
     .btn-primary {
         @apply px-6 py-4;
     }
@@ -65,31 +87,38 @@ h4 {
 body {
     @apply text-sm text-gray-500;
 }
+
 /* --- Header --- */
 header {
     @apply min-h-16;
 }
+
 .header-logo {
     @apply font-bold text-gray-900 flex items-center;
 }
+
 .header-logo img {
     @apply md:h-[50px];
 }
 
 section {
-  scroll-margin-top: 82px; /* tinggi header */
+    scroll-margin-top: 82px;
+    /* tinggi header */
 }
+
 section p {
     @apply mb-2;
 }
 
-header nav > a,
+header nav>a,
 header nav button {
     @apply hover:text-primary;
+
     &.active {
         @apply text-primary;
     }
 }
+
 #mobile-menu a {
     &.active {
         @apply text-primary;
@@ -97,7 +126,7 @@ header nav button {
 }
 
 details[open] summary svg {
-  transform: rotate(180deg);
+    transform: rotate(180deg);
 }
 
 /* --- Hero --- */
@@ -124,6 +153,7 @@ section .section-title {
 footer {
     @apply font-inter bg-gray-100 text-gray-900 text-[10px] md:text-sm;
 }
+
 footer a {
     @apply hover:text-primary;
 }
@@ -136,9 +166,27 @@ footer a {
     @apply after:origin-left after:scale-x-0 hover:after:scale-x-100;
     @apply after:transition-transform after:duration-300;
 }
+
 .link-primary-dark {
     @apply text-primary hover:text-primary-dark;
 }
+
 .link-dark-primary {
     @apply text-gray-900 hover:text-primary;
+}
+
+/* custom swiper nav */
+.swiper-button-next::after,
+.swiper-button-prev::after {
+    content: none !important;
+}
+.swiper-button-next, 
+.swiper-button-prev {
+    @apply !w-10 !h-10 text-sm;
+    @apply flex items-center justify-center leading-none rounded-full;
+    @apply bg-white border border-[#1E1E1E] hover:border-primary;
+}
+.swiper-button-next svg, 
+.swiper-button-prev svg {
+    @apply !w-5 !h-5;
 }
